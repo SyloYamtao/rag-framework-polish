@@ -1,0 +1,2277 @@
+{
+  "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+  "total_chunks": 206,
+  "total_pages": 211,
+  "loading_method": "unstructured",
+  "chunking_method": "by_paragraphs",
+  "chunk_size": null,
+  "timestamp": "2025-06-12T21:25:39.590582",
+  "chunks": [
+    {
+      "content": "大模型分布式训练框架 Microsoft DeepSpeed",
+      "metadata": {
+        "chunk_id": 1,
+        "page_number": 1,
+        "page_range": "1",
+        "word_count": 3,
+        "char_count": 30,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "彭靖田 Google Developer Expert",
+      "metadata": {
+        "chunk_id": 2,
+        "page_number": 1,
+        "page_range": "1",
+        "word_count": 4,
+        "char_count": 27,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "目录",
+      "metadata": {
+        "chunk_id": 3,
+        "page_number": 2,
+        "page_range": "2",
+        "word_count": 1,
+        "char_count": 2,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "大模型分布式训练框架 DeepSpeed",
+      "metadata": {
+        "chunk_id": 4,
+        "page_number": 2,
+        "page_range": "2",
+        "word_count": 2,
+        "char_count": 20,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "预训练模型显存计算方法",
+      "metadata": {
+        "chunk_id": 5,
+        "page_number": 2,
+        "page_range": "2",
+        "word_count": 1,
+        "char_count": 11,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "Zero Redundancy Optimizer (ZeRO) 技术",
+      "metadata": {
+        "chunk_id": 6,
+        "page_number": 2,
+        "page_range": "2",
+        "word_count": 5,
+        "char_count": 35,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "DeepSpeed 框架和核心技术",
+      "metadata": {
+        "chunk_id": 7,
+        "page_number": 2,
+        "page_range": "2",
+        "word_count": 2,
+        "char_count": 17,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "分布式模型训练并行化技术对比",
+      "metadata": {
+        "chunk_id": 8,
+        "page_number": 2,
+        "page_range": "2",
+        "word_count": 1,
+        "char_count": 14,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "DeepSpeed 与 Transformers 集成训练大模型",
+      "metadata": {
+        "chunk_id": 9,
+        "page_number": 2,
+        "page_range": "2",
+        "word_count": 4,
+        "char_count": 32,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "DeepSpeed 实战",
+      "metadata": {
+        "chunk_id": 10,
+        "page_number": 2,
+        "page_range": "2",
+        "word_count": 2,
+        "char_count": 12,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "DeepSpeed 框架编译与安装",
+      "metadata": {
+        "chunk_id": 11,
+        "page_number": 2,
+        "page_range": "2",
+        "word_count": 2,
+        "char_count": 17,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "DeepSpeed ZeRO 配置详解",
+      "metadata": {
+        "chunk_id": 12,
+        "page_number": 2,
+        "page_range": "2",
+        "word_count": 3,
+        "char_count": 19,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "使用 DeepSpeed 单机多卡、分布式训练",
+      "metadata": {
+        "chunk_id": 13,
+        "page_number": 2,
+        "page_range": "2",
+        "word_count": 3,
+        "char_count": 23,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "实战 DeepSpeed ZeRO-2 和 ZeRO-3 单机单卡训练",
+      "metadata": {
+        "chunk_id": 14,
+        "page_number": 2,
+        "page_range": "2",
+        "word_count": 6,
+        "char_count": 35,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "DeepSpeed 创新模块：Inference、Compression & Science",
+      "metadata": {
+        "chunk_id": 15,
+        "page_number": 2,
+        "page_range": "2",
+        "word_count": 4,
+        "char_count": 46,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "相比微调，预训练7B模型需要多少显存？",
+      "metadata": {
+        "chunk_id": 16,
+        "page_number": 3,
+        "page_range": "3",
+        "word_count": 1,
+        "char_count": 19,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "预训练LLaMA2-7B 模型需要多少显存？",
+      "metadata": {
+        "chunk_id": 17,
+        "page_number": 4,
+        "page_range": "4",
+        "word_count": 2,
+        "char_count": 22,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "假设以bf16混合精度预训练 LLaMA2-7B模型，需要近 120GB显存。即使A100/H100（80GB）单卡也无法支持。",
+      "metadata": {
+        "chunk_id": 18,
+        "page_number": 4,
+        "page_range": "4",
+        "word_count": 3,
+        "char_count": 64,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "§ 为何比 QLoRA多了100GB？不妨展开计算下显存占用： § 模型参数：70亿 x 2 Bytes ≈ 14GB； § 更新梯度：70亿 x 2 Bytes ≈ 14GB； § 优化器（e.g.AdamW），训练过程默认使用fp32精度：",
+      "metadata": {
+        "chunk_id": 19,
+        "page_number": 4,
+        "page_range": "4",
+        "word_count": 19,
+        "char_count": 122,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "§ 模型参数拷贝：7B x 4Bytes ≈ 28GB",
+      "metadata": {
+        "chunk_id": 20,
+        "page_number": 4,
+        "page_range": "4",
+        "word_count": 6,
+        "char_count": 27,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "§ 2倍梯度数量的动量：2x7B x 4Bytes≈ 56GB",
+      "metadata": {
+        "chunk_id": 21,
+        "page_number": 4,
+        "page_range": "4",
+        "word_count": 5,
+        "char_count": 31,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "§ 显存占用总计：14 x 2 + 28 x 3 = 112 GB § 可简记为：7 x (2+2+12) = 112",
+      "metadata": {
+        "chunk_id": 22,
+        "page_number": 4,
+        "page_range": "4",
+        "word_count": 17,
+        "char_count": 59,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "不同优化器的显存占用对比",
+      "metadata": {
+        "chunk_id": 23,
+        "page_number": 5,
+        "page_range": "5",
+        "word_count": 1,
+        "char_count": 12,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "典型优化器与模型权重数量比值： • SGD： 1；",
+      "metadata": {
+        "chunk_id": 24,
+        "page_number": 5,
+        "page_range": "5",
+        "word_count": 4,
+        "char_count": 25,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "RMSProp：2； • Adam：3；",
+      "metadata": {
+        "chunk_id": 25,
+        "page_number": 5,
+        "page_range": "5",
+        "word_count": 3,
+        "char_count": 20,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "典型优化器（32-bit）与模型权重（16-bit）显存占用比值： • SGD： 2；",
+      "metadata": {
+        "chunk_id": 26,
+        "page_number": 5,
+        "page_range": "5",
+        "word_count": 4,
+        "char_count": 43,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "RMSProp：4； • Adam：6；",
+      "metadata": {
+        "chunk_id": 27,
+        "page_number": 5,
+        "page_range": "5",
+        "word_count": 3,
+        "char_count": 20,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "使用混合精度训练模型单步流程图",
+      "metadata": {
+        "chunk_id": 28,
+        "page_number": 6,
+        "page_range": "6",
+        "word_count": 1,
+        "char_count": 15,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "Zero Redundancy Optimizer (ZeRO 优化器) 技术创新 （2020年 GPT3发布前）",
+      "metadata": {
+        "chunk_id": 29,
+        "page_number": 8,
+        "page_range": "8",
+        "word_count": 8,
+        "char_count": 57,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "大模型训练困难",
+      "metadata": {
+        "chunk_id": 30,
+        "page_number": 8,
+        "page_range": "8",
+        "word_count": 1,
+        "char_count": 7,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "巨大的深度学习模型虽然能带来显著的准确度提升，但训练拥有数十亿到数万亿参数的模型非常具有挑战性。",
+      "metadata": {
+        "chunk_id": 31,
+        "page_number": 8,
+        "page_range": "8",
+        "word_count": 1,
+        "char_count": 48,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "现有数据并行和模型并行这两种常见解决方案在将大型模型适配到有限的设备内存中时存在根本性的限制，",
+      "metadata": {
+        "chunk_id": 32,
+        "page_number": 8,
+        "page_range": "8",
+        "word_count": 1,
+        "char_count": 47,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "同时还需在计算、通信和开发效率之间取得平衡。",
+      "metadata": {
+        "chunk_id": 33,
+        "page_number": 8,
+        "page_range": "8",
+        "word_count": 1,
+        "char_count": 22,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "ZeRO的创新",
+      "metadata": {
+        "chunk_id": 34,
+        "page_number": 8,
+        "page_range": "8",
+        "word_count": 1,
+        "char_count": 7,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "内存优化：ZeRO通过优化内存使用，大幅提高了训练速度，同时增加了可以有效训练的模型大小。",
+      "metadata": {
+        "chunk_id": 35,
+        "page_number": 8,
+        "page_range": "8",
+        "word_count": 1,
+        "char_count": 45,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "消除冗余：ZeRO在数据和模型并行训练中消除了内存冗余，同时保持了低通信量和高计算粒度。",
+      "metadata": {
+        "chunk_id": 36,
+        "page_number": 8,
+        "page_range": "8",
+        "word_count": 1,
+        "char_count": 44,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "模型规模扩展：ZeRO允许模型大小与设备数量成比例扩展，同时保持高效率。",
+      "metadata": {
+        "chunk_id": 37,
+        "page_number": 8,
+        "page_range": "8",
+        "word_count": 1,
+        "char_count": 36,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "出色的实验结果",
+      "metadata": {
+        "chunk_id": 38,
+        "page_number": 8,
+        "page_range": "8",
+        "word_count": 1,
+        "char_count": 7,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "大规模的模型训练：ZeRO实现了在400个GPU上对超过1000亿参数的大模型进行超线性加速训练，实现了15",
+      "metadata": {
+        "chunk_id": 39,
+        "page_number": 8,
+        "page_range": "8",
+        "word_count": 1,
+        "char_count": 54,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "Petaflops的吞吐量。",
+      "metadata": {
+        "chunk_id": 40,
+        "page_number": 8,
+        "page_range": "8",
+        "word_count": 1,
+        "char_count": 14,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "性能提升：与当时最先进技术相比，模型大小增加了8倍，可实现性能增加10倍。",
+      "metadata": {
+        "chunk_id": 41,
+        "page_number": 8,
+        "page_range": "8",
+        "word_count": 1,
+        "char_count": 37,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "易用性：ZeRO能够训练高达130亿参数的大型模型（例如，比Megatron GPT的83亿和T5的110亿都大），而无",
+      "metadata": {
+        "chunk_id": 42,
+        "page_number": 8,
+        "page_range": "8",
+        "word_count": 2,
+        "char_count": 60,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "需依赖更难以应用的模型并行技术。",
+      "metadata": {
+        "chunk_id": 43,
+        "page_number": 8,
+        "page_range": "8",
+        "word_count": 1,
+        "char_count": 16,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "研究成果：研究人员利用ZeRO的系统突破创造了世界上最大的语言模型（170亿参数），并达到了破纪录的准",
+      "metadata": {
+        "chunk_id": 44,
+        "page_number": 8,
+        "page_range": "8",
+        "word_count": 1,
+        "char_count": 51,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "确率。",
+      "metadata": {
+        "chunk_id": 45,
+        "page_number": 8,
+        "page_range": "8",
+        "word_count": 1,
+        "char_count": 3,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "ZeRO-DP（Data Parallelism）优化技术",
+      "metadata": {
+        "chunk_id": 46,
+        "page_number": 9,
+        "page_range": "9",
+        "word_count": 2,
+        "char_count": 29,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "ZeRO-DP 是一种分布式数据并行训练方法，通过减少冗余数据来降低每个设备的显存占用，从而允许训练更大的模型。",
+      "metadata": {
+        "chunk_id": 47,
+        "page_number": 9,
+        "page_range": "9",
+        "word_count": 2,
+        "char_count": 56,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "ZeRO-DP 三个优化阶段（以 Adam优化器，64张GPU为例计算）：",
+      "metadata": {
+        "chunk_id": 48,
+        "page_number": 9,
+        "page_range": "9",
+        "word_count": 3,
+        "char_count": 37,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "ZeRO Stage 1 （Pos）：4倍显存压缩，将优化器参数（如动量和学习率等）分布到多张卡。通信量与数据并行相同。",
+      "metadata": {
+        "chunk_id": 49,
+        "page_number": 9,
+        "page_range": "9",
+        "word_count": 4,
+        "char_count": 60,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "ZeRO Stage 2 （Pos+g）：8倍显存压缩， 进一步将梯度分布到多张卡 。通信量仍不变。",
+      "metadata": {
+        "chunk_id": 50,
+        "page_number": 9,
+        "page_range": "9",
+        "word_count": 6,
+        "char_count": 50,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "ZeRO Stage 3 （Pos+g+p）：进一步将模型参数分布到多张卡，显存减少与GPU卡的数量（Nd）成线性关系。如，在64",
+      "metadata": {
+        "chunk_id": 51,
+        "page_number": 9,
+        "page_range": "9",
+        "word_count": 4,
+        "char_count": 65,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "个GPU上分割（Nd=64）将实现64倍的显存压缩。通信量会适度增加50%。",
+      "metadata": {
+        "chunk_id": 52,
+        "page_number": 9,
+        "page_range": "9",
+        "word_count": 1,
+        "char_count": 38,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "LLaMA2-7B：7 x (2+2+12) = 112",
+      "metadata": {
+        "chunk_id": 53,
+        "page_number": 9,
+        "page_range": "9",
+        "word_count": 5,
+        "char_count": 28,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "ZeRO 在千亿模型上的近线性加速实验结果",
+      "metadata": {
+        "chunk_id": 54,
+        "page_number": 10,
+        "page_range": "10",
+        "word_count": 2,
+        "char_count": 21,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "ZeRO-DP 三阶段优化技术对比：从75亿到1万亿的单卡显存消耗",
+      "metadata": {
+        "chunk_id": 55,
+        "page_number": 11,
+        "page_range": "11",
+        "word_count": 2,
+        "char_count": 33,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "ZeRO-R（Residual）组件：进一步优化显存开销",
+      "metadata": {
+        "chunk_id": 56,
+        "page_number": 12,
+        "page_range": "12",
+        "word_count": 1,
+        "char_count": 28,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "ZeRO优化器的ZeRO-R 组件针对以下三个关键方面进行了优化，进一步降低了显存占用并提高训练大型模型的效率： • 分区激活检查点 (Pa)",
+      "metadata": {
+        "chunk_id": 57,
+        "page_number": 12,
+        "page_range": "12",
+        "word_count": 5,
+        "char_count": 71,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "原理：模型并行（MP）设计本质上需要复制激活，导致跨模型并行GPU的激活冗余复制。ZeRO通过分区激活 并在计算中需要使用激活的前一刻才将其以复制形式具体化，从而消除了这种冗余。",
+      "metadata": {
+        "chunk_id": 58,
+        "page_number": 12,
+        "page_range": "12",
+        "word_count": 2,
+        "char_count": 89,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "过程：一旦计算了模型的一层的前向传播，输入激活就会在所有模型并行进程中分区，直到在反向传播期间 再次需要。此时，ZeRO使用all-gather操作重新生成激活的复制副本。",
+      "metadata": {
+        "chunk_id": 59,
+        "page_number": 12,
+        "page_range": "12",
+        "word_count": 2,
+        "char_count": 86,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "内存节省：配合激活检查点，只存储分区的激活检查点而非复制副本，可以显著减少激活占用的内存量。对 于极大的模型和非常有限的设备内存，这些分区的激活检查点甚至可以卸载到CPU内存，将激活内存开销减少 到几乎为零，但需要额外的通信成本。",
+      "metadata": {
+        "chunk_id": 60,
+        "page_number": 12,
+        "page_range": "12",
+        "word_count": 3,
+        "char_count": 115,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "恒定大小缓冲区 (CB)",
+      "metadata": {
+        "chunk_id": 61,
+        "page_number": 12,
+        "page_range": "12",
+        "word_count": 2,
+        "char_count": 12,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "策略：ZeRO精心选择临时数据缓冲区的大小，以平衡内存和计算效率。为了提高效率，高性能库（如NVIDIA Apex或Megatron）在应用这些操作前将所有参数融合到单个缓冲区中。但是，融合缓冲区的内存开销与模型 大小成正比，对于大型模型可能成为障碍。ZeRO通过使用性能高效的恒定大小融合缓冲区解决了这个问题， 使缓冲区大小不依赖于模型大小。",
+      "metadata": {
+        "chunk_id": 62,
+        "page_number": 12,
+        "page_range": "12",
+        "word_count": 4,
+        "char_count": 172,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "内存碎片整理 (MD)",
+      "metadata": {
+        "chunk_id": 63,
+        "page_number": 12,
+        "page_range": "12",
+        "word_count": 2,
+        "char_count": 11,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "问题：由于激活检查点和梯度计算，模型训练中出现内存碎片化。在前向传播中，仅存储选定的激活以供反 向传播使用，而大多数激活被丢弃，因为它们可以在反向传播期间重新计算，导致短期和长期内存交错，从 而引起内存碎片化。内存碎片化在内存充足时通常不是问题，但对于在有限内存下运行的大型模型训练，会 导致内存碎片化问题，如OOM（内存不足）和由于内存分配器花费大量时间寻找连续内存片段而导致的效率 低下。",
+      "metadata": {
+        "chunk_id": 64,
+        "page_number": 12,
+        "page_range": "12",
+        "word_count": 5,
+        "char_count": 196,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "优化：ZeRO通过为激活检查点和梯度预分配连续内存块，并在生成时将它们复制到预分配的内存中，实时进 行内存碎片整理。MD不仅使ZeRO能够以更大的批量大小训练更大的模型，而且还提高了在有限内存下训练的 效率。",
+      "metadata": {
+        "chunk_id": 65,
+        "page_number": 12,
+        "page_range": "12",
+        "word_count": 3,
+        "char_count": 104,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "ZeRO 压测实验结果",
+      "metadata": {
+        "chunk_id": 66,
+        "page_number": 13,
+        "page_range": "13",
+        "word_count": 2,
+        "char_count": 11,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "ZeRO 压测实验对应配置",
+      "metadata": {
+        "chunk_id": 67,
+        "page_number": 14,
+        "page_range": "14",
+        "word_count": 2,
+        "char_count": 13,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "Microsoft DeepSpeed 是什么呢？",
+      "metadata": {
+        "chunk_id": 68,
+        "page_number": 15,
+        "page_range": "15",
+        "word_count": 3,
+        "char_count": 25,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "Microsoft DeepSpeed",
+      "metadata": {
+        "chunk_id": 69,
+        "page_number": 16,
+        "page_range": "16",
+        "word_count": 2,
+        "char_count": 19,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "完整实现了 ZeRO 优化器",
+      "metadata": {
+        "chunk_id": 70,
+        "page_number": 16,
+        "page_range": "16",
+        "word_count": 3,
+        "char_count": 14,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "Microsoft DeepSpeed 框架简介",
+      "metadata": {
+        "chunk_id": 71,
+        "page_number": 17,
+        "page_range": "17",
+        "word_count": 3,
+        "char_count": 24,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "DeepSpeed 是一个开源深度学习优化库，旨在提高大模型训练和运行效率，以支持数千亿~万亿参数的超大语言模型。",
+      "metadata": {
+        "chunk_id": 72,
+        "page_number": 17,
+        "page_range": "17",
+        "word_count": 2,
+        "char_count": 57,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "为了提高大模型训练的效率和扩展性， DeepSpeed 不仅实现了ZeRO 论文中的核心技术，还组合了以下多个模块：",
+      "metadata": {
+        "chunk_id": 73,
+        "page_number": 17,
+        "page_range": "17",
+        "word_count": 4,
+        "char_count": 58,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "1. ZeRO（Zero Redundancy Optimizer）: ZeRO 是 DeepSpeed 的一个关键组成部分，它通过优化数据并行训练中的 显存使用，显著减少了所需的GPU显存。ZeRO 分为几个不同的级别（ZeRO-DP, ZeRO-Offload, ZeRO-Infinity）， 每个级别都提供了不同程度的优化和显存节省，允许训练更大的模型或在有限的硬件资源上训练模型。",
+      "metadata": {
+        "chunk_id": 74,
+        "page_number": 17,
+        "page_range": "17",
+        "word_count": 13,
+        "char_count": 195,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "2. 模型并行（Model Parallelism）: DeepSpeed 实现了模型并行技术，如：Tensor切片，以支持大型模型的分布式 训练。这些技术允许模型的不同部分在不同的计算设备上并行运行，从而处理那些单个设备无法容纳的大型模型。",
+      "metadata": {
+        "chunk_id": 75,
+        "page_number": 17,
+        "page_range": "17",
+        "word_count": 6,
+        "char_count": 121,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "3. 流水线并行（Pipeline Parallelism）: 通过将模型训练分解为多个阶段，并在不同的设备上并行处理这些阶段，流 水线并行技术可以进一步提高训练效率。这种方法特别适合于顺序依赖较弱的训练任务，如某些类型的深度学习 模型。",
+      "metadata": {
+        "chunk_id": 76,
+        "page_number": 17,
+        "page_range": "17",
+        "word_count": 6,
+        "char_count": 119,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "4. 稀疏注意力（Sparse Attention）: DeepSpeed 支持稀疏注意力机制，这有助于降低训练大型模型（尤其是那些基 于Transformer的模型）时的计算和内存需求。稀疏性技术可以减少不必要的计算，使模型更加高效。",
+      "metadata": {
+        "chunk_id": 77,
+        "page_number": 17,
+        "page_range": "17",
+        "word_count": 6,
+        "char_count": 118,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "5. 显存和带宽优化: DeepSpeed 采用了多种技术来优化显存使用和增加带宽效率，如异步I/O、内存池化和压缩通信 等。这些优化有助于提高数据加载和模型训练过程中的效率。",
+      "metadata": {
+        "chunk_id": 78,
+        "page_number": 17,
+        "page_range": "17",
+        "word_count": 5,
+        "char_count": 88,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "https://www.deepspeed.ai/",
+      "metadata": {
+        "chunk_id": 79,
+        "page_number": 17,
+        "page_range": "17",
+        "word_count": 1,
+        "char_count": 25,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "ZeRO-Offload 技术使能CPU参与大模型训练",
+      "metadata": {
+        "chunk_id": 80,
+        "page_number": 19,
+        "page_range": "19",
+        "word_count": 2,
+        "char_count": 27,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "ZeRO-Offload是ZeRO技术的一个扩展，它将部分数据和计算从GPU（或其他主要训练设备）卸载到CPU，从而减轻了",
+      "metadata": {
+        "chunk_id": 81,
+        "page_number": 19,
+        "page_range": "19",
+        "word_count": 1,
+        "char_count": 61,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "GPU的显存负担，并使得在有限GPU资源下训练更大的模型成为可能。核心策略如下：",
+      "metadata": {
+        "chunk_id": 82,
+        "page_number": 19,
+        "page_range": "19",
+        "word_count": 1,
+        "char_count": 40,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "模型卸载：ZeRO-Offload可以将模型的一部分状态（如优化器状态、梯度或参数）从GPU卸载到CPU内存中，从而",
+      "metadata": {
+        "chunk_id": 83,
+        "page_number": 19,
+        "page_range": "19",
+        "word_count": 1,
+        "char_count": 58,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "减少GPU上的内存需求。。",
+      "metadata": {
+        "chunk_id": 84,
+        "page_number": 19,
+        "page_range": "19",
+        "word_count": 1,
+        "char_count": 13,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "计算卸载：除了模型卸载之外，ZeRO-Offload还可以将一部分计算任务（如参数更新）卸载到CPU，减轻GPU的计",
+      "metadata": {
+        "chunk_id": 85,
+        "page_number": 19,
+        "page_range": "19",
+        "word_count": 1,
+        "char_count": 58,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "算负担，使得GPU可以专注于更加密集的前向和反向传播计算。同时尽量减少数据在GPU和CPU之间的移动，以及",
+      "metadata": {
+        "chunk_id": 86,
+        "page_number": 19,
+        "page_range": "19",
+        "word_count": 1,
+        "char_count": 53,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "减少CPU上的计算时间，从而在GPU上节省显存",
+      "metadata": {
+        "chunk_id": 87,
+        "page_number": 19,
+        "page_range": "19",
+        "word_count": 1,
+        "char_count": 23,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "效率和规模：在单个NVIDIA V100 GPU上可以实现40 TFlops的性能，训练超过100亿参数的模型，相比于PyTorch",
+      "metadata": {
+        "chunk_id": 88,
+        "page_number": 19,
+        "page_range": "19",
+        "word_count": 4,
+        "char_count": 66,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "等流行框架在单GPU上能训练的最大模型规模提高了10倍。",
+      "metadata": {
+        "chunk_id": 89,
+        "page_number": 19,
+        "page_range": "19",
+        "word_count": 1,
+        "char_count": 28,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "灵活性和可扩展性：设计用于在多GPU上扩展，提供接近线性的加速比，最多支持128个GPU。",
+      "metadata": {
+        "chunk_id": 90,
+        "page_number": 19,
+        "page_range": "19",
+        "word_count": 1,
+        "char_count": 45,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "ZeRO-Offload 模型训练数据流图：降低 GPU 和 CPU 交互开销",
+      "metadata": {
+        "chunk_id": 91,
+        "page_number": 20,
+        "page_range": "20",
+        "word_count": 6,
+        "char_count": 39,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "ZeRO-Offload 模型训练流程（单张GPU）",
+      "metadata": {
+        "chunk_id": 92,
+        "page_number": 21,
+        "page_range": "21",
+        "word_count": 2,
+        "char_count": 26,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "ZeRO-Offload 模型训练流程（多张GPUs）",
+      "metadata": {
+        "chunk_id": 93,
+        "page_number": 22,
+        "page_range": "22",
+        "word_count": 2,
+        "char_count": 27,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "ZeRO-Offload 模型训练流程（延迟更新）",
+      "metadata": {
+        "chunk_id": 94,
+        "page_number": 23,
+        "page_range": "23",
+        "word_count": 2,
+        "char_count": 25,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "ZeRO-Infinity 异构创新支持百万亿模型训练",
+      "metadata": {
+        "chunk_id": 95,
+        "page_number": 24,
+        "page_range": "24",
+        "word_count": 2,
+        "char_count": 27,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "ZeRO-Infinity也是ZeRO技术的扩展，旨在设计面向百万亿大模型的训练框架。它的主要创新如下：",
+      "metadata": {
+        "chunk_id": 96,
+        "page_number": 24,
+        "page_range": "24",
+        "word_count": 1,
+        "char_count": 52,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "全面优化： ZeRO-Infinity结合了数据并行、模型并行、流水线并行和ZeRO-Offload的优点，提供了一套全面的显",
+      "metadata": {
+        "chunk_id": 97,
+        "page_number": 24,
+        "page_range": "24",
+        "word_count": 2,
+        "char_count": 63,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "存和计算优化方案 。",
+      "metadata": {
+        "chunk_id": 98,
+        "page_number": 24,
+        "page_range": "24",
+        "word_count": 2,
+        "char_count": 10,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "高效利用各种存储层 ：通过智能地使用GPU显存、CPU内存和NVMe SSD存储， 最大化了训练设备的存储和计算能",
+      "metadata": {
+        "chunk_id": 99,
+        "page_number": 24,
+        "page_range": "24",
+        "word_count": 4,
+        "char_count": 57,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "力。",
+      "metadata": {
+        "chunk_id": 100,
+        "page_number": 24,
+        "page_range": "24",
+        "word_count": 1,
+        "char_count": 2,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "超大模型规模：可以在当前一代GPU集群上训练高达数十甚至数百万亿参数的模型。在单个NVIDIA DGX-2节点上",
+      "metadata": {
+        "chunk_id": 101,
+        "page_number": 24,
+        "page_range": "24",
+        "word_count": 2,
+        "char_count": 56,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "微调万亿参数模型，降低了超大模型训练和微调的资源需求。",
+      "metadata": {
+        "chunk_id": 102,
+        "page_number": 24,
+        "page_range": "24",
+        "word_count": 1,
+        "char_count": 27,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "优秀的吞吐量和可扩展性：在512个NVIDIA V100 GPU上保持超过25 petaflops的性能（达到峰值的40%），在不受",
+      "metadata": {
+        "chunk_id": 103,
+        "page_number": 24,
+        "page_range": "24",
+        "word_count": 4,
+        "char_count": 66,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "CPU或NVMe带宽限制的情况下，展示了超线性的可扩展性。",
+      "metadata": {
+        "chunk_id": 104,
+        "page_number": 24,
+        "page_range": "24",
+        "word_count": 1,
+        "char_count": 29,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "开源友好： Microsoft 在 DeepSpeed 框架中开源实现了ZeRO-Infinity 技术。",
+      "metadata": {
+        "chunk_id": 105,
+        "page_number": 24,
+        "page_range": "24",
+        "word_count": 6,
+        "char_count": 53,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "随着大型模型规模的快速增长和GPU内存增长的限制，传统的训练方法面临瓶颈。ZeRO-Infinity 面向未来提出了一套",
+      "metadata": {
+        "chunk_id": 106,
+        "page_number": 24,
+        "page_range": "24",
+        "word_count": 2,
+        "char_count": 60,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "创新的训练方法，推动了大模型和复杂任务的研究。",
+      "metadata": {
+        "chunk_id": 107,
+        "page_number": 24,
+        "page_range": "24",
+        "word_count": 1,
+        "char_count": 23,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "ZeRO-Infinity 异构创新支持百 万亿模型训练",
+      "metadata": {
+        "chunk_id": 108,
+        "page_number": 25,
+        "page_range": "25",
+        "word_count": 3,
+        "char_count": 28,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "ZeRO-Infinity 异构训练框架",
+      "metadata": {
+        "chunk_id": 109,
+        "page_number": 26,
+        "page_range": "26",
+        "word_count": 2,
+        "char_count": 20,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "Microsoft DeepSpeed 框架简介",
+      "metadata": {
+        "chunk_id": 110,
+        "page_number": 27,
+        "page_range": "27",
+        "word_count": 3,
+        "char_count": 24,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "DeepSpeed 是一个开源深度学习优化库，旨在提高大模型训练和运行效率，以支持数千亿~万亿参数的超大语言模型。",
+      "metadata": {
+        "chunk_id": 111,
+        "page_number": 27,
+        "page_range": "27",
+        "word_count": 2,
+        "char_count": 57,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "为了提高大模型训练的效率和扩展性， DeepSpeed 不仅实现了ZeRO 论文中的核心技术，还组合了以下多个模块：",
+      "metadata": {
+        "chunk_id": 112,
+        "page_number": 27,
+        "page_range": "27",
+        "word_count": 4,
+        "char_count": 58,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "1. ZeRO（Zero Redundancy Optimizer）: ZeRO 是 DeepSpeed 的一个关键组成部分，它通过优化数据并行训练中的 显存使用，显著减少了所需的GPU显存。ZeRO 分为几个不同的级别（ZeRO-DP, ZeRO-Offload, ZeRO-Infinity）， 每个级别都提供了不同程度的优化和显存节省，允许训练更大的模型或在有限的硬件资源上训练模型。",
+      "metadata": {
+        "chunk_id": 113,
+        "page_number": 27,
+        "page_range": "27",
+        "word_count": 13,
+        "char_count": 195,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "2. 模型并行（Model Parallelism）: DeepSpeed 实现了模型并行技术，如：Tensor切片，以支持大型模型的分布式 训练。这些技术允许模型的不同部分在不同的计算设备上并行运行，从而处理那些单个设备无法容纳的大型模型。",
+      "metadata": {
+        "chunk_id": 114,
+        "page_number": 27,
+        "page_range": "27",
+        "word_count": 6,
+        "char_count": 121,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "3. 流水线并行（Pipeline Parallelism）: 通过将模型训练分解为多个阶段，并在不同的设备上并行处理这些阶段，流 水线并行技术可以进一步提高训练效率。这种方法特别适合于顺序依赖较弱的训练任务，如某些类型的深度学习 模型。",
+      "metadata": {
+        "chunk_id": 115,
+        "page_number": 27,
+        "page_range": "27",
+        "word_count": 6,
+        "char_count": 119,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "4. 稀疏注意力（Sparse Attention）: DeepSpeed 支持稀疏注意力机制，这有助于降低训练大型模型（尤其是那些基 于Transformer的模型）时的计算和内存需求。稀疏性技术可以减少不必要的计算，使模型更加高效。",
+      "metadata": {
+        "chunk_id": 116,
+        "page_number": 27,
+        "page_range": "27",
+        "word_count": 6,
+        "char_count": 118,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "5. 显存和带宽优化: DeepSpeed 采用了多种技术来优化显存使用和增加带宽效率，如异步I/O、内存池化和压缩通信 等。这些优化有助于提高数据加载和模型训练过程中的效率。",
+      "metadata": {
+        "chunk_id": 117,
+        "page_number": 27,
+        "page_range": "27",
+        "word_count": 5,
+        "char_count": 88,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "https://www.deepspeed.ai/",
+      "metadata": {
+        "chunk_id": 118,
+        "page_number": 27,
+        "page_range": "27",
+        "word_count": 1,
+        "char_count": 25,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "分布式模型训练并行化技术对比",
+      "metadata": {
+        "chunk_id": 119,
+        "page_number": 28,
+        "page_range": "28",
+        "word_count": 1,
+        "char_count": 14,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "大模型分布式训练：数据并行 与 模型并行",
+      "metadata": {
+        "chunk_id": 120,
+        "page_number": 29,
+        "page_range": "29",
+        "word_count": 3,
+        "char_count": 20,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "大模型分布式训练：模型并行 与 流水线并行",
+      "metadata": {
+        "chunk_id": 121,
+        "page_number": 30,
+        "page_range": "30",
+        "word_count": 3,
+        "char_count": 21,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "流水线并行则是将模型训练的过程（特别是前向和后向传播）分割成多个阶段，并在不同的设备上并行执行这些阶段。 流水线并行的关键优势在于它可以减少设备间的空闲时间，因为不同的设备可以同时处理模型的不同部分。",
+      "metadata": {
+        "chunk_id": 122,
+        "page_number": 30,
+        "page_range": "30",
+        "word_count": 2,
+        "char_count": 100,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "在实践中，这两种技术经常结合使用，以实现在有限硬件资源下训练大规模深度学习模型的目标。例如，一个大型模型 可以首先使用模型并行技术在多个设备上分割，然后在这些设备上进一步应用流水线并行技术来优化训练过程的效率。",
+      "metadata": {
+        "chunk_id": 123,
+        "page_number": 30,
+        "page_range": "30",
+        "word_count": 2,
+        "char_count": 105,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "纯模型并行",
+      "metadata": {
+        "chunk_id": 124,
+        "page_number": 30,
+        "page_range": "30",
+        "word_count": 1,
+        "char_count": 5,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "流水线+模型并行",
+      "metadata": {
+        "chunk_id": 125,
+        "page_number": 30,
+        "page_range": "30",
+        "word_count": 1,
+        "char_count": 8,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "DeepSpeed 与 Transformers 什么关系？",
+      "metadata": {
+        "chunk_id": 126,
+        "page_number": 31,
+        "page_range": "31",
+        "word_count": 4,
+        "char_count": 30,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "DeepSpeed 与 Transformers 集成",
+      "metadata": {
+        "chunk_id": 127,
+        "page_number": 32,
+        "page_range": "32",
+        "word_count": 4,
+        "char_count": 27,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "Transformers 的 Trainer 支持直接使用参数 model_wrapped 和 place_model_on_device 来启动 DeepSpeed 加速训练",
+      "metadata": {
+        "chunk_id": 128,
+        "page_number": 32,
+        "page_range": "32",
+        "word_count": 10,
+        "char_count": 88,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "DeepSpeed 与 Transformers 集成",
+      "metadata": {
+        "chunk_id": 129,
+        "page_number": 33,
+        "page_range": "33",
+        "word_count": 4,
+        "char_count": 27,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "Transformers 也支持通过 HfDeepSpeedConfig 方式，以独立配置文件注入训练配置参数。",
+      "metadata": {
+        "chunk_id": 130,
+        "page_number": 33,
+        "page_range": "33",
+        "word_count": 4,
+        "char_count": 56,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "DeepSpeed 框架编译与安装",
+      "metadata": {
+        "chunk_id": 131,
+        "page_number": 34,
+        "page_range": "34",
+        "word_count": 2,
+        "char_count": 17,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "查看 GPU 架构和兼容性（NVIDIA T4 Major 7 Minor 5) – 需源代码安装 DeepSpeed",
+      "metadata": {
+        "chunk_id": 132,
+        "page_number": 35,
+        "page_range": "35",
+        "word_count": 11,
+        "char_count": 59,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "源代码安装 DeepSpeed",
+      "metadata": {
+        "chunk_id": 133,
+        "page_number": 36,
+        "page_range": "36",
+        "word_count": 2,
+        "char_count": 15,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "主要参数设置 • 根据你的 GPU 实际情况（查看方法见前一页），设置参数 TORCH_CUDA_ARCH_LIST； • 如果你需要使用 NVMe Offload，设置参数 DS_BUILD_UTILS=1； • 如果你需要使用 CPU Offload 优化器参数，设置参数 DS_BUILD_CPU_ADAM=1；",
+      "metadata": {
+        "chunk_id": 134,
+        "page_number": 36,
+        "page_range": "36",
+        "word_count": 17,
+        "char_count": 159,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "源代码安装 DeepSpeed – 安装完成",
+      "metadata": {
+        "chunk_id": 135,
+        "page_number": 37,
+        "page_range": "37",
+        "word_count": 4,
+        "char_count": 22,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "编译 DeepSpeed 源代码",
+      "metadata": {
+        "chunk_id": 136,
+        "page_number": 38,
+        "page_range": "38",
+        "word_count": 3,
+        "char_count": 16,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "编译 DeepSpeed 源代码 – 编译失败报错",
+      "metadata": {
+        "chunk_id": 137,
+        "page_number": 39,
+        "page_range": "39",
+        "word_count": 5,
+        "char_count": 25,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "解决方案：升级 GCC 和 G++ 版本，支持 C++17 以上编译器",
+      "metadata": {
+        "chunk_id": 138,
+        "page_number": 39,
+        "page_range": "39",
+        "word_count": 7,
+        "char_count": 35,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "检查 GCC/G++ 版本是否满足最低要求",
+      "metadata": {
+        "chunk_id": 139,
+        "page_number": 40,
+        "page_range": "40",
+        "word_count": 3,
+        "char_count": 21,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "PyTorch 要求 C++ 17 以及上版本的编译器（对应 GCC/G++ 最低版本为7）",
+      "metadata": {
+        "chunk_id": 140,
+        "page_number": 40,
+        "page_range": "40",
+        "word_count": 7,
+        "char_count": 46,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "如果需要，更新 GCC/G++ 版本（>=7）",
+      "metadata": {
+        "chunk_id": 141,
+        "page_number": 40,
+        "page_range": "40",
+        "word_count": 3,
+        "char_count": 23,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "DeepSpeed ZeRO-Offload 模式单 GPU 训练翻译模型（T5） - DeepSpeed启动报错",
+      "metadata": {
+        "chunk_id": 142,
+        "page_number": 41,
+        "page_range": "41",
+        "word_count": 7,
+        "char_count": 57,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "DeepSpeed ZeRO-Offload 模式单 GPU 训练翻译模型（T5）- Python脚本启动报错",
+      "metadata": {
+        "chunk_id": 143,
+        "page_number": 42,
+        "page_range": "42",
+        "word_count": 6,
+        "char_count": 55,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "解决方案：需要重新使用源代码安装 Transformers",
+      "metadata": {
+        "chunk_id": 144,
+        "page_number": 42,
+        "page_range": "42",
+        "word_count": 2,
+        "char_count": 29,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "源代码安装 Transformers – 安装完成",
+      "metadata": {
+        "chunk_id": 145,
+        "page_number": 43,
+        "page_range": "43",
+        "word_count": 4,
+        "char_count": 25,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "DeepSpeed ZeRO-Offload 模式单 GPU 训练翻译模型（T5） - 训练开始(Zero-2)",
+      "metadata": {
+        "chunk_id": 146,
+        "page_number": 44,
+        "page_range": "44",
+        "word_count": 7,
+        "char_count": 56,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "DeepSpeed ZeRO-Offload 模式单 GPU 训练翻译模型（T5）- 训练完成(Zero-2)",
+      "metadata": {
+        "chunk_id": 147,
+        "page_number": 45,
+        "page_range": "45",
+        "word_count": 6,
+        "char_count": 55,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "DeepSpeed ZeRO 配置详解",
+      "metadata": {
+        "chunk_id": 148,
+        "page_number": 46,
+        "page_range": "46",
+        "word_count": 3,
+        "char_count": 19,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "T5 （Text-to-Text Transfer Transformer）模型架构 (2019)",
+      "metadata": {
+        "chunk_id": 149,
+        "page_number": 47,
+        "page_range": "47",
+        "word_count": 5,
+        "char_count": 49,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "Google Research 团队提出的T5采用了一种创新的文本到文本的框架，将所有的 NLP 任务（传统的翻译、 摘要、分类、问答和文本补全等）视为文本生成问题。 T5 通过预训练和微调的方式来适应特定的任务，其中预训练阶段包括了大量的无监督学习，使用了一个称 为“掩码语言模型”的任务来预测文本中被随机遮盖的部分。",
+      "metadata": {
+        "chunk_id": 150,
+        "page_number": 47,
+        "page_range": "47",
+        "word_count": 9,
+        "char_count": 160,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "T5 模型家族在翻译任务上的对比",
+      "metadata": {
+        "chunk_id": 151,
+        "page_number": 48,
+        "page_range": "48",
+        "word_count": 2,
+        "char_count": 16,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "T5 模型众多变体在各个任务上的性能。Small、Base、Large、3B 和 11B 表示模型参数量分别为 6000 万、2.2 亿、7.7 亿、30 亿和 110 亿。每个表的第一行列出了该任务之前的 SOTA 得分。",
+      "metadata": {
+        "chunk_id": 152,
+        "page_number": 48,
+        "page_range": "48",
+        "word_count": 14,
+        "char_count": 112,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "使用 DeepSpeed 以 ZeRO-2 配置训练 T5-Large(7.7亿参数)",
+      "metadata": {
+        "chunk_id": 153,
+        "page_number": 49,
+        "page_range": "49",
+        "word_count": 6,
+        "char_count": 43,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "deepspeed --num_gpus=1 translation/run_translation.py \\ --deepspeed config/ds_config_zero2.json --model_name_or_path t5-large --do_train --do_eval \\ --per_device_train_batch_size 4 --per_device_eval_batch_size 4 \\ --output_dir output_dir --overwrite_output_dir --max_train_samples 500 --num_train_epochs 1 \\ --dataset_name wmt16 --dataset_config \"ro-en\" --source_lang en --target_lang ro",
+      "metadata": {
+        "chunk_id": 154,
+        "page_number": 49,
+        "page_range": "49",
+        "word_count": 32,
+        "char_count": 387,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "使用 DeepSpeed 以 ZeRO-2 配置训练 T5-Large(7.7亿参数)",
+      "metadata": {
+        "chunk_id": 155,
+        "page_number": 50,
+        "page_range": "50",
+        "word_count": 6,
+        "char_count": 43,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "LLM-quickstart/deepspeed/config/ds_config_zero2.json",
+      "metadata": {
+        "chunk_id": 156,
+        "page_number": 50,
+        "page_range": "50",
+        "word_count": 1,
+        "char_count": 52,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "ZeRO-2 vs ZeRO-3 配置",
+      "metadata": {
+        "chunk_id": 157,
+        "page_number": 51,
+        "page_range": "51",
+        "word_count": 4,
+        "char_count": 19,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "LLM-quickstart/deepspeed/config/ds_config_zero2.json",
+      "metadata": {
+        "chunk_id": 158,
+        "page_number": 51,
+        "page_range": "51",
+        "word_count": 1,
+        "char_count": 52,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "LLM-quickstart/deepspeed/config/ds_config_zero3.json",
+      "metadata": {
+        "chunk_id": 159,
+        "page_number": 51,
+        "page_range": "51",
+        "word_count": 1,
+        "char_count": 52,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "使用 DeepSpeed 以 ZeRO-3 配置训练 T5-Large(7.7亿参数)",
+      "metadata": {
+        "chunk_id": 160,
+        "page_number": 52,
+        "page_range": "52",
+        "word_count": 6,
+        "char_count": 43,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "计算任务总量不变，显存需求降低，训练速度变慢",
+      "metadata": {
+        "chunk_id": 161,
+        "page_number": 52,
+        "page_range": "52",
+        "word_count": 1,
+        "char_count": 22,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "使用 DeepSpeed 以 ZeRO-3 配置训练 T5-Large(7.7亿参数)",
+      "metadata": {
+        "chunk_id": 162,
+        "page_number": 53,
+        "page_range": "53",
+        "word_count": 6,
+        "char_count": 43,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "CPU Offload 多核并行训练，占用了26GB左右内存：",
+      "metadata": {
+        "chunk_id": 163,
+        "page_number": 53,
+        "page_range": "53",
+        "word_count": 3,
+        "char_count": 31,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "使用 DeepSpeed 以 ZeRO-3 配置训练 T5-Large(7.7亿参数) – 训练完成",
+      "metadata": {
+        "chunk_id": 164,
+        "page_number": 54,
+        "page_range": "54",
+        "word_count": 8,
+        "char_count": 50,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "训练结束后，主进程（GPU）正常退出，子进程（CPU）手动终止（`kill -9`）",
+      "metadata": {
+        "chunk_id": 165,
+        "page_number": 54,
+        "page_range": "54",
+        "word_count": 2,
+        "char_count": 42,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "使用 DeepSpeed 以 ZeRO-3 配置训练 T5-3B",
+      "metadata": {
+        "chunk_id": 166,
+        "page_number": 55,
+        "page_range": "55",
+        "word_count": 6,
+        "char_count": 32,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "deepspeed --num_gpus=1 translation/run_translation.py \\ --deepspeed config/ds_config_zero3.json --model_name_or_path t5-3b \\ --do_train --do_eval --per_device_train_batch_size 1 --per_device_eval_batch_size 4 \\ --output_dir output_dir --overwrite_output_dir --max_train_samples 500 --num_train_epochs 1 \\ --dataset_name wmt16 --dataset_config \"ro-en\" --source_lang en --target_lang ro --fp16",
+      "metadata": {
+        "chunk_id": 167,
+        "page_number": 55,
+        "page_range": "55",
+        "word_count": 33,
+        "char_count": 391,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "使用 DeepSpeed 以 ZeRO-3 配置训练 T5-3B（内存溢出，异常退出 Exit code 12）",
+      "metadata": {
+        "chunk_id": 168,
+        "page_number": 56,
+        "page_range": "56",
+        "word_count": 9,
+        "char_count": 56,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "deepspeed --num_gpus=1 translation/run_translation.py \\ --deepspeed config/ds_config_zero3.json --model_name_or_path t5-3b \\ --do_train --do_eval --per_device_train_batch_size 1 --per_device_eval_batch_size 4 \\ --output_dir output_dir --overwrite_output_dir --max_train_samples 500 --num_train_epochs 1 \\ --dataset_name wmt16 --dataset_config \"ro-en\" --source_lang en --target_lang ro --fp16",
+      "metadata": {
+        "chunk_id": 169,
+        "page_number": 56,
+        "page_range": "56",
+        "word_count": 33,
+        "char_count": 391,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "Homework：调整 ZeRO-3 配置文件，支持 T5-3B 甚至 T5-11B 模型训练",
+      "metadata": {
+        "chunk_id": 170,
+        "page_number": 56,
+        "page_range": "56",
+        "word_count": 7,
+        "char_count": 47,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "使用 DeepSpeed 单机多卡、分布式训",
+      "metadata": {
+        "chunk_id": 171,
+        "page_number": 57,
+        "page_range": "57",
+        "word_count": 3,
+        "char_count": 22,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "练",
+      "metadata": {
+        "chunk_id": 172,
+        "page_number": 57,
+        "page_range": "57",
+        "word_count": 1,
+        "char_count": 1,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "DeepSpeed 启动命令：单机多卡",
+      "metadata": {
+        "chunk_id": 173,
+        "page_number": 58,
+        "page_range": "58",
+        "word_count": 2,
+        "char_count": 19,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "多卡启动无需额外安装 DeepSpeed，在启动命令中将 num_gpus 参数设置为显卡数量：",
+      "metadata": {
+        "chunk_id": 174,
+        "page_number": 58,
+        "page_range": "58",
+        "word_count": 4,
+        "char_count": 48,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "deepspeed --num_gpus=2 your_program.py <normal cl args> --deepspeed ds_config.json",
+      "metadata": {
+        "chunk_id": 175,
+        "page_number": 58,
+        "page_range": "58",
+        "word_count": 8,
+        "char_count": 82,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "以在单机4卡训练 T5-3B 模型为例，DeepSpeed 启动命令（参考）如下：",
+      "metadata": {
+        "chunk_id": 176,
+        "page_number": 58,
+        "page_range": "58",
+        "word_count": 4,
+        "char_count": 41,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "deepspeed --num_gpus=4 translation/run_translation.py \\",
+      "metadata": {
+        "chunk_id": 177,
+        "page_number": 58,
+        "page_range": "58",
+        "word_count": 4,
+        "char_count": 55,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "--deepspeed config/ds_config_zero2.json --model_name_or_path t5-3b \\",
+      "metadata": {
+        "chunk_id": 178,
+        "page_number": 58,
+        "page_range": "58",
+        "word_count": 5,
+        "char_count": 68,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "--do_train --per_device_train_batch_size 4 \\",
+      "metadata": {
+        "chunk_id": 179,
+        "page_number": 58,
+        "page_range": "58",
+        "word_count": 4,
+        "char_count": 44,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "--do_eval --per_device_eval_batch_size 4 \\",
+      "metadata": {
+        "chunk_id": 180,
+        "page_number": 58,
+        "page_range": "58",
+        "word_count": 4,
+        "char_count": 42,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "--output_dir output_dir --overwrite_output_dir \\",
+      "metadata": {
+        "chunk_id": 181,
+        "page_number": 58,
+        "page_range": "58",
+        "word_count": 4,
+        "char_count": 48,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "--max_train_samples 500 --num_train_epochs 1 \\",
+      "metadata": {
+        "chunk_id": 182,
+        "page_number": 58,
+        "page_range": "58",
+        "word_count": 5,
+        "char_count": 46,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "--dataset_name wmt16 --dataset_config “ro-en” \\",
+      "metadata": {
+        "chunk_id": 183,
+        "page_number": 58,
+        "page_range": "58",
+        "word_count": 5,
+        "char_count": 47,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "--source_lang en --target_lang ro \\",
+      "metadata": {
+        "chunk_id": 184,
+        "page_number": 58,
+        "page_range": "58",
+        "word_count": 5,
+        "char_count": 35,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "--fp16",
+      "metadata": {
+        "chunk_id": 185,
+        "page_number": 58,
+        "page_range": "58",
+        "word_count": 1,
+        "char_count": 6,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "DeepSpeed 启动命令：分布式训练",
+      "metadata": {
+        "chunk_id": 186,
+        "page_number": 59,
+        "page_range": "59",
+        "word_count": 2,
+        "char_count": 20,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "分布式训练需要在所有节点都源代码安装 DeepSpeed，通过编译出来的 whl 包安装：",
+      "metadata": {
+        "chunk_id": 187,
+        "page_number": 59,
+        "page_range": "59",
+        "word_count": 4,
+        "char_count": 45,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "新建 `hostfile` 文件，将所有节点的 SSH 别名（类似 VSCode 访问远程服务器）和GPU数量配置如下：",
+      "metadata": {
+        "chunk_id": 188,
+        "page_number": 59,
+        "page_range": "59",
+        "word_count": 7,
+        "char_count": 60,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "使用 DeepSpeed 启动分布式训练： deepspeed --num_gpus 8 --num_nodes 2 --hostfile hostfile --master_addr hostname1 --master_port=9901 \\ your_program.py <normal cl args> --deepspeed ds_config.json",
+      "metadata": {
+        "chunk_id": 189,
+        "page_number": 59,
+        "page_range": "59",
+        "word_count": 20,
+        "char_count": 183,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "DeepSpeed 启动命令：分布式训练（基于 SLURM）",
+      "metadata": {
+        "chunk_id": 190,
+        "page_number": 60,
+        "page_range": "60",
+        "word_count": 3,
+        "char_count": 30,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "SLURM（Simple Linux Utility for Resource Management）是一个开源、高度可配置的集群管理和作业 调度系统，广泛应用于高性能计算（HPC）环境中进行资源分配、作业调度和监控。",
+      "metadata": {
+        "chunk_id": 191,
+        "page_number": 60,
+        "page_range": "60",
+        "word_count": 7,
+        "char_count": 109,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "使用 SLURM 启动分布式训练：sbatch launch.slurm",
+      "metadata": {
+        "chunk_id": 192,
+        "page_number": 60,
+        "page_range": "60",
+        "word_count": 4,
+        "char_count": 36,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "实战 DeepSpeed",
+      "metadata": {
+        "chunk_id": 193,
+        "page_number": 61,
+        "page_range": "61",
+        "word_count": 2,
+        "char_count": 12,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "ZeRO-2 和 ZeRO-3 单机单卡训练",
+      "metadata": {
+        "chunk_id": 194,
+        "page_number": 61,
+        "page_range": "61",
+        "word_count": 4,
+        "char_count": 22,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "DeepSpeed 创新模块",
+      "metadata": {
+        "chunk_id": 195,
+        "page_number": 62,
+        "page_range": "62",
+        "word_count": 2,
+        "char_count": 14,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "Inference、Compression & Science",
+      "metadata": {
+        "chunk_id": 196,
+        "page_number": 62,
+        "page_range": "62",
+        "word_count": 3,
+        "char_count": 31,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "DeepSpeed 四大核心模块",
+      "metadata": {
+        "chunk_id": 197,
+        "page_number": 63,
+        "page_range": "63",
+        "word_count": 2,
+        "char_count": 16,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "Training 模块不仅实现了 ZeRO 系列优化技术，还支持了 MoE 模型和RLHF等前沿训练方法。",
+      "metadata": {
+        "chunk_id": 198,
+        "page_number": 63,
+        "page_range": "63",
+        "word_count": 6,
+        "char_count": 53,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "Inference 模块提供了整套高效运行超大模型的解决方案：",
+      "metadata": {
+        "chunk_id": 199,
+        "page_number": 63,
+        "page_range": "63",
+        "word_count": 2,
+        "char_count": 31,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "并行技术：Tensor、Pipeline、Expert、ZeRO-Parallelism。",
+      "metadata": {
+        "chunk_id": 200,
+        "page_number": 63,
+        "page_range": "63",
+        "word_count": 1,
+        "char_count": 45,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "低时延高吞吐技术：通信优化、自定义推理内核、异构存储优化。",
+      "metadata": {
+        "chunk_id": 201,
+        "page_number": 63,
+        "page_range": "63",
+        "word_count": 1,
+        "char_count": 29,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "Compression 模块进一步提升了模型推理效率，降低了部署成本。社区紧跟最新的模型压缩技术并开",
+      "metadata": {
+        "chunk_id": 202,
+        "page_number": 63,
+        "page_range": "63",
+        "word_count": 2,
+        "char_count": 50,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "源实现了 ZeroQuant and XTC 等算法。",
+      "metadata": {
+        "chunk_id": 203,
+        "page_number": 63,
+        "page_range": "63",
+        "word_count": 5,
+        "char_count": 27,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "DeepSpeed4Science 模块是响应微软人类科学挑战使命的新模块，旨在通过AI系统技术创新构建独特",
+      "metadata": {
+        "chunk_id": 204,
+        "page_number": 63,
+        "page_range": "63",
+        "word_count": 2,
+        "char_count": 54,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "能力，帮助领域专家揭开当今最大的科学之谜。（类似 DeepMind 之于 Google 的愿景任务）",
+      "metadata": {
+        "chunk_id": 205,
+        "page_number": 63,
+        "page_range": "63",
+        "word_count": 5,
+        "char_count": 50,
+        "chunk_type": "by_paragraphs"
+      }
+    },
+    {
+      "content": "THANKS",
+      "metadata": {
+        "chunk_id": 206,
+        "page_number": 64,
+        "page_range": "64",
+        "word_count": 1,
+        "char_count": 6,
+        "chunk_type": "by_paragraphs"
+      }
+    }
+  ]
+}
