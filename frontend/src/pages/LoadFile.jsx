@@ -19,12 +19,58 @@ const LoadFile = () => {
   const [loadedContent, setLoadedContent] = useState(null);
   const [status, setStatus] = useState('');
   const [documents, setDocuments] = useState([]);
-  const [activeTab, setActiveTab] = useState('preview'); // 'preview' 或 'documents'
+  const [activeTab, setActiveTab] = useState('preview');
   const [selectedDoc, setSelectedDoc] = useState(null);
+  const [fileType, setFileType] = useState('pdf');
 
   useEffect(() => {
     fetchDocuments();
   }, []);
+
+  const getAcceptedFileTypes = () => {
+    switch (fileType) {
+      case 'pdf':
+        return '.pdf';
+      case 'csv':
+        return '.csv';
+      case 'word':
+        return '.doc,.docx';
+      case 'markdown':
+        return '.md,.markdown';
+      case 'image':
+        return '.jpg,.jpeg,.png,.bmp,.tiff';
+      default:
+        return '.pdf';
+    }
+  };
+
+  const getLoadingMethods = () => {
+    switch (fileType) {
+      case 'pdf':
+        return [
+          { value: 'pymupdf', label: 'PyMuPDF' },
+          { value: 'pypdf', label: 'PyPDF' },
+          { value: 'pdfplumber', label: 'PDFPlumber' },
+          { value: 'pypdfium2', label: 'PyPDFium2' },
+          { value: 'unstructured', label: 'Unstructured' }
+        ];
+      case 'csv':
+      case 'word':
+      case 'markdown':
+      case 'image':
+        return [
+          { value: 'unstructured', label: 'Unstructured' }
+        ];
+      default:
+        return [];
+    }
+  };
+
+  const handleFileTypeChange = (e) => {
+    setFileType(e.target.value);
+    setFile(null);
+    setLoadingMethod('unstructured');
+  };
 
   const fetchDocuments = async () => {
     try {
@@ -236,10 +282,25 @@ const LoadFile = () => {
         <div className="col-span-3 space-y-4">
           <div className="p-4 border rounded-lg bg-white shadow-sm">
             <div>
-              <label className="block text-sm font-medium mb-1">Upload PDF</label>
+              <label className="block text-sm font-medium mb-1">File Type</label>
+              <select
+                value={fileType}
+                onChange={handleFileTypeChange}
+                className="block w-full p-2 border rounded"
+              >
+                <option value="pdf">PDF</option>
+                <option value="csv">CSV</option>
+                <option value="word">Word Document</option>
+                <option value="markdown">Markdown</option>
+                <option value="image">Image</option>
+              </select>
+            </div>
+
+            <div className="mt-4">
+              <label className="block text-sm font-medium mb-1">Upload File</label>
               <input
                 type="file"
-                accept=".pdf"
+                accept={getAcceptedFileTypes()}
                 onChange={(e) => setFile(e.target.files[0])}
                 className="block w-full border rounded px-3 py-2"
               />
@@ -252,9 +313,11 @@ const LoadFile = () => {
                 onChange={(e) => setLoadingMethod(e.target.value)}
                 className="block w-full p-2 border rounded"
               >
-                <option value="pymupdf">PyMuPDF</option>
-                <option value="pypdf">PyPDF</option>
-                <option value="unstructured">Unstructured</option>
+                {getLoadingMethods().map(method => (
+                  <option key={method.value} value={method.value}>
+                    {method.label}
+                  </option>
+                ))}
               </select>
             </div>
 

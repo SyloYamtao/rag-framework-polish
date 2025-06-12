@@ -12,7 +12,7 @@
 ```bash
 const config = {
               development: {
-                apiBaseUrl: 'http://192.168.172.128:8001'
+                apiBaseUrl: 'http://127.0.0.1:8000'
               },
               production: {
                 apiBaseUrl: 'http://api.example.com'
@@ -44,3 +44,7 @@ cd backend/
 # 启动
 uvicorn main:app --reload --port 8000 --host 127.0.0.1
 ```
+
+### 加载
+#### PyPDFim2
+![PyPDFium2_load_pdf_screenshot.png](images/PyPDFium2_load_pdf_screenshot.png)

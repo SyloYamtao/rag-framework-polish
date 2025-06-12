@@ -2,12 +2,43 @@ from pypdf import PdfReader
 from unstructured.partition.pdf import partition_pdf
 import pdfplumber
 import fitz  # PyMuPDF
+import pypdfium2
 import logging
 import os
 from datetime import datetime
 import json
 
 logger = logging.getLogger(__name__)
+
+# 条件导入其他模块
+try:
+    from unstructured.partition.csv import partition_csv
+    CSV_AVAILABLE = True
+except ImportError:
+    logger.warning("CSV processing is not available. Install required dependencies.")
+    CSV_AVAILABLE = False
+
+try:
+    from unstructured.partition.docx import partition_docx
+    DOCX_AVAILABLE = True
+except ImportError:
+    logger.warning("DOCX processing is not available. Install required dependencies.")
+    DOCX_AVAILABLE = False
+
+try:
+    from unstructured.partition.md import partition_md
+    MD_AVAILABLE = True
+except ImportError:
+    logger.warning("Markdown processing is not available. Install required dependencies.")
+    MD_AVAILABLE = False
+
+try:
+    from unstructured.partition.image import partition_image
+    IMAGE_AVAILABLE = True
+except ImportError:
+    logger.warning("Image processing is not available. Install required dependencies.")
+    IMAGE_AVAILABLE = False
+
 """
 PDF文档加载服务类
     这个服务类提供了多种PDF文档加载方法，支持不同的加载策略和分块选项。
@@ -37,38 +68,51 @@ class LoadingService:
         self.total_pages = 0
         self.current_page_map = []
     
-    def load_pdf(self, file_path: str, method: str, strategy: str = None, chunking_strategy: str = None, chunking_options: dict = None) -> str:
+    def load_file(self, file_path: str, method: str, strategy: str = None, chunking_strategy: str = None, chunking_options: dict = None) -> str:
         """
-        加载PDF文档的主方法，支持多种加载策略。
+        加载文件的主方法，支持多种文件类型和加载策略。
 
         参数:
-            file_path (str): PDF文件路径
-            method (str): 加载方法，支持 'pymupdf', 'pypdf', 'pdfplumber', 'unstructured'
-            strategy (str, optional): 使用unstructured方法时的策略，可选 'fast', 'hi_res', 'ocr_only'
-            chunking_strategy (str, optional): 文本分块策略，可选 'basic', 'by_title'
+            file_path (str): 文件路径
+            method (str): 加载方法
+            strategy (str, optional): 使用unstructured方法时的策略
+            chunking_strategy (str, optional): 文本分块策略
             chunking_options (dict, optional): 分块选项配置
 
         返回:
             str: 提取的文本内容
         """
         try:
-            if method == "pymupdf":
-                return self._load_with_pymupdf(file_path)
-            elif method == "pypdf":
-                return self._load_with_pypdf(file_path)
-            elif method == "pdfplumber":
-                return self._load_with_pdfplumber(file_path)
-            elif method == "unstructured":
-                return self._load_with_unstructured(
-                    file_path, 
-                    strategy=strategy,
-                    chunking_strategy=chunking_strategy,
-                    chunking_options=chunking_options
-                )
+            file_extension = os.path.splitext(file_path)[1].lower()
+            
+            if file_extension == '.pdf':
+                if method == "pymupdf":
+                    return self._load_with_pymupdf(file_path)
+                elif method == "pypdf":
+                    return self._load_with_pypdf(file_path)
+                elif method == "pdfplumber":
+                    return self._load_with_pdfplumber(file_path)
+                elif method == "pypdfium2":
+                    return self._load_with_pypdfium2(file_path)
+                elif method == "unstructured":
+                    return self._load_with_unstructured(
+                        file_path, 
+                        strategy=strategy,
+                        chunking_strategy=chunking_strategy,
+                        chunking_options=chunking_options
+                    )
+            elif file_extension == '.csv' and CSV_AVAILABLE:
+                return self._load_with_unstructured_csv(file_path)
+            elif file_extension in ['.doc', '.docx'] and DOCX_AVAILABLE:
+                return self._load_with_unstructured_word(file_path)
+            elif file_extension in ['.md', '.markdown'] and MD_AVAILABLE:
+                return self._load_with_unstructured_markdown(file_path)
+            elif file_extension in ['.jpg', '.jpeg', '.png', '.bmp', '.tiff'] and IMAGE_AVAILABLE:
+                return self._load_with_unstructured_image(file_path)
             else:
-                raise ValueError(f"Unsupported loading method: {method}")
+                raise ValueError(f"Unsupported file type or missing dependencies: {file_extension}")
         except Exception as e:
-            logger.error(f"Error loading PDF with {method}: {str(e)}")
+            logger.error(f"Error loading file with {method}: {str(e)}")
             raise
     
     def get_total_pages(self) -> int:
@@ -266,6 +310,144 @@ class LoadingService:
             logger.error(f"pdfplumber error: {str(e)}")
             raise
     
+    def _load_with_pypdfium2(self, file_path: str) -> str:
+        """
+        使用PyPDFium2库加载PDF文档。
+        """
+        text_blocks = []
+        try:
+            pdf = pypdfium2.PdfDocument(file_path)
+            self.total_pages = len(pdf)
+            
+            for page_num in range(len(pdf)):
+                page = pdf[page_num]
+                textpage = page.get_textpage()
+                text = textpage.get_text_range()
+                
+                if text.strip():
+                    text_blocks.append({
+                        "text": text.strip(),
+                        "page": page_num + 1
+                    })
+            
+            self.current_page_map = text_blocks
+            return "\n".join(block["text"] for block in text_blocks)
+        except Exception as e:
+            logger.error(f"PyPDFium2 error: {str(e)}")
+            raise
+
+    def _load_with_unstructured_csv(self, file_path: str) -> str:
+        """
+        使用UnstructuredCSVLoader加载CSV文件。
+        """
+        if not CSV_AVAILABLE:
+            raise ImportError("CSV processing is not available. Install required dependencies.")
+            
+        try:
+            elements = partition_csv(file_path)
+            text_blocks = []
+            
+            for elem in elements:
+                text_blocks.append({
+                    "text": str(elem),
+                    "page": 1,
+                    "metadata": {
+                        "element_type": elem.__class__.__name__,
+                        "category": str(getattr(elem, 'category', None))
+                    }
+                })
+            
+            self.total_pages = 1
+            self.current_page_map = text_blocks
+            return "\n".join(block["text"] for block in text_blocks)
+        except Exception as e:
+            logger.error(f"Unstructured CSV error: {str(e)}")
+            raise
+
+    def _load_with_unstructured_word(self, file_path: str) -> str:
+        """
+        使用UnstructuredWordDocumentLoader加载Word文档。
+        """
+        if not DOCX_AVAILABLE:
+            raise ImportError("DOCX processing is not available. Install required dependencies.")
+            
+        try:
+            elements = partition_docx(file_path)
+            text_blocks = []
+            
+            for elem in elements:
+                text_blocks.append({
+                    "text": str(elem),
+                    "page": 1,
+                    "metadata": {
+                        "element_type": elem.__class__.__name__,
+                        "category": str(getattr(elem, 'category', None))
+                    }
+                })
+            
+            self.total_pages = 1
+            self.current_page_map = text_blocks
+            return "\n".join(block["text"] for block in text_blocks)
+        except Exception as e:
+            logger.error(f"Unstructured Word error: {str(e)}")
+            raise
+
+    def _load_with_unstructured_markdown(self, file_path: str) -> str:
+        """
+        使用UnstructuredMarkdownLoader加载Markdown文件。
+        """
+        if not MD_AVAILABLE:
+            raise ImportError("Markdown processing is not available. Install required dependencies.")
+            
+        try:
+            elements = partition_md(file_path)
+            text_blocks = []
+            
+            for elem in elements:
+                text_blocks.append({
+                    "text": str(elem),
+                    "page": 1,
+                    "metadata": {
+                        "element_type": elem.__class__.__name__,
+                        "category": str(getattr(elem, 'category', None))
+                    }
+                })
+            
+            self.total_pages = 1
+            self.current_page_map = text_blocks
+            return "\n".join(block["text"] for block in text_blocks)
+        except Exception as e:
+            logger.error(f"Unstructured Markdown error: {str(e)}")
+            raise
+
+    def _load_with_unstructured_image(self, file_path: str) -> str:
+        """
+        使用UnstructuredImageLoader加载图片文件。
+        """
+        if not IMAGE_AVAILABLE:
+            raise ImportError("Image processing is not available. Install required dependencies.")
+            
+        try:
+            elements = partition_image(file_path)
+            text_blocks = []
+            
+            for elem in elements:
+                text_blocks.append({
+                    "text": str(elem),
+                    "page": 1,
+                    "metadata": {
+                        "element_type": elem.__class__.__name__,
+                        "category": str(getattr(elem, 'category', None))
+                    }
+                })
+            
+            self.total_pages = 1
+            self.current_page_map = text_blocks
+            return "\n".join(block["text"] for block in text_blocks)
+        except Exception as e:
+            logger.error(f"Unstructured Image error: {str(e)}")
+            raise
+
     def save_document(self, filename: str, chunks: list, metadata: dict, loading_method: str, strategy: str = None, chunking_strategy: str = None) -> str:
         """
         保存处理后的文档数据。

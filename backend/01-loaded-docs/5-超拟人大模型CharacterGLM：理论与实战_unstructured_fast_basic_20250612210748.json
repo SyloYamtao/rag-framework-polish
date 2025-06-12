@@ -1,0 +1,811 @@
+{
+  "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+  "total_chunks": 38,
+  "total_pages": 10,
+  "loading_method": "unstructured",
+  "loading_strategy": "fast",
+  "chunking_strategy": "basic",
+  "chunking_method": "loaded",
+  "timestamp": "2025-06-12T21:07:48.407120",
+  "chunks": [
+    {
+      "content": "CharacterGLM技术介绍",
+      "metadata": {
+        "chunk_id": 1,
+        "page_number": 1,
+        "word_count": 1,
+        "page_range": "Page 1",
+        "coordinates": "CoordinatesMetadata(points=((108.8977, 227.45999472), (108.8977, 282.46000272), (681.515231148, 282.46000272), (681.515231148, 227.45999472)), system=<unstructured.documents.coordinates.PixelSpace object at 0x144529b50>)",
+        "file_directory": "temp",
+        "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:07:44",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "6d3f35f494bf4c00a2a5fef36941eb42",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "2024年2月 智谱AI技术团队",
+      "metadata": {
+        "chunk_id": 2,
+        "page_number": 1,
+        "word_count": 2,
+        "page_range": "Page 1",
+        "coordinates": "CoordinatesMetadata(points=((120.1493, 337.41600000000005), (120.1493, 356.31600000000003), (336.1492, 356.31600000000003), (336.1492, 337.41600000000005)), system=<unstructured.documents.coordinates.PixelSpace object at 0x144529b50>)",
+        "file_directory": "temp",
+        "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:07:44",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "c1b43ba15026159a98c10d4f96be8f91",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "北 京 智 谱 华 章 科 技 有 限 公 司",
+      "metadata": {
+        "chunk_id": 3,
+        "page_number": 1,
+        "word_count": 12,
+        "page_range": "Page 1",
+        "coordinates": "CoordinatesMetadata(points=((118.4904, 473.544), (118.4904, 485.544), (290.21040000000005, 485.544), (290.21040000000005, 473.544)), system=<unstructured.documents.coordinates.PixelSpace object at 0x144529b50>)",
+        "file_directory": "temp",
+        "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:07:44",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "2aac9ac6c372785bdfd0ee8706dde755",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "超拟人大模型：CharacterGLM",
+      "metadata": {
+        "chunk_id": 4,
+        "page_number": 2,
+        "word_count": 1,
+        "page_range": "Page 2",
+        "coordinates": "CoordinatesMetadata(points=((58.9, 29.32799), (58.9, 53.32799), (381.0888, 53.32799), (381.0888, 29.32799)), system=<unstructured.documents.coordinates.PixelSpace object at 0x144362710>)",
+        "file_directory": "temp",
+        "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:07:44",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "f600019d9f528ef51b90538ea3e18007",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "提供情绪价值的超拟人大模型",
+      "metadata": {
+        "chunk_id": 5,
+        "page_number": 2,
+        "word_count": 1,
+        "page_range": "Page 2",
+        "coordinates": "CoordinatesMetadata(points=((62.78889, 90.8400005904), (62.78889, 110.83999979040004), (322.7888796, 110.83999979040004), (322.7888796, 90.8400005904)), system=<unstructured.documents.coordinates.PixelSpace object at 0x144362710>)",
+        "file_directory": "temp",
+        "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:07:44",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "78e31ff24e000dd8c8838a477d0e50ed",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "超拟人大模型",
+      "metadata": {
+        "chunk_id": 6,
+        "page_number": 2,
+        "word_count": 1,
+        "page_range": "Page 2",
+        "coordinates": "CoordinatesMetadata(points=((61.47496, 148.12800000000004), (61.47496, 172.12800000000004), (205.47496, 172.12800000000004), (205.47496, 148.12800000000004)), system=<unstructured.documents.coordinates.PixelSpace object at 0x144362710>)",
+        "file_directory": "temp",
+        "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:07:44",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "12659c4d408a75b0c0668bf2a3a787eb",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "≠",
+      "metadata": {
+        "chunk_id": 7,
+        "page_number": 2,
+        "word_count": 1,
+        "page_range": "Page 2",
+        "coordinates": "CoordinatesMetadata(points=((226.85, 144.49599369600003), (226.85, 172.496001696), (242.222004392, 172.496001696), (242.222004392, 144.49599369600003)), system=<unstructured.documents.coordinates.PixelSpace object at 0x144362710>)",
+        "file_directory": "temp",
+        "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:07:44",
+        "links": [],
+        "parent_id": "12659c4d408a75b0c0668bf2a3a787eb",
+        "filetype": "application/pdf",
+        "element_type": "Text",
+        "id": "7321feda1f09a8c1ca89f936be47f1e6",
+        "category": "UncategorizedText"
+      }
+    },
+    {
+      "content": "通用任务型大模型",
+      "metadata": {
+        "chunk_id": 8,
+        "page_number": 2,
+        "word_count": 1,
+        "page_range": "Page 2",
+        "coordinates": "CoordinatesMetadata(points=((262.15, 148.12800000000004), (262.15, 172.12800000000004), (454.15, 172.12800000000004), (454.15, 148.12800000000004)), system=<unstructured.documents.coordinates.PixelSpace object at 0x144362710>)",
+        "file_directory": "temp",
+        "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:07:44",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "6dd2522ada2c63164f223edcdcbb44d6",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "个性化：根据用户偏好定制 AI 角色，服务用户体验",
+      "metadata": {
+        "chunk_id": 9,
+        "page_number": 2,
+        "word_count": 3,
+        "page_range": "Page 2",
+        "coordinates": "CoordinatesMetadata(points=((71.8048, 238.716), (71.8048, 256.716), (478.4298, 256.716), (478.4298, 238.716)), system=<unstructured.documents.coordinates.PixelSpace object at 0x144362710>)",
+        "file_directory": "temp",
+        "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:07:44",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "b44020c1f2d1e11718c2e81430d69290",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "场景化：满足各类应用交互场景下的 AI 对话生成需求",
+      "metadata": {
+        "chunk_id": 10,
+        "page_number": 2,
+        "word_count": 3,
+        "page_range": "Page 2",
+        "coordinates": "CoordinatesMetadata(points=((71.8048, 325.596), (71.8048, 343.596), (496.4298, 343.596), (496.4298, 325.596)), system=<unstructured.documents.coordinates.PixelSpace object at 0x144362710>)",
+        "file_directory": "temp",
+        "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:07:44",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "c72860b334f98b0713f71dbc0354e6c0",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "情感化：与用户建立情感链接，创造丰富的情绪价值",
+      "metadata": {
+        "chunk_id": 11,
+        "page_number": 2,
+        "word_count": 1,
+        "page_range": "Page 2",
+        "coordinates": "CoordinatesMetadata(points=((71.8048, 412.236), (71.8048, 430.236), (485.8048, 430.236), (485.8048, 412.236)), system=<unstructured.documents.coordinates.PixelSpace object at 0x144362710>)",
+        "file_directory": "temp",
+        "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:07:44",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "53fa49bbda7dcc523ee738558a8bb383",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "虚拟陪伴",
+      "metadata": {
+        "chunk_id": 12,
+        "page_number": 2,
+        "word_count": 1,
+        "page_range": "Page 2",
+        "coordinates": "CoordinatesMetadata(points=((613.3, 204.72600118079998), (613.3, 217.72599958080002), (665.2999936, 217.72599958080002), (665.2999936, 204.72600118079998)), system=<unstructured.documents.coordinates.PixelSpace object at 0x144362710>)",
+        "file_directory": "temp",
+        "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:07:44",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "7769c128d0de8e6f28ad3c0adc768075",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "虚拟智能助手 服务型虚拟人",
+      "metadata": {
+        "chunk_id": 13,
+        "page_number": 2,
+        "word_count": 2,
+        "page_range": "Page 2",
+        "coordinates": "CoordinatesMetadata(points=((701.45, 203.5260011808), (701.45, 217.72599958080002), (883.3999904, 217.72599958080002), (883.3999904, 203.5260011808)), system=<unstructured.documents.coordinates.PixelSpace object at 0x144362710>)",
+        "file_directory": "temp",
+        "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:07:44",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "e5cffead8a8bc553a8663d6ad608311a",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "创作型虚拟人 品牌虚拟形象 专业咨询虚拟人",
+      "metadata": {
+        "chunk_id": 14,
+        "page_number": 2,
+        "word_count": 3,
+        "page_range": "Page 2",
+        "coordinates": "CoordinatesMetadata(points=((601.05, 327.1260011808), (601.05, 341.08599958080003), (890.9999888, 341.08599958080003), (890.9999888, 327.1260011808)), system=<unstructured.documents.coordinates.PixelSpace object at 0x144362710>)",
+        "file_directory": "temp",
+        "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:07:44",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "4719fdc95b3c0c58454fd75d26bd2f4d",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "用户虚拟分身",
+      "metadata": {
+        "chunk_id": 15,
+        "page_number": 2,
+        "word_count": 1,
+        "page_range": "Page 2",
+        "coordinates": "CoordinatesMetadata(points=((599.15, 448.0860011808), (599.15, 461.08599958080003), (677.1499904, 461.08599958080003), (677.1499904, 448.0860011808)), system=<unstructured.documents.coordinates.PixelSpace object at 0x144362710>)",
+        "file_directory": "temp",
+        "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:07:44",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "6e5817920aa3df192e04aa342ce471b2",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "NPC虚拟人",
+      "metadata": {
+        "chunk_id": 16,
+        "page_number": 2,
+        "word_count": 1,
+        "page_range": "Page 2",
+        "coordinates": "CoordinatesMetadata(points=((708.55, 448.0860011808), (708.55, 461.08599958080003), (774.9249951999999, 461.08599958080003), (774.9249951999999, 448.0860011808)), system=<unstructured.documents.coordinates.PixelSpace object at 0x144362710>)",
+        "file_directory": "temp",
+        "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:07:44",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "a1ba8e893bf89c39d376bae6086bbc77",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "偶像虚拟人",
+      "metadata": {
+        "chunk_id": 17,
+        "page_number": 2,
+        "word_count": 1,
+        "page_range": "Page 2",
+        "coordinates": "CoordinatesMetadata(points=((810.1, 446.8860011808), (810.1, 459.8859995808), (875.099992, 459.8859995808), (875.099992, 446.8860011808)), system=<unstructured.documents.coordinates.PixelSpace object at 0x144362710>)",
+        "file_directory": "temp",
+        "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:07:44",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "a087372df05d2eb2622f1c1adf866b3b",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "超拟人大模型的六大子系统",
+      "metadata": {
+        "chunk_id": 18,
+        "page_number": 3,
+        "word_count": 1,
+        "page_range": "Page 3",
+        "coordinates": "CoordinatesMetadata(points=((58.39646, 30.287990000000036), (58.39646, 54.287990000000036), (335.38766, 54.287990000000036), (335.38766, 30.287990000000036)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1449a70d0>)",
+        "file_directory": "temp",
+        "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:07:44",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "6b5a2e8828308da3d0dc49cf29ee52ef",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "性格、态度、观点 拟人化Prompt，Q-Lora",
+      "metadata": {
+        "chunk_id": 19,
+        "page_number": 3,
+        "word_count": 2,
+        "page_range": "Page 3",
+        "coordinates": "CoordinatesMetadata(points=((192.0277, 138.6720011808), (192.0277, 175.50799979040005), (344.57768719999996, 175.50799979040005), (344.57768719999996, 138.6720011808)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1449a70d0>)",
+        "file_directory": "temp",
+        "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:07:44",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "317cd26e99e8e4465106524b19d90de3",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "思考、表达 COT，非言语信息，Function Calling",
+      "metadata": {
+        "chunk_id": 20,
+        "page_number": 3,
+        "word_count": 3,
+        "page_range": "Page 3",
+        "coordinates": "CoordinatesMetadata(points=((57.1, 249.7920011808), (57.1, 286.62799979039994), (291.32769199999996, 286.62799979039994), (291.32769199999996, 249.7920011808)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1449a70d0>)",
+        "file_directory": "temp",
+        "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:07:44",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "5608891e0a15a9a274ab155a17e72801",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "演进迭代、成长升级 RLHF，持续演进的用户关系数据",
+      "metadata": {
+        "chunk_id": 21,
+        "page_number": 3,
+        "word_count": 2,
+        "page_range": "Page 3",
+        "coordinates": "CoordinatesMetadata(points=((153.775, 407.9520011808), (153.775, 444.0679997904), (356.3999904, 444.0679997904), (356.3999904, 407.9520011808)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1449a70d0>)",
+        "file_directory": "temp",
+        "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:07:44",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "ceb59a627fea2d61e6188f36ff0228ea",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "能力",
+      "metadata": {
+        "chunk_id": 22,
+        "page_number": 3,
+        "word_count": 1,
+        "page_range": "Page 3",
+        "coordinates": "CoordinatesMetadata(points=((363.0982, 304.92000059040004), (363.0982, 324.91999979039997), (403.0981984, 324.91999979039997), (403.0981984, 304.92000059040004)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1449a70d0>)",
+        "file_directory": "temp",
+        "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:07:44",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "a6e686593a6bee8c8fe63b4d4f17239e",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "人格",
+      "metadata": {
+        "chunk_id": 23,
+        "page_number": 3,
+        "word_count": 1,
+        "page_range": "Page 3",
+        "coordinates": "CoordinatesMetadata(points=((411.7539, 220.2000005904), (411.7539, 240.19999979040006), (451.75389839999997, 240.19999979040006), (451.75389839999997, 220.2000005904)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1449a70d0>)",
+        "file_directory": "temp",
+        "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:07:44",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "fcae459a1e55c3f21a9f89f79c49cc18",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "知识",
+      "metadata": {
+        "chunk_id": 24,
+        "page_number": 3,
+        "word_count": 1,
+        "page_range": "Page 3",
+        "coordinates": "CoordinatesMetadata(points=((509.0655, 220.2000005904), (509.0655, 240.19999979040006), (549.0654984, 240.19999979040006), (549.0654984, 220.2000005904)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1449a70d0>)",
+        "file_directory": "temp",
+        "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:07:44",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "b65d7dcde77c2057e8efbc365378e795",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "成长性 价值观",
+      "metadata": {
+        "chunk_id": 25,
+        "page_number": 3,
+        "word_count": 2,
+        "page_range": "Page 3",
+        "coordinates": "CoordinatesMetadata(points=((401.754, 388.4400005904), (401.754, 408.43999979039995), (559.0654976000001, 408.43999979039995), (559.0654976000001, 388.4400005904)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1449a70d0>)",
+        "file_directory": "temp",
+        "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:07:44",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "adc5bdd048ca75ebb171d163a4a72f39",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "社会化",
+      "metadata": {
+        "chunk_id": 26,
+        "page_number": 3,
+        "word_count": 1,
+        "page_range": "Page 3",
+        "coordinates": "CoordinatesMetadata(points=((546.331, 304.92000059040004), (546.331, 324.91999979039997), (606.3309976, 324.91999979039997), (606.3309976, 304.92000059040004)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1449a70d0>)",
+        "file_directory": "temp",
+        "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:07:44",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "0edefade3d4300d92dc5c79704a988c0",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "记忆、世界知识 长时记忆，检索增强",
+      "metadata": {
+        "chunk_id": 27,
+        "page_number": 3,
+        "word_count": 2,
+        "page_range": "Page 3",
+        "coordinates": "CoordinatesMetadata(points=((617.2551, 138.6720011808), (617.2551, 176.22799979040002), (743.2550928, 176.22799979040002), (743.2550928, 138.6720011808)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1449a70d0>)",
+        "file_directory": "temp",
+        "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:07:44",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "c6a5942b098c1fd6f886dbe41468f94c",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "千人千面、情绪交互 角色关系，情感生成，共情回复",
+      "metadata": {
+        "chunk_id": 28,
+        "page_number": 3,
+        "word_count": 2,
+        "page_range": "Page 3",
+        "coordinates": "CoordinatesMetadata(points=((654.1275, 257.47200118079996), (654.1275, 294.0679997904), (850.1499888000001, 294.0679997904), (850.1499888000001, 257.47200118079996)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1449a70d0>)",
+        "file_directory": "temp",
+        "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:07:44",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "afebf5d4b9f9aea9fbe7f0ccaaa59dd0",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "道德、安全、伦理 百万级角色化安全数据微调、强化学习",
+      "metadata": {
+        "chunk_id": 29,
+        "page_number": 3,
+        "word_count": 2,
+        "page_range": "Page 3",
+        "coordinates": "CoordinatesMetadata(points=((609.2, 407.9520011808), (609.2, 444.5259995808), (830.1999728, 444.5259995808), (830.1999728, 407.9520011808)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1449a70d0>)",
+        "file_directory": "temp",
+        "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:07:44",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "413a10751f58e033ab8690e48142354d",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "6",
+      "metadata": {
+        "chunk_id": 30,
+        "page_number": 6,
+        "word_count": 1,
+        "page_range": "Page 6",
+        "coordinates": "CoordinatesMetadata(points=((935.5835, 519.2280000000001), (935.5835, 528.2280000000001), (940.5875, 528.2280000000001), (940.5875, 519.2280000000001)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1449a5d50>)",
+        "file_directory": "temp",
+        "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:07:44",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Footer",
+        "id": "e252c3578a1d91ba9e3c2ac646d2c9a9",
+        "category": "Footer"
+      }
+    },
+    {
+      "content": "A B A B A B A B A",
+      "metadata": {
+        "chunk_id": 31,
+        "page_number": 9,
+        "word_count": 9,
+        "page_range": "Page 9",
+        "coordinates": "CoordinatesMetadata(points=((48.5, 75.81599), (48.5, 265.89599999999996), (60.506, 265.89599999999996), (60.506, 75.81599)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14445c410>)",
+        "file_directory": "temp",
+        "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:07:44",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "97c5633bb1fed97ff82dd1bcb0697d9d",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "图灵测试对话样例",
+      "metadata": {
+        "chunk_id": 32,
+        "page_number": 9,
+        "word_count": 1,
+        "page_range": "Page 9",
+        "coordinates": "CoordinatesMetadata(points=((61.95, 31.439990000000023), (61.95, 55.43999000000002), (246.94440000000003, 55.43999000000002), (246.94440000000003, 31.439990000000023)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14445c410>)",
+        "file_directory": "temp",
+        "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:07:44",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "ed2700b2758556468a915bfb8404094f",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "A",
+      "metadata": {
+        "chunk_id": 33,
+        "page_number": 9,
+        "word_count": 1,
+        "page_range": "Page 9",
+        "coordinates": "CoordinatesMetadata(points=((413.15, 209.25599999999997), (413.15, 227.25599999999997), (425.15599999999995, 227.25599999999997), (425.15599999999995, 209.25599999999997)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14445c410>)",
+        "file_directory": "temp",
+        "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:07:44",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "6505888a27b09f8f11f662f8387fe2d9",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "B A B A B A B A",
+      "metadata": {
+        "chunk_id": 34,
+        "page_number": 9,
+        "word_count": 8,
+        "page_range": "Page 9",
+        "coordinates": "CoordinatesMetadata(points=((413.15, 252.45599999999996), (413.15, 421.41600000000005), (425.15599999999995, 421.41600000000005), (425.15599999999995, 252.45599999999996)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14445c410>)",
+        "file_directory": "temp",
+        "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:07:44",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "0dd24dce22228f3143da2a24bd39e7fb",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "B A B",
+      "metadata": {
+        "chunk_id": 35,
+        "page_number": 9,
+        "word_count": 3,
+        "page_range": "Page 9",
+        "coordinates": "CoordinatesMetadata(points=((413.15, 437.496), (413.15, 498.456), (425.15599999999995, 498.456), (425.15599999999995, 437.496)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14445c410>)",
+        "file_directory": "temp",
+        "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:07:44",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "ea3871e2e38c97b6575e43caf892bd28",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "感谢您的聆听",
+      "metadata": {
+        "chunk_id": 36,
+        "page_number": 10,
+        "word_count": 1,
+        "page_range": "Page 10",
+        "coordinates": "CoordinatesMetadata(points=((108.8977, 227.45999472), (108.8977, 282.46000272), (429.13524658, 282.46000272), (429.13524658, 227.45999472)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1449c31d0>)",
+        "file_directory": "temp",
+        "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:07:44",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "c2b24420a2a8f4f6b934bbc1737b9986",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "2024年2月 智谱AI技术团队",
+      "metadata": {
+        "chunk_id": 37,
+        "page_number": 10,
+        "word_count": 2,
+        "page_range": "Page 10",
+        "coordinates": "CoordinatesMetadata(points=((120.1493, 337.41600000000005), (120.1493, 356.31600000000003), (336.1492, 356.31600000000003), (336.1492, 337.41600000000005)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1449c31d0>)",
+        "file_directory": "temp",
+        "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:07:44",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "5c63be1bd60f3642c738db4666e31aa1",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "北 京 智 谱 华 章 科 技 有 限 公 司",
+      "metadata": {
+        "chunk_id": 38,
+        "page_number": 10,
+        "word_count": 12,
+        "page_range": "Page 10",
+        "coordinates": "CoordinatesMetadata(points=((118.4904, 473.544), (118.4904, 485.544), (290.21040000000005, 485.544), (290.21040000000005, 473.544)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1449c31d0>)",
+        "file_directory": "temp",
+        "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:07:44",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "21d952b6679f38823376359c672caee2",
+        "category": "Title"
+      }
+    }
+  ]
+}

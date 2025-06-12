@@ -1,0 +1,66 @@
+{
+  "filename": "5-超拟人大模型CharacterGLM：理论与实战.pdf",
+  "total_chunks": 6,
+  "total_pages": 10,
+  "loading_method": "pdfplumber",
+  "loading_strategy": null,
+  "chunking_strategy": null,
+  "chunking_method": "loaded",
+  "timestamp": "2025-06-12T21:07:20.293449",
+  "chunks": [
+    {
+      "content": "CharacterGLM技术介绍\n2024年2月 智谱AI技术团队\n北京智谱华章科技有限公司",
+      "metadata": {
+        "chunk_id": 1,
+        "page_number": 1,
+        "word_count": 4,
+        "page_range": "Page 1"
+      }
+    },
+    {
+      "content": "超拟人大模型：CharacterGLM\n提供情绪价值的超拟人大模型\n≠\n超拟人大模型 通用任务型大模型\n虚拟陪伴 虚拟智能助手 服务型虚拟人\n个性化：根据用户偏好定制 AI 角色，服务用户体验\n场景化：满足各类应用交互场景下的 AI 对话生成需求 创作型虚拟人 品牌虚拟形象 专业咨询虚拟人\n情感化：与用户建立情感链接，创造丰富的情绪价值\n用户虚拟分身 NPC虚拟人 偶像虚拟人",
+      "metadata": {
+        "chunk_id": 2,
+        "page_number": 2,
+        "word_count": 21,
+        "page_range": "Page 2"
+      }
+    },
+    {
+      "content": "超拟人大模型的六大子系统\n性格、态度、观点 记忆、世界知识\n拟人化Prompt，Q-Lora 长时记忆，检索增强\n人格 知识\n思考、表达\n千人千面、情绪交互\nCOT，非言语信息，Function Calling\n角色关系，情感生成，共情回复\n能力 社会化\n成长性 价值观\n演进迭代、成长升级 道德、安全、伦理\nRLHF，持续演进的用户关系数据 百万级角色化安全数据微调、强化学习",
+      "metadata": {
+        "chunk_id": 3,
+        "page_number": 3,
+        "word_count": 20,
+        "page_range": "Page 3"
+      }
+    },
+    {
+      "content": "6",
+      "metadata": {
+        "chunk_id": 4,
+        "page_number": 6,
+        "word_count": 1,
+        "page_range": "Page 6"
+      }
+    },
+    {
+      "content": "图灵测试对话样例\nA\nB\nA\nB\nA\nB\nA\nA\nB\nA\nB\nA\nB\nA\nB\nA\nB\nA\nB\nA\nB",
+      "metadata": {
+        "chunk_id": 5,
+        "page_number": 9,
+        "word_count": 22,
+        "page_range": "Page 9"
+      }
+    },
+    {
+      "content": "感谢您的聆听\n2024年2月 智谱AI技术团队\n北京智谱华章科技有限公司",
+      "metadata": {
+        "chunk_id": 6,
+        "page_number": 10,
+        "word_count": 4,
+        "page_range": "Page 10"
+      }
+    }
+  ]
+}

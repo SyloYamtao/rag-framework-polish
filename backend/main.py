@@ -600,79 +600,74 @@ async def load_file(
 ):
     try:
         # 保存上传的文件
-        temp_path = os.path.join("temp", file.filename)
-        with open(temp_path, "wb") as buffer:
+        file_path = f"temp/{file.filename}"
+        os.makedirs("temp", exist_ok=True)
+        
+        with open(file_path, "wb") as buffer:
             content = await file.read()
             buffer.write(content)
         
-        # 准备元数据
-        metadata = {
-            "filename": file.filename,
-            "total_chunks": 0,  # 将在后面更新
-            "total_pages": 0,   # 将在后面更新
-            "loading_method": loading_method,
-            "loading_strategy": strategy,  
-            "chunking_strategy": chunking_strategy, 
-            "timestamp": datetime.now().isoformat()
-        }
+        # 解析chunking_options
+        chunking_options_dict = json.loads(chunking_options) if chunking_options else None
         
-        # Parse chunking options if provided
-        chunking_options_dict = None
-        if chunking_options:
-            chunking_options_dict = json.loads(chunking_options)
-        
-        # 使用 LoadingService 加载文档
+        # 加载文件
         loading_service = LoadingService()
-        raw_text = loading_service.load_pdf(
-            temp_path, 
-            loading_method, 
+        raw_text = loading_service.load_file(
+            file_path=file_path,
+            method=loading_method,
             strategy=strategy,
             chunking_strategy=chunking_strategy,
             chunking_options=chunking_options_dict
         )
         
-        metadata["total_pages"] = loading_service.get_total_pages()
-        
+        # 获取页面映射
         page_map = loading_service.get_page_map()
         
-        # 转换成标准化的chunks格式
-        chunks = []
-        for idx, page in enumerate(page_map, 1):
-            chunk_metadata = {
-                "chunk_id": idx,
-                "page_number": page["page"],
-                "page_range": str(page["page"]),
-                "word_count": len(page["text"].split())
+        # 准备返回数据
+        response_data = {
+            "loaded_content": {
+                "total_pages": loading_service.get_total_pages(),
+                "total_chunks": len(page_map),
+                "loading_method": loading_method,
+                "chunking_method": "loaded",
+                "timestamp": datetime.now().isoformat(),
+                "chunks": [
+                    {
+                        "content": block["text"],
+                        "metadata": {
+                            "chunk_id": i + 1,
+                            "page_number": block.get("page", 1),
+                            "word_count": len(block["text"].split()),
+                            "page_range": f"Page {block.get('page', 1)}",
+                            **block.get("metadata", {})
+                        }
+                    }
+                    for i, block in enumerate(page_map)
+                ]
             }
-            if "metadata" in page:
-                chunk_metadata.update(page["metadata"])
-            
-            chunks.append({
-                "content": page["text"],
-                "metadata": chunk_metadata
-            })
+        }
         
-        # 使用 LoadingService 保存文档，传递strategy参数
-        filepath = loading_service.save_document(
+        # 保存文档
+        doc_path = loading_service.save_document(
             filename=file.filename,
-            chunks=chunks,
-            metadata=metadata,
+            chunks=response_data["loaded_content"]["chunks"],
+            metadata={
+                "total_pages": loading_service.get_total_pages(),
+                "total_chunks": len(page_map)
+            },
             loading_method=loading_method,
             strategy=strategy,
-            chunking_strategy=chunking_strategy,
+            chunking_strategy=chunking_strategy
         )
         
-        # 读取保存的文档以返回
-        with open(filepath, "r", encoding="utf-8") as f:
-            document_data = json.load(f)
-        
         # 清理临时文件
-        os.remove(temp_path)
+        os.remove(file_path)
         
-        return {"loaded_content": document_data, "filepath": filepath}
+        return response_data
+        
     except Exception as e:
         logger.error(f"Error loading file: {str(e)}")
-        raise
+        raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/chunk")
 async def chunk_document(data: dict = Body(...)):
