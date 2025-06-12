@@ -55,3 +55,8 @@ uvicorn main:app --reload --port 8000 --host 127.0.0.1
 ### Chunk Files
 #### 添加了分块重叠支持
 ![Chunk_Overlap.png](images/Chunk_Overlap.png)
+
+### Parse Files
+#### 解析结果保存为JSON文件
+![parse_and_save_as_json_file.png](images/parse_and_save_as_json_file.png)
+

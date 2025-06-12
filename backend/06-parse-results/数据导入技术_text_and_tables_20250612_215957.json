@@ -1,0 +1,571 @@
+{
+  "filename": "数据导入技术.pdf",
+  "total_pages": 51,
+  "total_chunks": 51,
+  "loading_method": "pymupdf",
+  "chunking_method": "text_and_tables",
+  "timestamp": "2025-06-12T21:59:57.744587",
+  "chunks": [
+    {
+      "content": "黄佳\n新加坡科研局资深AI工程师\n大模型RAG进阶实战营– 组件篇\n1 - 数据导入技术",
+      "metadata": {
+        "chunk_id": 1,
+        "page_number": 1,
+        "page_range": "Page 1",
+        "word_count": 7,
+        "char_count": 44,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "Copyright \n黄佳@咖哥AI\n极客时间RAG训练营",
+      "metadata": {
+        "chunk_id": 2,
+        "page_number": 2,
+        "page_range": "Page 2",
+        "word_count": 3,
+        "char_count": 29,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "Copyright \n黄佳@咖哥AI\n极客时间RAG训练营",
+      "metadata": {
+        "chunk_id": 3,
+        "page_number": 3,
+        "page_range": "Page 3",
+        "word_count": 3,
+        "char_count": 29,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "目录\n1. 简单文本的读取\n2. 结构化文本的读取\n（JSON\\网页\\Markdown）\n3. 解析图中的文字(和图的内容)\n（图片\\PPT\\PDF中的图）\n4. 用各种工具解析PDF\n5. 表格类数据的导入\n（CSV、DB、PDF中的表格）",
+      "metadata": {
+        "chunk_id": 4,
+        "page_number": 4,
+        "page_range": "Page 4",
+        "word_count": 14,
+        "char_count": 121,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "整体原则\n1. 优先使用通用的解析库或工具\n2. 重要的文件类型如PDF，选择专用工具\n3. 理解文件内容的内部结构\n4. 复杂的文档，可以先将其转化为更易解析的中\n间格式\n5. 大模型也可以用来辅助解析结构化、半结构化\n和非结构化数据",
+      "metadata": {
+        "chunk_id": 5,
+        "page_number": 5,
+        "page_range": "Page 5",
+        "word_count": 13,
+        "char_count": 118,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "简单文本的读取",
+      "metadata": {
+        "chunk_id": 6,
+        "page_number": 6,
+        "page_range": "Page 6",
+        "word_count": 1,
+        "char_count": 7,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "用LangChain读入txt文档\npip install langchain-community \npip install langchain-unstructured",
+      "metadata": {
+        "chunk_id": 7,
+        "page_number": 7,
+        "page_range": "Page 7",
+        "word_count": 7,
+        "char_count": 85,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "LangChain Document对象和其中的元数据\n[Document(metadata={'source': 'data/黑神话/黑神话悟空的设定.txt'}, page_content='《黑\n神话：悟空》的故事可分为六个章节，名为“火照黑云”、“风起黄昏”、“夜生白露”、“曲\n度紫鸳”、“日落红尘”和“未竟”，并且拥有两个结局，玩家的选择和经历将影响最终的结局。\n\\n每个章节结尾，附有二维和三维的动画过场，展示和探索《黑神话：悟空》中的叙事和主题元\n素。\\n游戏的设定融合了中国的文化和自然地标。例如重庆的大足石刻、山西省的小西天、南禅\n寺、铁佛寺、广胜寺和鹳雀楼等，都在游戏中出现。游戏也融入了佛教和道教的哲学元素。')]\n1.metadata: 即元数据，存储与文档相关的元信息，例如文档的来\n源路径、作者、日期等。元数据虽然不是文档具体内容，但信息\n含量丰富，在RAG系统中，很有用武之地。\n2.page_content: 保存实际的文本内容，是文档的主要数据部分。",
+      "metadata": {
+        "chunk_id": 8,
+        "page_number": 8,
+        "page_range": "Page 8",
+        "word_count": 16,
+        "char_count": 443,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "LangChain中的各种Loader\ndocument_loaders目录的init.py",
+      "metadata": {
+        "chunk_id": 9,
+        "page_number": 9,
+        "page_range": "Page 9",
+        "word_count": 2,
+        "char_count": 46,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "用LangChain读取目录中的所有文档\npip install unstructured\npip install \"unstructured[image]\"\npip install \"unstructured[md]\"\nsudo apt-get install tesseract-ocr\npip install pytesseract",
+      "metadata": {
+        "chunk_id": 10,
+        "page_number": 10,
+        "page_range": "Page 10",
+        "word_count": 17,
+        "char_count": 169,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "不同的Loader解析结果不同",
+      "metadata": {
+        "chunk_id": 11,
+        "page_number": 11,
+        "page_range": "Page 11",
+        "word_count": 1,
+        "char_count": 15,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "用LlamaIndex读取目录中的所有文档",
+      "metadata": {
+        "chunk_id": 12,
+        "page_number": 12,
+        "page_range": "Page 12",
+        "word_count": 1,
+        "char_count": 21,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "用Unstructured工具读取各式类型的文档\nfrom unstructured.partition.text import partition_text\ntext = \"data/黑神话/黑神话悟空的设定.txt\"\nelements = partition_text(text)\nfor element in elements:\nprint(element)",
+      "metadata": {
+        "chunk_id": 13,
+        "page_number": 13,
+        "page_range": "Page 13",
+        "word_count": 16,
+        "char_count": 182,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "加载器\n描述\nUnstructuredLoader\n通用加载器，可用于本地分区或通过API 进行分区处理\nUnstructuredCHMLoader\n用于解析Microsoft 编译的HTML 帮助文档\nUnstructuredCSVLoader\n用于解析CSV 文件\nUnstructuredEmailLoader\n用于解析电子邮件\nUnstructuredEPubLoader\n用于解析EPUB 电子书文件\nUnstructuredExcelLoader\n用于解析Excel 文件\nUnstructuredFileIOLoader\n通用文件I/O 加载器\nUnstructuredHTMLLoader\n用于解析HTML 文件\nUnstructuredImageLoader\n用于解析图片中的文本\nUnstructuredMarkdownLoader\n用于解析Markdown 文件\nUnstructuredODTLoader\n用于解析Open Document 格式文件\nUnstructuredOrgModeLoader\n用于解析Emacs Org Mode 文件\nUnstructuredPDFLoader\n用于解析PDF 文件\nUnstructuredPowerPointLoader\n用于解析PowerPoint 文件\nUnstructuredRSTLoader\n用于解析reStructured Text 文件\nUnstructuredRTFLoader\n用于解析RTF 文件\nUnstructuredTSVLoader\n用于解析TSV 文件\nUnstructuredURLLoader\n用于解析URL 指向的网页内容\nUnstructuredWordDocumentLoader\n用于解析Word 文档\nUnstructuredXMLLoader\n用于解析XML 文件\nLangChain集成了各种Unstructured Loader",
+      "metadata": {
+        "chunk_id": 14,
+        "page_number": 14,
+        "page_range": "Page 14",
+        "word_count": 67,
+        "char_count": 826,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "使用LangChain的JSON Loader",
+      "metadata": {
+        "chunk_id": 15,
+        "page_number": 15,
+        "page_range": "Page 15",
+        "word_count": 2,
+        "char_count": 23,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "使用LangChain的JSON Loader\nfrom langchain_community.document_loaders import JSONLoader\nprint(\"=== JSONLoader 加载结果===\")\nprint(\"1. 主角信息：\")\nmain_loader = JSONLoader(\nfile_path=\"data/黑神话/黑神话人物角色.json\",\njq_schema='.mainCharacter | \"姓名：\" + .name + \"，背景：\" + .backstory',\ntext_content=True\n)\nmain_char = main_loader.load()\nprint(main_char)\nprint(\"\\n2. 支持角色信息：\")\nsupport_loader = JSONLoader(\nfile_path=\"data/黑神话/黑神话人物角色.json\",\njq_schema='.supportCharacters[] | \"姓名：\" + .name + \"，背景：\" + .background',\ntext_content=True\n)\nsupport_chars = support_loader.load()\nprint(support_chars)\n=== JSONLoader 加载结果===\n1. 主角信息：\n[Document(metadata={'source': '/home/huangjia/Documents/08_RAG/Book2409/data/\n黑神话/黑神话人物角色.json', 'seq_num': 1}, page_content='姓名：孙悟空，背景：\n混沌初开之时，盘古开天辟地，天地灵气凝结成仙石，其中孕育出一只石猴。这\n只石猴拜师菩提老祖，修得一身本领，后被赐名孙悟空。')]\n2. 支持角色信息：\n[Document(metadata={'source': '/home/huangjia/Documents/08_RAG/Book2409/data/\n黑神话/黑神话人物角色.json', 'seq_num': 1}, page_content='姓名：白龙马，背景：\n原为西海龙王三太子敖烈，因冒犯天条被贬为马，后随唐僧西行取经，成为孙悟\n空的伙伴'), \nDocument(metadata={'source': '/home/huangjia/Documents/08_RAG/Book2409/data/黑\n神话/黑神话人物角色.json', 'seq_num': 2}, page_content='姓名：红孩儿，背景：牛\n魔王与铁扇公主之子，修炼火焰三昧，掌握三昧真火'), \nDocument(metadata={'source': '/home/huangjia/Documents/08_RAG/Book2409/data/黑\n神话/黑神话人物角色.json', 'seq_num': 3}, page_content='姓名：六耳猕猴，背景：\n天地间与美猴王最像的存在，有着与孙悟空相似的能力')]",
+      "metadata": {
+        "chunk_id": 16,
+        "page_number": 16,
+        "page_range": "Page 16",
+        "word_count": 88,
+        "char_count": 1323,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "网页文档的解析",
+      "metadata": {
+        "chunk_id": 17,
+        "page_number": 17,
+        "page_range": "Page 17",
+        "word_count": 1,
+        "char_count": 7,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "文档加载器\n说明\nPackage/API\n特点\nWebBaseLoader\n使用urllib 和\nBeautifulSoup 加载并解\n析HTML网页\nPackage\n简单易用，适合基本网页内容抓\n取\nUnstructuredLoader 使用Unstructured 解析\n和加载网页\nPackage\n支持多种复杂网页结构，适合异\n构内容处理\nRecursiveURLLoader 从根URL递归抓取所有子\n链接\nPackage\n自动化链接抓取，适合大规模站\n点抓取\nSitemapLoader\n从给定的站点地图抓取所\n有页面\nPackage\n高效解析站点结构，快速获取所\n有页面内容\nFirecrawlLoader\n可本地部署的API服务，\n托管版本有免费额度\nAPI\n灵活可扩展，适合需要实时抓取\n和转换的应用\nLangChain中的各种网页加载器",
+      "metadata": {
+        "chunk_id": 18,
+        "page_number": 18,
+        "page_range": "Page 18",
+        "word_count": 39,
+        "char_count": 377,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "WebBaseLoader\nimport bs4\nfrom langchain_community.document_loaders import WebBaseLoader\npage_url = \"https://zh.wikipedia.org/wiki/黑神话：悟空\"\nloader = WebBaseLoader(web_paths=[page_url])\ndocs = []\ndocs = loader.load()\nassert len(docs) == 1\ndoc = docs[0]\nprint(f\"{doc.metadata}\\n\")\nprint(doc.page_content.strip())\n{'source': 'https://zh.wikipedia.org/wiki/黑神话：悟空', 'title': '黑神话：悟空-\n维基百科，自由的百科全书', 'language': 'zh'}\n黑神话：悟空- 维基百科，自由的百科全书\n|$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}\n());RLCONF={\"wgBreakFrames\":false,\"wgSeparatorTransformTable\":[\"\",\"\"],\"\nwgDigitTransformTable\":[\"\",\"\"],\"wgDefaultDateF",
+      "metadata": {
+        "chunk_id": 19,
+        "page_number": 19,
+        "page_range": "Page 19",
+        "word_count": 40,
+        "char_count": 623,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "UnstructuredLoader\n# 使用UnstructuredLoader加载网页\nfrom langchain_unstructured import UnstructuredLoader\npage_url = \"https://zh.wikipedia.org/wiki/黑神话：悟空\"\nloader = UnstructuredLoader(web_url=page_url)\ndocs = loader.load()\nfor doc in docs[:5]:\nprint(f'{doc.metadata[\"category\"]}: {doc.page_content}')\nTitle: 黑神话：悟空\nListItem: اﻟﻌرﺑﯾﺔ\nListItem: ﻣﺻرى\nListItem: Azərbaycanca\nListItem: Беларуская (тарашкевіца)",
+      "metadata": {
+        "chunk_id": 20,
+        "page_number": 20,
+        "page_range": "Page 20",
+        "word_count": 33,
+        "char_count": 399,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "UnstructuredLoader – 父子元素的链接\nfrom langchain_unstructured import UnstructuredLoader\nfrom typing import List\nfrom langchain_core.documents import Document\npage_url = \"https://zh.wikipedia.org/wiki/黑神话：悟空\"\ndef _get_setup_docs_from_url(url: str) -> List[Document]:\nloader = UnstructuredLoader(web_url=url)\nsetup_docs = []\n# parent_id = None # 初始化parent_id\n# current_parent = None # 用于存储当前父元素\nfor doc in loader.load():\n# 检查是否是Title 或Table\nif doc.metadata[\"category\"] == \"Title\" or doc.metadata[\"category\"] ==\n\"Table\":\nparent_id = doc.metadata[\"element_id\"]\ncurrent_parent = doc # 更新当前父元素\nsetup_docs.append(doc)\nelif doc.metadata.get(\"parent_id\") == parent_id:\nsetup_docs.append((current_parent, doc)) # 将父元素和子元素一起存储\nreturn setup_docs\ndocs = _get_setup_docs_from_url(page_url)\nfor item in docs:\nif isinstance(item, tuple):\nparent, child = item\nprint(f'父元素- {parent.metadata[\"category\"]}: {parent.page_content}')\nprint(f'子元素- {child.metadata[\"category\"]}: {child.page_content}')\nelse:\nprint(f'{item.metadata[\"category\"]}: {item.page_content}')\nprint(\"-\" * 80)",
+      "metadata": {
+        "chunk_id": 21,
+        "page_number": 21,
+        "page_range": "Page 21",
+        "word_count": 101,
+        "char_count": 1052,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "Markdown文档的解析",
+      "metadata": {
+        "chunk_id": 22,
+        "page_number": 22,
+        "page_range": "Page 22",
+        "word_count": 1,
+        "char_count": 13,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "In\nfrom langchain_community.document_loaders import \nUnstructuredMarkdownLoader\nfrom langchain_core.documents import Document\nmarkdown_path = \"data/黑神话/黑神话版本介绍.md\"\nloader = UnstructuredMarkdownLoader(markdown_path)\ndata = loader.load()\nprint(data[0].page_content)\nOut\n黑神话：悟空🐵\n黑神话：悟空是由中国游戏开发团队制作的一款备受瞩目\n的动作冒险游戏，以《西游记》为背景，重新演绎了经典\n故事，带来了极具冲击力的视觉和游戏体验。\n游戏版本介绍\n1. 数字标准版💻\n包含基础游戏\n2. 数字豪华版🎶\nUnstructuredMarkdownLoader",
+      "metadata": {
+        "chunk_id": 23,
+        "page_number": 23,
+        "page_range": "Page 23",
+        "word_count": 31,
+        "char_count": 409,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "解析出元素之间的关系\nIn\nloader = UnstructuredMarkdownLoader(markdown_path, mode=\"elements\")\ndata = loader.load()\nprint(f\"Number of documents: {len(data)}\\n\")\nfor document in data:\nprint(f\"{document}\\n\")\nOut\nNumber of documents: 22\npage_content='黑神话：悟空🐵' metadata={'source': 'data/黑神话/黑悟空版本介绍.md', 'category_depth': 0, \n'languages': ['zho'], 'file_directory': 'data/黑神话', 'filename': '黑悟空版本介绍.md', 'filetype': 'text/markdown', \n'last_modified': '2024-11-26T12:15:59', 'category': 'Title', 'element_id': 'b89add9386b58a1638e0b96d19f08d0d'}\npage_content='黑神话：悟空是由中国游戏开发团队制作的一款备受瞩目的动作冒险游戏，以《西游记》\n为背景，重新演绎了经典故事，带来了极具冲击力的视觉和游戏体验。' metadata={'source': 'data/黑神话/\n黑悟空版本介绍.md', 'languages': ['zho'], 'file_directory': 'data/黑神话', 'filename': '黑悟空版本介绍.md', \n'filetype': 'text/markdown', 'last_modified': '2024-11-26T12:15:59', 'parent_id': \n'b89add9386b58a1638e0b96d19f08d0d', 'category': 'UncategorizedText', 'element_id': \n'4d1fd58a257960aafb046fc47605c217'}",
+      "metadata": {
+        "chunk_id": 24,
+        "page_number": 24,
+        "page_range": "Page 24",
+        "word_count": 63,
+        "char_count": 940,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "解析图中的文字(图片内容)",
+      "metadata": {
+        "chunk_id": 25,
+        "page_number": 25,
+        "page_range": "Page 25",
+        "word_count": 1,
+        "char_count": 13,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "读入图片中的文字\nfrom langchain_community.document_loaders\nimport UnstructuredImageLoader\nimage_path = \"data/黑神话/黑神话英文.jpg\"\nloader = \nUnstructuredImageLoader(image_path)\ndata = loader.load()\nprint(data)",
+      "metadata": {
+        "chunk_id": 26,
+        "page_number": 26,
+        "page_range": "Page 26",
+        "word_count": 15,
+        "char_count": 194,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "读PPT中的文字\nfrom unstructured.partition.ppt import partition_ppt\n# 解析PPT 文件\nppt_elements = partition_ppt(filename=\"data/黑神话悟空PPT.pptx\")\nprint(\"PPT 内容：\")\nfor element in ppt_elements:\nprint(element.text)\nfrom langchain_core.documents import Document\n# 转换为Documents 数据结构\ndocuments = [\nDocument(page_content=element.text, \nmetadata={\"source\": \"data/黑神话悟空PPT.pptx\"})\nfor element in ppt_elements\n]",
+      "metadata": {
+        "chunk_id": 27,
+        "page_number": 27,
+        "page_range": "Page 27",
+        "word_count": 36,
+        "char_count": 388,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "通过大模型解析图文\nresponse = client.chat.completions.create(\nmodel=\"gpt-4o-mini\",\nmessages=[\n{\n\"role\": \"user\",\n\"content\": [\n{\"type\": \"text\", \"text\": \"请详细\n描述这张PPT幻灯片的内容，包括标题、正文和图片内容。\"},\n{\n\"type\": \"image_url\",\n\"image_url\": {\n\"url\": \nf\"data:image/jpeg;base64,{base64_image}\"\n}\n}\n]\n}\n],\nmax_tokens=300\n)\nresults.append(response.choices[0].message.content)",
+      "metadata": {
+        "chunk_id": 28,
+        "page_number": 28,
+        "page_range": "Page 28",
+        "word_count": 31,
+        "char_count": 343,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "用各种工具解析PDF",
+      "metadata": {
+        "chunk_id": 29,
+        "page_number": 29,
+        "page_range": "Page 29",
+        "word_count": 1,
+        "char_count": 10,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "各种工具的简单比较\n文档加载器\n说明\nPackage/API\n特点\nPyPDF\n使用pypdf 加载和解析PDF文件\nPackage\n高效轻量，适合处理简单PDF文档\nUnstructured\n使用Unstructured 的开源库加载PDF文件Package/API\n兼容多种文档格式，支持内容提取\n和分析\nAmazon Textract\n使用AWS API 加载PDF文件\nAPI\n云服务支持，适合大批量文档的\nOCR处理\nMathPix\n使用MathPix 加载和解析PDF文件\nAPI\n专为数学公式设计，精准解析复杂\n内容\nPDFPlumber\n使用PDFPlumber 加载PDF文件\nPackage\n丰富的PDF内容控制和处理功能\nPyPDFDirectry\n加载目录中的PDF文件\nPackage\n批量加载，便于处理多个PDF文档\nPyPDFium2\n使用PyPDFium2 加载PDF文件\nPackage\n高效解析，支持PDF页面的渲染和\n转换\nPyMuPDF\n使用PyMuPDF 加载PDF文件\nPackage\n速度优化，支持复杂PDF的精细化\n处理\nPDFMiner\n使用PDFMiner 加载PDF文件\nPackage\n适合文本抽取，处理PDF中的嵌入\n文字内容",
+      "metadata": {
+        "chunk_id": 30,
+        "page_number": 30,
+        "page_range": "Page 30",
+        "word_count": 56,
+        "char_count": 542,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "三大类解析方法\n•\n基于规则的解析\n•\n基于深度学习的解析\n•\n基于多模态大模型的解析\n执行以下操作：\n•\n通过启发式方法或机器学习推理将文本框聚合为行、段落或其他结构；\n•\n对图像运行OCR，以检测其中的文本；\n•\n将文本分类为段落、列表、表格或其他结构；\n•\n将文本组织成表格的行和列，或以键值对的形式呈现。",
+      "metadata": {
+        "chunk_id": 31,
+        "page_number": 31,
+        "page_range": "Page 31",
+        "word_count": 16,
+        "char_count": 156,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "In\nfrom langchain_community.document_loaders import PyPDFLoader\nfile_path = \"data/黑神话/亢金龙和娄金狗.pdf\"\nloader = PyPDFLoader(file_path)\npages = loader.load()\nprint(f\"加载了{len(pages)} 页PDF文档\")\nfor page in pages:\nprint(page.page_content)\nOut\n加载了1 页PDF文档\n游戏中的一些角色，如亢金龙（左）、娄金狗（右），其创作灵感源自山西晋城玉皇庙的彩\n塑。角色亢金龙以人形和龙形出现，作为敌方的头目。\n用PyPDFLoader等工具进行简单文本提取",
+      "metadata": {
+        "chunk_id": 32,
+        "page_number": 32,
+        "page_range": "Page 32",
+        "word_count": 27,
+        "char_count": 335,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "用Unstructured工具保留版式信息和结构\nfile_path = (\"data/山西文旅/云冈石窟-en.pdf\")\nfrom langchain_unstructured import UnstructuredLoader\nloader = UnstructuredLoader(\nfile_path=file_path,\nstrategy=\"hi_res\",\npartition_via_api=True, # 通过API调用Unstructured\ncoordinates=True, # 返回元素位置坐标\n)\ndocs = []\nfor doc in loader.lazy_load():\ndocs.append(doc)",
+      "metadata": {
+        "chunk_id": 33,
+        "page_number": 33,
+        "page_range": "Page 33",
+        "word_count": 28,
+        "char_count": 320,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "用Marker工具把PDF转Markdown",
+      "metadata": {
+        "chunk_id": 34,
+        "page_number": 34,
+        "page_range": "Page 34",
+        "word_count": 1,
+        "char_count": 22,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "LlamaParser解析PDF",
+      "metadata": {
+        "chunk_id": 35,
+        "page_number": 35,
+        "page_range": "Page 35",
+        "word_count": 1,
+        "char_count": 16,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "Normal PDF Parser vs LlamaParser\nNormal Parser\nLlamaParser",
+      "metadata": {
+        "chunk_id": 36,
+        "page_number": 36,
+        "page_range": "Page 36",
+        "word_count": 8,
+        "char_count": 58,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "导入CSV表格数据",
+      "metadata": {
+        "chunk_id": 37,
+        "page_number": 37,
+        "page_range": "Page 37",
+        "word_count": 1,
+        "char_count": 9,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "CSVLoader会自动切分数据\nIn\nfrom langchain.document_loaders import CSVLoader\nfile_path = \"data/黑神话/黑神话悟空.csv\"\nloader = CSVLoader(file_path=file_path)\ndata = loader.load()\nfor record in data[:2]:\nprint(record)\nOut\npage_content='Category: 装备Name: 铜云棒Description: 一根结实的青铜棒，挥舞时能发出破空之声，适合近战攻击。\nPowerLevel: 85' \nmetadata={'source': 'data/黑神话/黑神话悟空.csv', 'row': 0}\npage_content='Category: 装备Name: 百戏衬钱衣Description: 一件精美的战斗铠甲，能够提供强大的防御并抵御剧毒伤\n害。PowerLevel: 90' \nmetadata={'source': 'data/黑神话/黑神话悟空.csv', 'row': 1}",
+      "metadata": {
+        "chunk_id": 38,
+        "page_number": 38,
+        "page_range": "Page 38",
+        "word_count": 41,
+        "char_count": 496,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "特定列来设置\"source\"元数据的键\nIn\nfrom langchain.document_loaders import CSVLoader\nfile_path = \"data/黑神话/黑神话悟空.csv\"\nloader = CSVLoader(file_path=file_path)\ndata = loader.load()\nfor record in data[:2]:\nprint(record)\nOut\npage_content='Category: 装备\nName: 铜云棒\nDescription: 一根结实的青铜棒，挥舞时能发出破空之声，适合近战攻击。\nPowerLevel: 85' metadata={'source': '铜云棒', 'row': 0}\npage_content='Category: 装备\nName: 百戏衬钱衣\nDescription: 一件精美的战斗铠甲，能够提供强大的防御并抵御剧毒伤害。\nPowerLevel: 90' metadata={'source': '百戏衬钱衣', 'row': 1}",
+      "metadata": {
+        "chunk_id": 39,
+        "page_number": 39,
+        "page_range": "Page 39",
+        "word_count": 45,
+        "char_count": 473,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "比较CSVLoader和UnstructuredCSVLoader\nfrom langchain_community.document_loaders import UnstructuredCSVLoader\nloader = UnstructuredCSVLoader(file_path=file_path)\ndata = loader.load()\nprint(\"示例: 使用UnstructuredCSVLoader 加载文件\")\nprint(data)\nprint(\"-\" * 80)\n示例: 使用UnstructuredCSVLoader 加载文件\n[Document(metadata={'source': 'data/黑神话/黑神话悟空.csv'}, page_content='Category Name \nDescription PowerLevel 装备铜云棒一根结实的青铜棒，挥舞时能发出破空之声，适合近战攻击。85 \n装备百戏衬钱衣一件精美的战斗铠甲，能够提供强大的防御并抵御剧毒伤害。90 技能天雷击召唤天雷\n攻击敌人，造成大范围雷电伤害。95 技能火焰舞施展火焰舞步，将敌人包围在炽热的火焰之中。92 人\n物悟空主角，拥有七十二变和腾云驾雾的能力，行侠仗义。100 人物银角大王强大的妖王之一，擅长\n操控各种法宝，具有极高的战斗力。88')]",
+      "metadata": {
+        "chunk_id": 40,
+        "page_number": 40,
+        "page_range": "Page 40",
+        "word_count": 36,
+        "char_count": 586,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "用LlamaHub DatabaseReader连接数据库",
+      "metadata": {
+        "chunk_id": 41,
+        "page_number": 41,
+        "page_range": "Page 41",
+        "word_count": 2,
+        "char_count": 29,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "安装MySQL\nmysql --version\nsudo apt update\nsudo apt install mysql-server -y\nsudo systemctl start mysql\nsudo systemctl status mysql\nmysql> CREATE USER 'newuser'@'localhost' IDENTIFIED WITH mysql_native_password BY \n'password';\nQuery OK, 0 rows affected (0.01 sec)\nmysql> CREATE DATABASE example_db; \nQuery OK, 1 row affected (0.00 sec) \nmysql> USE example_db; \nDatabase changed \nmysql> CREATE TABLE game_scenes ( -> id INT PRIMARY KEY AUTO_INCREMENT, -> \nscene_name VARCHAR(100), -> description TEXT, -> region VARCHAR(100), -> environment_type\nVARCHAR(50), -> main_enemies TEXT, -> special_features TEXT -> ); \nQuery OK, 0 rows affected (0.03 sec) \nGRANT ALL PRIVILEGES ON example_db.* TO 'newuser'@'localhost';\nFLUSH PRIVILEGES;\nmysql> INSERT INTO game_scenes (scene_name, description, region, environment_type, \nmain_enemies, special_features) VALUES , '有重要NPC铁匠铺，可以升-> ('朱家村', '游戏开始的第⼀\n个村庄，充满了浓郁的中国古代乡村风情', '东部平原', '村庄', ' 流寇、妖怪⼩兵', '有重要NPC铁匠铺，可\n以升级武器'), -> ('⽔帘洞', '传说中的花果⼭⽔帘洞，瀑布环绕，仙⽓缭绕', '花果⼭', '⼭洞', '猴妖、⽯怪', \n'悟空的出⽣地，蕴含特殊剧情'), -> ('龙宫', '东海龙宫，⾦碧辉煌，⽔晶宫殿', '东海底', '⽔下宫殿', '虾兵\n蟹将、龙族守卫', '可获得定海神针'), -> ('⽕焰⼭', '常年被烈焰环绕的险恶之地', '⻄部地区', '⽕⼭', '⽕焰\n妖怪、⽕龙', '需要特殊装备才能安全通过'), -> ('傲来国', '繁华的古代城市，集市热闹⾮凡', '东海之滨', '\n城市', '官兵、隐藏妖怪', '有多个⽀线任务和商店'), -> ('灵⼭', '佛教圣地，⾦光万丈', '⻄⽅', '圣地', '⾦刚\n护法、天兵天将', '重要剧情地点，有多个⾼难度Boss'), -> ('盘丝洞', '诡异阴森的蜘蛛洞窟', '⼭林深处', '\n洞⽳', '蜘蛛精、蜘蛛妖', '迷宫式设计，包含特殊宝物'), -> ('五⾏⼭', '压制过悟空的神秘⼭峰', '中原地区\n', '⼭地', '⼭精⽯怪、远古守卫', '包含重要剧情回忆ʼ); \nQuery OK, 8 rows affected (0.01 sec) Records: 8 Duplicates: 0 Warnings: 0\nmysql> SELECT * FROM game_scenes;\nmysql -u root / sudo mysql\n1\n2\n3\n4",
+      "metadata": {
+        "chunk_id": 42,
+        "page_number": 42,
+        "page_range": "Page 42",
+        "word_count": 203,
+        "char_count": 1587,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "pip install llama-index-readers-database\nsudo apt-get install libmysqlclient-dev\nsudo apt-get install python3-dev\npip install mysqlclient",
+      "metadata": {
+        "chunk_id": 43,
+        "page_number": 44,
+        "page_range": "Page 44",
+        "word_count": 14,
+        "char_count": 137,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "用LlamaIndex读取数据库中的条目\nfrom llama_index.readers.database import DatabaseReader\nreader = DatabaseReader(\nscheme=\"mysql\",\nhost=\"localhost\",\nport=3306,\nuser=“newuser\",\npassword=\"password\",\ndbname=\"example_db\"\n)\nquery = \"SELECT * FROM game_scenes\" #选择所有游戏场景\ndocuments = reader.load_data(query=query)\nprint(f\"从数据库加载的文档数量: {len(documents)}\")\nprint(documents)",
+      "metadata": {
+        "chunk_id": 44,
+        "page_number": 45,
+        "page_range": "Page 45",
+        "word_count": 28,
+        "char_count": 350,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "解析PDF中的表格数据",
+      "metadata": {
+        "chunk_id": 45,
+        "page_number": 46,
+        "page_range": "Page 46",
+        "word_count": 1,
+        "char_count": 11,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "和表头关联非常密切的PDF表\nPDF是一个带表格的结构化数据，所以直\n接用SimpleDirectoryReader加载并用\nSentenceSplitter进行分块后，信息可能被\n破坏，从而导致问答效果不佳。",
+      "metadata": {
+        "chunk_id": 46,
+        "page_number": 47,
+        "page_range": "Page 47",
+        "word_count": 5,
+        "char_count": 105,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "通过camelot工具提取表格数据\nsudo apt-get install ghostscript\npip install ghostscript\nCamelot和某些pdf工具不大兼容\nfrom ctypes.util import find_library\nfind_library(\"gs\")\n1\n2",
+      "metadata": {
+        "chunk_id": 47,
+        "page_number": 48,
+        "page_range": "Page 48",
+        "word_count": 16,
+        "char_count": 154,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "通过PDFPlumber工具提取表格数据\n会比较快\n•\nTabula\n•\npdfplumber\n•\npdftables\n•\npdf-table-extract",
+      "metadata": {
+        "chunk_id": 48,
+        "page_number": 49,
+        "page_range": "Page 49",
+        "word_count": 10,
+        "char_count": 79,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "通过Unstructured提取表格标题（表头）\n优化策略\n方法1: 使用cleaners 过滤页脚信息\n方法2: 通过coordinates 去除页脚\n方法3: 通过metadata 识别并排除页脚",
+      "metadata": {
+        "chunk_id": 49,
+        "page_number": 50,
+        "page_range": "Page 50",
+        "word_count": 11,
+        "char_count": 100,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "通过Unstructured推断表格结构",
+      "metadata": {
+        "chunk_id": 50,
+        "page_number": 51,
+        "page_range": "Page 51",
+        "word_count": 1,
+        "char_count": 20,
+        "chunk_type": "text"
+      }
+    },
+    {
+      "content": "通过调用LlamaParser来解析表格\nLlamaParser API",
+      "metadata": {
+        "chunk_id": 51,
+        "page_number": 52,
+        "page_range": "Page 52",
+        "word_count": 3,
+        "char_count": 36,
+        "chunk_type": "text"
+      }
+    }
+  ]
+}

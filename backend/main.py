@@ -48,6 +48,7 @@ async def process_file(
     try:
         # 保存上传的文件
         temp_path = os.path.join("temp", file.filename)
+        os.makedirs("temp", exist_ok=True)
         with open(temp_path, "wb") as buffer:
             content = await file.read()
             buffer.write(content)
@@ -59,10 +60,14 @@ async def process_file(
             "original_file_size": len(content),
             "processing_date": datetime.now().isoformat(),
             "chunking_method": chunking_option,
+            "document_type": os.path.splitext(file.filename)[1].lower().lstrip('.')
         }
         
         loading_service = LoadingService()
-        raw_text = loading_service.load_pdf(temp_path, loading_method)
+        raw_text = loading_service.load_file(
+            file_path=temp_path,
+            method=loading_method
+        )
         metadata["total_pages"] = loading_service.get_total_pages()
         
         page_map = loading_service.get_page_map()
@@ -550,26 +555,32 @@ async def delete_embedded_doc(doc_name: str):
 async def parse_file(
     file: UploadFile = File(...),
     loading_method: str = Form(...),
-    parsing_option: str = Form(...)
+    parsing_option: str = Form(...),
+    document_type: str = Form(None)
 ):
     try:
-        # Save uploaded file
+        # 保存上传的文件
         temp_path = os.path.join("temp", file.filename)
+        os.makedirs("temp", exist_ok=True)
         with open(temp_path, "wb") as buffer:
             content = await file.read()
             buffer.write(content)
         
-        # Prepare metadata
+        # 准备元数据
         metadata = {
             "filename": file.filename,
             "loading_method": loading_method,
             "original_file_size": len(content),
             "processing_date": datetime.now().isoformat(),
             "parsing_method": parsing_option,
+            "document_type": document_type or os.path.splitext(file.filename)[1].lower().lstrip('.')
         }
         
         loading_service = LoadingService()
-        raw_text = loading_service.load_pdf(temp_path, loading_method)
+        raw_text = loading_service.load_file(
+            file_path=temp_path,
+            method=loading_method
+        )
         metadata["total_pages"] = loading_service.get_total_pages()
         
         page_map = loading_service.get_page_map()
@@ -582,10 +593,27 @@ async def parse_file(
             page_map=page_map
         )
         
-        # Clean up temp file
+        # 保存解析结果
+        parse_results_dir = "06-parse-results"
+        os.makedirs(parse_results_dir, exist_ok=True)
+        
+        # 生成输出文件名
+        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        base_name = os.path.splitext(file.filename)[0]
+        output_filename = f"{base_name}_{parsing_option}_{timestamp}.json"
+        output_path = os.path.join(parse_results_dir, output_filename)
+        
+        # 保存结果到文件
+        with open(output_path, 'w', encoding='utf-8') as f:
+            json.dump(parsed_content, f, ensure_ascii=False, indent=2)
+        
+        # 清理临时文件
         os.remove(temp_path)
         
-        return {"parsed_content": parsed_content}
+        return {
+            "parsed_content": parsed_content,
+            "saved_path": output_path
+        }
     except Exception as e:
         logger.error(f"Error parsing file: {str(e)}")
         raise
