@@ -45,6 +45,10 @@ cd backend/
 uvicorn main:app --reload --port 8000 --host 127.0.0.1
 ```
 
-### 加载
-#### PyPDFim2
+### Load Files
+#### New Load Method PyPDFim2
 ![PyPDFium2_load_pdf_screenshot.png](images/PyPDFium2_load_pdf_screenshot.png)
+
+#### More Augments To LOad PDF Files With Unstructured
+![unstructured_load_pdf_with_more_augments.png](images/unstructured_load_pdf_with_more_augments.png)
+

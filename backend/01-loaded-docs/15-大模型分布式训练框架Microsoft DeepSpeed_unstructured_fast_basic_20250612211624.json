@@ -1,0 +1,4549 @@
+{
+  "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+  "total_chunks": 211,
+  "total_pages": 64,
+  "loading_method": "unstructured",
+  "loading_strategy": "fast",
+  "chunking_strategy": "basic",
+  "chunking_method": "loaded",
+  "timestamp": "2025-06-12T21:16:24.639252",
+  "chunks": [
+    {
+      "content": "大模型分布式训练框架 Microsoft DeepSpeed",
+      "metadata": {
+        "chunk_id": 1,
+        "page_number": 1,
+        "word_count": 3,
+        "page_range": "Page 1",
+        "coordinates": "CoordinatesMetadata(points=((262.5625, 172.68599457600004), (262.5625, 267.76600257599995), (697.5213438528, 267.76600257599995), (697.5213438528, 172.68599457600004)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e0e1b10>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "f29a5d6cbb63535c88d8e005c067d9fb",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "彭靖田 Google Developer Expert",
+      "metadata": {
+        "chunk_id": 2,
+        "page_number": 1,
+        "word_count": 4,
+        "page_range": "Page 1",
+        "coordinates": "CoordinatesMetadata(points=((332.25, 297.449994576), (332.25, 349.570002576), (627.800024016, 349.570002576), (627.800024016, 297.449994576)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e0e1b10>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "4aa1468acece3666260332c0d28ec056",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "目录",
+      "metadata": {
+        "chunk_id": 3,
+        "page_number": 2,
+        "word_count": 1,
+        "page_range": "Page 2",
+        "coordinates": "CoordinatesMetadata(points=((64.7585, 54.665989999999965), (64.7585, 87.66598999999997), (129.7289, 87.66598999999997), (129.7289, 54.665989999999965)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14c9fe110>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "9d7817aa5155ac8819cd911e7817c45e",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "大模型分布式训练框架 DeepSpeed",
+      "metadata": {
+        "chunk_id": 4,
+        "page_number": 2,
+        "word_count": 2,
+        "page_range": "Page 2",
+        "coordinates": "CoordinatesMetadata(points=((143.6673, 93.20000063039998), (143.6673, 115.39999974239998), (481.64229561600007, 115.39999974239998), (481.64229561600007, 93.20000063039998)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14c9fe110>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "9d7817aa5155ac8819cd911e7817c45e",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "870611e9b97c701d3e0051c5c62fb850",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "预训练模型显存计算方法",
+      "metadata": {
+        "chunk_id": 5,
+        "page_number": 2,
+        "word_count": 1,
+        "page_range": "Page 2",
+        "coordinates": "CoordinatesMetadata(points=((179.6673, 129.20000063040004), (179.6673, 151.39999974240004), (422.58729136320005, 151.39999974240004), (422.58729136320005, 129.20000063040004)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14c9fe110>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "9d7817aa5155ac8819cd911e7817c45e",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "b588fbfa2de8118155cb5cba109b49d1",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "Zero Redundancy Optimizer (ZeRO) 技术",
+      "metadata": {
+        "chunk_id": 6,
+        "page_number": 2,
+        "word_count": 5,
+        "page_range": "Page 2",
+        "coordinates": "CoordinatesMetadata(points=((179.6673, 165.20000063040004), (179.6673, 187.39999974240004), (587.59629842784, 187.39999974240004), (587.59629842784, 165.20000063040004)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14c9fe110>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "9d7817aa5155ac8819cd911e7817c45e",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "b14067a0a21290802c6b01ca4b39ff46",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "DeepSpeed 框架和核心技术",
+      "metadata": {
+        "chunk_id": 7,
+        "page_number": 2,
+        "word_count": 2,
+        "page_range": "Page 2",
+        "coordinates": "CoordinatesMetadata(points=((179.6673, 201.20000063040004), (179.6673, 223.39999974240004), (458.84129450304, 223.39999974240004), (458.84129450304, 201.20000063040004)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14c9fe110>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "9d7817aa5155ac8819cd911e7817c45e",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "cf8d5b2d942bf97aabdb575f361aec73",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "分布式模型训练并行化技术对比",
+      "metadata": {
+        "chunk_id": 8,
+        "page_number": 2,
+        "word_count": 1,
+        "page_range": "Page 2",
+        "coordinates": "CoordinatesMetadata(points=((179.6673, 237.20000063040004), (179.6673, 259.39999974240004), (481.45928900831996, 259.39999974240004), (481.45928900831996, 237.20000063040004)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14c9fe110>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "9d7817aa5155ac8819cd911e7817c45e",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "a7af4660476afbd7f6fb51662eccf95a",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "DeepSpeed 与 Transformers 集成训练大模型",
+      "metadata": {
+        "chunk_id": 9,
+        "page_number": 2,
+        "word_count": 4,
+        "page_range": "Page 2",
+        "coordinates": "CoordinatesMetadata(points=((179.6673, 273.2000006304), (179.6673, 295.3999997424), (615.21629450304, 295.3999997424), (615.21629450304, 273.2000006304)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14c9fe110>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "9d7817aa5155ac8819cd911e7817c45e",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "d2a8711860a8df11b1a66efc51277023",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "DeepSpeed 实战",
+      "metadata": {
+        "chunk_id": 10,
+        "page_number": 2,
+        "word_count": 2,
+        "page_range": "Page 2",
+        "coordinates": "CoordinatesMetadata(points=((143.6673, 309.2000006304), (143.6673, 331.3999997424), (324.72129842784, 331.3999997424), (324.72129842784, 309.2000006304)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14c9fe110>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "9d7817aa5155ac8819cd911e7817c45e",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "85885640bacc3d458d4dcf461a164544",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "DeepSpeed 框架编译与安装",
+      "metadata": {
+        "chunk_id": 11,
+        "page_number": 2,
+        "word_count": 2,
+        "page_range": "Page 2",
+        "coordinates": "CoordinatesMetadata(points=((179.6673, 345.2000006304), (179.6673, 367.3999997424), (458.84129450304, 367.3999997424), (458.84129450304, 345.2000006304)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14c9fe110>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "9d7817aa5155ac8819cd911e7817c45e",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "45beee420e6a460a9cdf63c30a294844",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "DeepSpeed ZeRO 配置详解",
+      "metadata": {
+        "chunk_id": 12,
+        "page_number": 2,
+        "word_count": 3,
+        "page_range": "Page 2",
+        "coordinates": "CoordinatesMetadata(points=((179.6673, 381.2000006304), (179.6673, 403.3999997424), (456.21929685792, 403.3999997424), (456.21929685792, 381.2000006304)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14c9fe110>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "9d7817aa5155ac8819cd911e7817c45e",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "819cb8f1b7c4b7009870e381f87f0135",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "使用 DeepSpeed 单机多卡、分布式训练",
+      "metadata": {
+        "chunk_id": 13,
+        "page_number": 2,
+        "word_count": 3,
+        "page_range": "Page 2",
+        "coordinates": "CoordinatesMetadata(points=((179.6673, 417.2000006304), (179.6673, 439.3999997424), (562.08829214816, 439.3999997424), (562.08829214816, 417.2000006304)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14c9fe110>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "9d7817aa5155ac8819cd911e7817c45e",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "574167c5cc40b93bc7264a3ae04182d4",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "实战 DeepSpeed ZeRO-2 和 ZeRO-3 单机单卡训练",
+      "metadata": {
+        "chunk_id": 14,
+        "page_number": 2,
+        "word_count": 6,
+        "page_range": "Page 2",
+        "coordinates": "CoordinatesMetadata(points=((179.6673, 453.2000006304), (179.6673, 475.3999997424), (661.34629842784, 475.3999997424), (661.34629842784, 453.2000006304)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14c9fe110>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "9d7817aa5155ac8819cd911e7817c45e",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "b16a844f15e88d8a83d8ea7a821dfad5",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "DeepSpeed 创新模块：Inference、Compression & Science",
+      "metadata": {
+        "chunk_id": 15,
+        "page_number": 2,
+        "word_count": 4,
+        "page_range": "Page 2",
+        "coordinates": "CoordinatesMetadata(points=((143.6673, 489.2000006304), (143.6673, 511.3999997424), (711.7182971129599, 511.3999997424), (711.7182971129599, 489.2000006304)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14c9fe110>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "9d7817aa5155ac8819cd911e7817c45e",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "ace9fa123d003943c13e4f56c9d0d068",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "相比微调，预训练7B模型需要多少显存？",
+      "metadata": {
+        "chunk_id": 16,
+        "page_number": 3,
+        "word_count": 1,
+        "page_range": "Page 3",
+        "coordinates": "CoordinatesMetadata(points=((168.5625, 229.71287030400003), (168.5625, 267.192), (827.4375, 267.192), (827.4375, 229.71287030400003)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e14dfd0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Text",
+        "id": "128f797ed9af57d0417cba2eaf001aa9",
+        "category": "UncategorizedText"
+      }
+    },
+    {
+      "content": "预训练LLaMA2-7B 模型需要多少显存？",
+      "metadata": {
+        "chunk_id": 17,
+        "page_number": 4,
+        "word_count": 2,
+        "page_range": "Page 4",
+        "coordinates": "CoordinatesMetadata(points=((61.61559, 71.86400635199999), (61.61559, 171.36799790400005), (457.615518, 171.36799790400005), (457.615518, 71.86400635199999)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e1e7490>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "f86207083896c9b39752eed537615fb9",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "假设以bf16混合精度预训练 LLaMA2-7B模型，需要近 120GB显存。即使A100/H100（80GB）单卡也无法支持。",
+      "metadata": {
+        "chunk_id": 18,
+        "page_number": 4,
+        "word_count": 3,
+        "page_range": "Page 4",
+        "coordinates": "CoordinatesMetadata(points=((52.4122, 211.45600127039995), (52.4122, 247.5519995808), (457.03718559999993, 247.5519995808), (457.03718559999993, 211.45600127039995)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e1e7490>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "92ceba9cb6fb114895893ecd101e7793",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "§ 为何比 QLoRA多了100GB？不妨展开计算下显存占用： § 模型参数：70亿 x 2 Bytes ≈ 14GB； § 更新梯度：70亿 x 2 Bytes ≈ 14GB； § 优化器（e.g.AdamW），训练过程默认使用fp32精度：",
+      "metadata": {
+        "chunk_id": 19,
+        "page_number": 4,
+        "word_count": 19,
+        "page_range": "Page 4",
+        "coordinates": "CoordinatesMetadata(points=((52.4122, 281.5360012704), (52.4122, 373.55199958080004), (459.66218079999993, 373.55199958080004), (459.66218079999993, 281.5360012704)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e1e7490>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "92ceba9cb6fb114895893ecd101e7793",
+        "filetype": "application/pdf",
+        "element_type": "NarrativeText",
+        "id": "36590575b5de28331acddfa4397ebc03",
+        "category": "NarrativeText"
+      }
+    },
+    {
+      "content": "§ 模型参数拷贝：7B x 4Bytes ≈ 28GB",
+      "metadata": {
+        "chunk_id": 20,
+        "page_number": 4,
+        "word_count": 6,
+        "page_range": "Page 4",
+        "coordinates": "CoordinatesMetadata(points=((70.4122, 381.61600127040003), (70.4122, 398.51199958079997), (343.39099617712003, 398.51199958079997), (343.39099617712003, 381.61600127040003)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e1e7490>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "92ceba9cb6fb114895893ecd101e7793",
+        "filetype": "application/pdf",
+        "element_type": "NarrativeText",
+        "id": "93beaafc27e098f603ec72e4905d6b9a",
+        "category": "NarrativeText"
+      }
+    },
+    {
+      "content": "§ 2倍梯度数量的动量：2x7B x 4Bytes≈ 56GB",
+      "metadata": {
+        "chunk_id": 21,
+        "page_number": 4,
+        "word_count": 5,
+        "page_range": "Page 4",
+        "coordinates": "CoordinatesMetadata(points=((70.4122, 407.5360012704), (70.4122, 424.43199958080004), (396.39099617712003, 424.43199958080004), (396.39099617712003, 407.5360012704)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e1e7490>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "92ceba9cb6fb114895893ecd101e7793",
+        "filetype": "application/pdf",
+        "element_type": "NarrativeText",
+        "id": "b9fa2b108c38124c782f336da968309c",
+        "category": "NarrativeText"
+      }
+    },
+    {
+      "content": "§ 显存占用总计：14 x 2 + 28 x 3 = 112 GB § 可简记为：7 x (2+2+12) = 112",
+      "metadata": {
+        "chunk_id": 22,
+        "page_number": 4,
+        "word_count": 17,
+        "page_range": "Page 4",
+        "coordinates": "CoordinatesMetadata(points=((52.4122, 457.4560012704), (52.4122, 499.55199958080004), (351.39299790192, 499.55199958080004), (351.39299790192, 457.4560012704)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e1e7490>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "92ceba9cb6fb114895893ecd101e7793",
+        "filetype": "application/pdf",
+        "element_type": "Text",
+        "id": "e9d345631323d6d2f3e6d6ea1253ca58",
+        "category": "UncategorizedText"
+      }
+    },
+    {
+      "content": "不同优化器的显存占用对比",
+      "metadata": {
+        "chunk_id": 23,
+        "page_number": 5,
+        "word_count": 1,
+        "page_range": "Page 5",
+        "coordinates": "CoordinatesMetadata(points=((36.73606, 20.317979235200028), (36.73606, 41.886606435200065), (304.85004050079993, 41.886606435200065), (304.85004050079993, 20.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14a1f9790>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Header",
+        "id": "23691f10eae47042e92be0c6f88f59f3",
+        "category": "Header"
+      }
+    },
+    {
+      "content": "典型优化器与模型权重数量比值： • SGD： 1；",
+      "metadata": {
+        "chunk_id": 24,
+        "page_number": 5,
+        "word_count": 4,
+        "page_range": "Page 5",
+        "coordinates": "CoordinatesMetadata(points=((72.10952, 74.35199118079998), (72.10952, 115.31199958079998), (312.10948399999995, 115.31199958079998), (312.10948399999995, 74.35199118079998)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14a1f9790>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "23691f10eae47042e92be0c6f88f59f3",
+        "filetype": "application/pdf",
+        "element_type": "Text",
+        "id": "9140b42bc5507687534ed6e5234fbc98",
+        "category": "UncategorizedText"
+      }
+    },
+    {
+      "content": "RMSProp：2； • Adam：3；",
+      "metadata": {
+        "chunk_id": 25,
+        "page_number": 5,
+        "word_count": 3,
+        "page_range": "Page 5",
+        "coordinates": "CoordinatesMetadata(points=((72.10952, 124.33600127039995), (72.10952, 166.19199958079997), (203.4844984, 166.19199958079997), (203.4844984, 124.33600127039995)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14a1f9790>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "23691f10eae47042e92be0c6f88f59f3",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "e967dc56c4afa2c112fc9764f82078f2",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "典型优化器（32-bit）与模型权重（16-bit）显存占用比值： • SGD： 2；",
+      "metadata": {
+        "chunk_id": 26,
+        "page_number": 5,
+        "word_count": 4,
+        "page_range": "Page 5",
+        "coordinates": "CoordinatesMetadata(points=((378.0755, 73.45599127039998), (378.0755, 115.31199958079998), (801.3254872, 115.31199958079998), (801.3254872, 73.45599127039998)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14a1f9790>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "23691f10eae47042e92be0c6f88f59f3",
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "ac67a6cc8994de86cb2aeb4ad2a41360",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "RMSProp：4； • Adam：6；",
+      "metadata": {
+        "chunk_id": 27,
+        "page_number": 5,
+        "word_count": 3,
+        "page_range": "Page 5",
+        "coordinates": "CoordinatesMetadata(points=((378.0755, 124.33600127039995), (378.0755, 166.19199958079997), (509.45049839999996, 166.19199958079997), (509.45049839999996, 124.33600127039995)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14a1f9790>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "ac67a6cc8994de86cb2aeb4ad2a41360",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "dbdced2fb79c0d8f74be7438bd837a39",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "使用混合精度训练模型单步流程图",
+      "metadata": {
+        "chunk_id": 28,
+        "page_number": 6,
+        "word_count": 1,
+        "page_range": "Page 6",
+        "coordinates": "CoordinatesMetadata(points=((36.73606, 20.317979235200028), (36.73606, 41.886606435200065), (371.9720356191999, 41.886606435200065), (371.9720356191999, 20.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e0f88d0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Header",
+        "id": "1aabc4bfab65ebdd761fe62978948dec",
+        "category": "Header"
+      }
+    },
+    {
+      "content": "Zero Redundancy Optimizer (ZeRO 优化器) 技术创新 （2020年 GPT3发布前）",
+      "metadata": {
+        "chunk_id": 29,
+        "page_number": 8,
+        "word_count": 8,
+        "page_range": "Page 8",
+        "coordinates": "CoordinatesMetadata(points=((36.73606, 20.317979235200028), (36.73606, 43.89398965280003), (831.1080935184, 43.89398965280003), (831.1080935184, 20.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14c9ff4d0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Header",
+        "id": "19871ddab59e98a128eb9cfaf4219948",
+        "category": "Header"
+      }
+    },
+    {
+      "content": "大模型训练困难",
+      "metadata": {
+        "chunk_id": 30,
+        "page_number": 8,
+        "word_count": 1,
+        "page_range": "Page 8",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 74.75199126079997), (71.54952, 91.55198958079995), (206.04950879999998, 91.55198958079995), (206.04950879999998, 74.75199126079997)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14c9ff4d0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "19871ddab59e98a128eb9cfaf4219948",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "90e681eb43e343b6aab321822dede2cf",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "巨大的深度学习模型虽然能带来显著的准确度提升，但训练拥有数十亿到数万亿参数的模型非常具有挑战性。",
+      "metadata": {
+        "chunk_id": 31,
+        "page_number": 8,
+        "word_count": 1,
+        "page_range": "Page 8",
+        "coordinates": "CoordinatesMetadata(points=((107.5495, 102.83200126079998), (107.5495, 119.63199958079997), (913.5494984, 119.63199958079997), (913.5494984, 102.83200126079998)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14c9ff4d0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "19871ddab59e98a128eb9cfaf4219948",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "c548080fdd06a5c85f8856a27390fe95",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "现有数据并行和模型并行这两种常见解决方案在将大型模型适配到有限的设备内存中时存在根本性的限制，",
+      "metadata": {
+        "chunk_id": 32,
+        "page_number": 8,
+        "word_count": 1,
+        "page_range": "Page 8",
+        "coordinates": "CoordinatesMetadata(points=((107.5495, 131.8720012608), (107.5495, 148.6719995808), (897.5494984, 148.6719995808), (897.5494984, 131.8720012608)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14c9ff4d0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "19871ddab59e98a128eb9cfaf4219948",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "824d825053c80744d162f7e818bc77a4",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "同时还需在计算、通信和开发效率之间取得平衡。",
+      "metadata": {
+        "chunk_id": 33,
+        "page_number": 8,
+        "word_count": 1,
+        "page_range": "Page 8",
+        "coordinates": "CoordinatesMetadata(points=((130.0495, 161.47200118079996), (130.0495, 177.47199958079995), (482.0494984, 177.47199958079995), (482.0494984, 161.47200118079996)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14c9ff4d0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "19871ddab59e98a128eb9cfaf4219948",
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "2e80c34dd0a419af454b3397bdd7edb2",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "",
+      "metadata": {
+        "chunk_id": 34,
+        "page_number": 8,
+        "word_count": 0,
+        "page_range": "Page 8",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 189.71200126079998), (71.54952, 205.71199966080002), (77.14951944, 205.71199966080002), (77.14951944, 189.71200126079998)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14c9ff4d0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "2e80c34dd0a419af454b3397bdd7edb2",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "fdd85d911a8332b58d70e6959a891c51",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "ZeRO的创新",
+      "metadata": {
+        "chunk_id": 35,
+        "page_number": 8,
+        "word_count": 1,
+        "page_range": "Page 8",
+        "coordinates": "CoordinatesMetadata(points=((94.04952, 190.51200118079998), (94.04952, 206.62399956960002), (177.1544952, 206.62399956960002), (177.1544952, 190.51200118079998)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14c9ff4d0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "19871ddab59e98a128eb9cfaf4219948",
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "e2ef5283ae33d13722353643ae1d6a97",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "内存优化：ZeRO通过优化内存使用，大幅提高了训练速度，同时增加了可以有效训练的模型大小。",
+      "metadata": {
+        "chunk_id": 36,
+        "page_number": 8,
+        "word_count": 1,
+        "page_range": "Page 8",
+        "coordinates": "CoordinatesMetadata(points=((107.5495, 218.7520012608), (107.5495, 235.66399956960004), (820.5294984, 235.66399956960004), (820.5294984, 218.7520012608)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14c9ff4d0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "e2ef5283ae33d13722353643ae1d6a97",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "33ac565f8404e420eae80b13150634e3",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "消除冗余：ZeRO在数据和模型并行训练中消除了内存冗余，同时保持了低通信量和高计算粒度。",
+      "metadata": {
+        "chunk_id": 37,
+        "page_number": 8,
+        "word_count": 1,
+        "page_range": "Page 8",
+        "coordinates": "CoordinatesMetadata(points=((107.5495, 246.83200126079998), (107.5495, 263.7439995696), (804.5294984, 263.7439995696), (804.5294984, 246.83200126079998)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14c9ff4d0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "e2ef5283ae33d13722353643ae1d6a97",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "16093ae91446d30282af299d42562354",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "模型规模扩展：ZeRO允许模型大小与设备数量成比例扩展，同时保持高效率。",
+      "metadata": {
+        "chunk_id": 38,
+        "page_number": 8,
+        "word_count": 1,
+        "page_range": "Page 8",
+        "coordinates": "CoordinatesMetadata(points=((107.5495, 275.8720012608), (107.5495, 292.78399956960004), (676.5294984, 292.78399956960004), (676.5294984, 275.8720012608)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14c9ff4d0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "e2ef5283ae33d13722353643ae1d6a97",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "5701a7f1ee8a11685910bfdae154a2e7",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "出色的实验结果",
+      "metadata": {
+        "chunk_id": 39,
+        "page_number": 8,
+        "word_count": 1,
+        "page_range": "Page 8",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 304.67200126079996), (71.54952, 321.4719995808), (206.04950879999998, 321.4719995808), (206.04950879999998, 304.67200126079996)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14c9ff4d0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "e2ef5283ae33d13722353643ae1d6a97",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "2dc82d08504cd986a47753a8d59dc1d5",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "大规模的模型训练：ZeRO实现了在400个GPU上对超过1000亿参数的大模型进行超线性加速训练，实现了15",
+      "metadata": {
+        "chunk_id": 40,
+        "page_number": 8,
+        "word_count": 1,
+        "page_range": "Page 8",
+        "coordinates": "CoordinatesMetadata(points=((107.5495, 333.7120012608), (107.5495, 350.62399956959996), (901.1654996384, 350.62399956959996), (901.1654996384, 333.7120012608)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14c9ff4d0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "e2ef5283ae33d13722353643ae1d6a97",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "5dae8aec1eb0c1d8adf84ca154e6777a",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "Petaflops的吞吐量。",
+      "metadata": {
+        "chunk_id": 41,
+        "page_number": 8,
+        "word_count": 1,
+        "page_range": "Page 8",
+        "coordinates": "CoordinatesMetadata(points=((130.0495, 363.5520011808), (130.0495, 379.66399956960004), (270.14949839999997, 379.66399956960004), (270.14949839999997, 363.5520011808)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14c9ff4d0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "19871ddab59e98a128eb9cfaf4219948",
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "513219783d851c7108e39af99aafb7ff",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "性能提升：与当时最先进技术相比，模型大小增加了8倍，可实现性能增加10倍。",
+      "metadata": {
+        "chunk_id": 42,
+        "page_number": 8,
+        "word_count": 1,
+        "page_range": "Page 8",
+        "coordinates": "CoordinatesMetadata(points=((107.5495, 390.8320012608), (107.5495, 407.74399956959996), (698.4244984, 407.74399956959996), (698.4244984, 390.8320012608)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14c9ff4d0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "513219783d851c7108e39af99aafb7ff",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "e0a27606055472e8acb95305fba3987a",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "易用性：ZeRO能够训练高达130亿参数的大型模型（例如，比Megatron GPT的83亿和T5的110亿都大），而无",
+      "metadata": {
+        "chunk_id": 43,
+        "page_number": 8,
+        "word_count": 2,
+        "page_range": "Page 8",
+        "coordinates": "CoordinatesMetadata(points=((107.5495, 419.8720012608), (107.5495, 436.78399956960004), (897.54909677504, 436.78399956960004), (897.54909677504, 419.8720012608)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14c9ff4d0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "513219783d851c7108e39af99aafb7ff",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "06a4f242afe9fb7856816dadb9cbf616",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "需依赖更难以应用的模型并行技术。",
+      "metadata": {
+        "chunk_id": 44,
+        "page_number": 8,
+        "word_count": 1,
+        "page_range": "Page 8",
+        "coordinates": "CoordinatesMetadata(points=((130.0495, 449.47200118079996), (130.0495, 465.4719995808), (386.0494984, 465.4719995808), (386.0494984, 449.47200118079996)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14c9ff4d0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "19871ddab59e98a128eb9cfaf4219948",
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "9c413e112ef94db9bf560aca3c5bd3e2",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "研究成果：研究人员利用ZeRO的系统突破创造了世界上最大的语言模型（170亿参数），并达到了破纪录的准",
+      "metadata": {
+        "chunk_id": 45,
+        "page_number": 8,
+        "word_count": 1,
+        "page_range": "Page 8",
+        "coordinates": "CoordinatesMetadata(points=((107.5495, 477.7120012608), (107.5495, 494.6239995696), (897.55588551936, 494.6239995696), (897.55588551936, 477.7120012608)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14c9ff4d0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "9c413e112ef94db9bf560aca3c5bd3e2",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "420c0f7bfa747bab2da5fd834723b6d0",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "确率。",
+      "metadata": {
+        "chunk_id": 46,
+        "page_number": 8,
+        "word_count": 1,
+        "page_range": "Page 8",
+        "coordinates": "CoordinatesMetadata(points=((130.0495, 507.5520011808), (130.0495, 523.5519995808), (178.0494984, 523.5519995808), (178.0494984, 507.5520011808)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14c9ff4d0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Footer",
+        "id": "7507f51b672e8bad5ae5fecfa7c4a3af",
+        "category": "Footer"
+      }
+    },
+    {
+      "content": "ZeRO-DP（Data Parallelism）优化技术",
+      "metadata": {
+        "chunk_id": 47,
+        "page_number": 9,
+        "word_count": 2,
+        "page_range": "Page 9",
+        "coordinates": "CoordinatesMetadata(points=((36.73606, 20.317979235200028), (36.73606, 43.89398965280003), (440.9830935184, 43.89398965280003), (440.9830935184, 20.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e1fcc10>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Header",
+        "id": "47978fb49dec7fdef1c0731f5302b6b5",
+        "category": "Header"
+      }
+    },
+    {
+      "content": "ZeRO-DP 是一种分布式数据并行训练方法，通过减少冗余数据来降低每个设备的显存占用，从而允许训练更大的模型。",
+      "metadata": {
+        "chunk_id": 48,
+        "page_number": 9,
+        "word_count": 2,
+        "page_range": "Page 9",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 75.55199118079997), (71.54952, 91.6639895696), (900.6544231999999, 91.6639895696), (900.6544231999999, 75.55199118079997)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e1fcc10>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "47978fb49dec7fdef1c0731f5302b6b5",
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "2ef3232f6e51bf9eb6a37f26d1db0185",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "ZeRO-DP 三个优化阶段（以 Adam优化器，64张GPU为例计算）：",
+      "metadata": {
+        "chunk_id": 49,
+        "page_number": 9,
+        "word_count": 3,
+        "page_range": "Page 9",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 103.63200118079999), (71.54952, 119.74399956960002), (523.1544904, 119.74399956960002), (523.1544904, 103.63200118079999)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e1fcc10>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "47978fb49dec7fdef1c0731f5302b6b5",
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "0a291d61617a87d150a9b4a5871be905",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "",
+      "metadata": {
+        "chunk_id": 50,
+        "page_number": 9,
+        "word_count": 0,
+        "page_range": "Page 9",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 131.8720012608), (71.54952, 147.87199966080004), (77.14951944, 147.87199966080004), (77.14951944, 131.8720012608)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e1fcc10>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "0a291d61617a87d150a9b4a5871be905",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "155d2d7c4adf48d423fbe31b3e74692c",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "ZeRO Stage 1 （Pos）：4倍显存压缩，将优化器参数（如动量和学习率等）分布到多张卡。通信量与数据并行相同。",
+      "metadata": {
+        "chunk_id": 51,
+        "page_number": 9,
+        "word_count": 4,
+        "page_range": "Page 9",
+        "coordinates": "CoordinatesMetadata(points=((98.54952, 132.6720011808), (98.54952, 150.31899978480004), (903.3194456, 150.31899978480004), (903.3194456, 132.6720011808)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e1fcc10>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "47978fb49dec7fdef1c0731f5302b6b5",
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "3c2baac955e42fe54a1b393d28b99b82",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "",
+      "metadata": {
+        "chunk_id": 52,
+        "page_number": 9,
+        "word_count": 0,
+        "page_range": "Page 9",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 160.67200126079996), (71.54952, 176.6719996608), (77.14951944, 176.6719996608), (77.14951944, 160.67200126079996)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e1fcc10>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "3c2baac955e42fe54a1b393d28b99b82",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "ec7bda88d8be7f818e4c97d5fbdd6c53",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "ZeRO Stage 2 （Pos+g）：8倍显存压缩， 进一步将梯度分布到多张卡 。通信量仍不变。",
+      "metadata": {
+        "chunk_id": 53,
+        "page_number": 9,
+        "word_count": 6,
+        "page_range": "Page 9",
+        "coordinates": "CoordinatesMetadata(points=((98.54952, 161.47200118079996), (98.54952, 179.3589997848), (696.8194983999999, 179.3589997848), (696.8194983999999, 161.47200118079996)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e1fcc10>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "47978fb49dec7fdef1c0731f5302b6b5",
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "0e10c809b8d90e19eadcf591d333c9d9",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "",
+      "metadata": {
+        "chunk_id": 54,
+        "page_number": 9,
+        "word_count": 0,
+        "page_range": "Page 9",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 189.71200126079998), (71.54952, 205.71199966080002), (77.14951944, 205.71199966080002), (77.14951944, 189.71200126079998)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e1fcc10>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "0e10c809b8d90e19eadcf591d333c9d9",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "b54c4e29c24f4bfc9fdc8b630672f376",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "ZeRO Stage 3 （Pos+g+p）：进一步将模型参数分布到多张卡，显存减少与GPU卡的数量（Nd）成线性关系。如，在64",
+      "metadata": {
+        "chunk_id": 55,
+        "page_number": 9,
+        "word_count": 4,
+        "page_range": "Page 9",
+        "coordinates": "CoordinatesMetadata(points=((98.54952, 190.51200118079998), (98.54952, 208.39899978480003), (897.30629837632, 208.39899978480003), (897.30629837632, 190.51200118079998)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e1fcc10>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "47978fb49dec7fdef1c0731f5302b6b5",
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "5f562b249a3bcbdfaa37bf17d444d75f",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "个GPU上分割（Nd=64）将实现64倍的显存压缩。通信量会适度增加50%。",
+      "metadata": {
+        "chunk_id": 56,
+        "page_number": 9,
+        "word_count": 1,
+        "page_range": "Page 9",
+        "coordinates": "CoordinatesMetadata(points=((98.54952, 219.5520011808), (98.54952, 237.43899978480005), (611.4244984, 237.43899978480005), (611.4244984, 219.5520011808)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e1fcc10>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "47978fb49dec7fdef1c0731f5302b6b5",
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "1e9ee2392bfffdaa34b9a05ff961e1ee",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "LLaMA2-7B：7 x (2+2+12) = 112",
+      "metadata": {
+        "chunk_id": 57,
+        "page_number": 9,
+        "word_count": 5,
+        "page_range": "Page 9",
+        "coordinates": "CoordinatesMetadata(points=((595.8697, 498.4960012704), (595.8697, 515.3919995808), (827.91789740768, 515.3919995808), (827.91789740768, 498.4960012704)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e1fcc10>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Footer",
+        "id": "bf5b767257cc82cc0b8c6edbbbe8a490",
+        "category": "Footer"
+      }
+    },
+    {
+      "content": "ZeRO 在千亿模型上的近线性加速实验结果",
+      "metadata": {
+        "chunk_id": 58,
+        "page_number": 10,
+        "word_count": 2,
+        "page_range": "Page 10",
+        "coordinates": "CoordinatesMetadata(points=((36.73606, 20.317979235200028), (36.73606, 43.89398965280003), (460.3460739919999, 43.89398965280003), (460.3460739919999, 20.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e2b3dd0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Header",
+        "id": "2ceac41d51e4ec002551969e082961b9",
+        "category": "Header"
+      }
+    },
+    {
+      "content": "ZeRO-DP 三阶段优化技术对比：从75亿到1万亿的单卡显存消耗",
+      "metadata": {
+        "chunk_id": 59,
+        "page_number": 11,
+        "word_count": 2,
+        "page_range": "Page 11",
+        "coordinates": "CoordinatesMetadata(points=((36.73606, 20.317979235200028), (36.73606, 43.89398965280003), (671.2279853824, 43.89398965280003), (671.2279853824, 20.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x151051ad0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Header",
+        "id": "10ac979d0b67c813fdd732a2d0bb74ce",
+        "category": "Header"
+      }
+    },
+    {
+      "content": "ZeRO-R（Residual）组件：进一步优化显存开销",
+      "metadata": {
+        "chunk_id": 60,
+        "page_number": 12,
+        "word_count": 1,
+        "page_range": "Page 12",
+        "coordinates": "CoordinatesMetadata(points=((36.73606, 20.317979235200028), (36.73606, 43.89398965280003), (525.1000805008, 43.89398965280003), (525.1000805008, 20.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150fb7390>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Header",
+        "id": "1ac6a5ffc2dc33def38c1a9de858c710",
+        "category": "Header"
+      }
+    },
+    {
+      "content": "ZeRO优化器的ZeRO-R 组件针对以下三个关键方面进行了优化，进一步降低了显存占用并提高训练大型模型的效率： • 分区激活检查点 (Pa)",
+      "metadata": {
+        "chunk_id": 61,
+        "page_number": 12,
+        "word_count": 5,
+        "page_range": "Page 12",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 75.55199118079997), (71.54952, 115.27899978480002), (877.7594984, 115.27899978480002), (877.7594984, 75.55199118079997)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150fb7390>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "1ac6a5ffc2dc33def38c1a9de858c710",
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "9bda9b936a31cd1276aa3223fdc642ae",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "原理：模型并行（MP）设计本质上需要复制激活，导致跨模型并行GPU的激活冗余复制。ZeRO通过分区激活 并在计算中需要使用激活的前一刻才将其以复制形式具体化，从而消除了这种冗余。",
+      "metadata": {
+        "chunk_id": 62,
+        "page_number": 12,
+        "word_count": 2,
+        "page_range": "Page 12",
+        "coordinates": "CoordinatesMetadata(points=((107.5495, 115.79200126079996), (107.5495, 151.5519995808), (887.0294904, 151.5519995808), (887.0294904, 115.79200126079996)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150fa5490>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "9bda9b936a31cd1276aa3223fdc642ae",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "4c305520e97c21d657ee569258661df9",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "过程：一旦计算了模型的一层的前向传播，输入激活就会在所有模型并行进程中分区，直到在反向传播期间 再次需要。此时，ZeRO使用all-gather操作重新生成激活的复制副本。",
+      "metadata": {
+        "chunk_id": 63,
+        "page_number": 12,
+        "word_count": 2,
+        "page_range": "Page 12",
+        "coordinates": "CoordinatesMetadata(points=((107.5495, 154.67200126079996), (107.5495, 190.78399956960004), (882.0494279999998, 190.78399956960004), (882.0494279999998, 154.67200126079996)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14aa63650>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "9bda9b936a31cd1276aa3223fdc642ae",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "f1fe4afafb9b69f6c00e80924238d7cf",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "内存节省：配合激活检查点，只存储分区的激活检查点而非复制副本，可以显著减少激活占用的内存量。对 于极大的模型和非常有限的设备内存，这些分区的激活检查点甚至可以卸载到CPU内存，将激活内存开销减少 到几乎为零，但需要额外的通信成本。",
+      "metadata": {
+        "chunk_id": 64,
+        "page_number": 12,
+        "word_count": 3,
+        "page_range": "Page 12",
+        "coordinates": "CoordinatesMetadata(points=((107.5495, 192.83200126079998), (107.5495, 247.5519995808), (893.0494808, 247.5519995808), (893.0494808, 192.83200126079998)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e20a4d0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "9bda9b936a31cd1276aa3223fdc642ae",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "3d2d16780bbe3240c98be6135acfa898",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "恒定大小缓冲区 (CB)",
+      "metadata": {
+        "chunk_id": 65,
+        "page_number": 12,
+        "word_count": 2,
+        "page_range": "Page 12",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 249.71200126079998), (71.54952, 268.3989997848), (234.1664995008, 268.3989997848), (234.1664995008, 249.71200126079998)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150fb7390>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "9bda9b936a31cd1276aa3223fdc642ae",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "86dc253f318758b45406cbb96cdf1231",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "策略：ZeRO精心选择临时数据缓冲区的大小，以平衡内存和计算效率。为了提高效率，高性能库（如NVIDIA Apex或Megatron）在应用这些操作前将所有参数融合到单个缓冲区中。但是，融合缓冲区的内存开销与模型 大小成正比，对于大型模型可能成为障碍。ZeRO通过使用性能高效的恒定大小融合缓冲区解决了这个问题， 使缓冲区大小不依赖于模型大小。",
+      "metadata": {
+        "chunk_id": 66,
+        "page_number": 12,
+        "word_count": 4,
+        "page_range": "Page 12",
+        "coordinates": "CoordinatesMetadata(points=((107.5495, 269.8720012608), (107.5495, 343.55199958080004), (886.79189497376, 343.55199958080004), (886.79189497376, 269.8720012608)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150fb7390>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "9bda9b936a31cd1276aa3223fdc642ae",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "85c546e0571bdd36620acd4d55620b68",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "内存碎片整理 (MD)",
+      "metadata": {
+        "chunk_id": 67,
+        "page_number": 12,
+        "word_count": 2,
+        "page_range": "Page 12",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 345.7120012608), (71.54952, 364.3989997848), (224.4164995008, 364.3989997848), (224.4164995008, 345.7120012608)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150fb7390>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "9bda9b936a31cd1276aa3223fdc642ae",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "fee65ce743a7313579ad18dac0bb7559",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "问题：由于激活检查点和梯度计算，模型训练中出现内存碎片化。在前向传播中，仅存储选定的激活以供反 向传播使用，而大多数激活被丢弃，因为它们可以在反向传播期间重新计算，导致短期和长期内存交错，从 而引起内存碎片化。内存碎片化在内存充足时通常不是问题，但对于在有限内存下运行的大型模型训练，会 导致内存碎片化问题，如OOM（内存不足）和由于内存分配器花费大量时间寻找连续内存片段而导致的效率 低下。",
+      "metadata": {
+        "chunk_id": 68,
+        "page_number": 12,
+        "word_count": 5,
+        "page_range": "Page 12",
+        "coordinates": "CoordinatesMetadata(points=((107.5495, 365.8720012608), (107.5495, 458.51199958079997), (884.9244471999999, 458.51199958079997), (884.9244471999999, 365.8720012608)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150fb7390>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "9bda9b936a31cd1276aa3223fdc642ae",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "77820b848ce3e0ffcad4155d70109253",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "优化：ZeRO通过为激活检查点和梯度预分配连续内存块，并在生成时将它们复制到预分配的内存中，实时进 行内存碎片整理。MD不仅使ZeRO能够以更大的批量大小训练更大的模型，而且还提高了在有限内存下训练的 效率。",
+      "metadata": {
+        "chunk_id": 69,
+        "page_number": 12,
+        "word_count": 3,
+        "page_range": "Page 12",
+        "coordinates": "CoordinatesMetadata(points=((107.5495, 461.8720012608), (107.5495, 516.5919995808), (892.0294471999999, 516.5919995808), (892.0294471999999, 461.8720012608)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150fb7390>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "9bda9b936a31cd1276aa3223fdc642ae",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "73c9c2ae2a38d3bb0d0a632313a5aca4",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "ZeRO 压测实验结果",
+      "metadata": {
+        "chunk_id": 70,
+        "page_number": 13,
+        "word_count": 2,
+        "page_range": "Page 13",
+        "coordinates": "CoordinatesMetadata(points=((36.73606, 20.317979235200028), (36.73606, 43.89398965280003), (236.60609026400002, 43.89398965280003), (236.60609026400002, 20.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e20a310>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Header",
+        "id": "202205ce52b74d923d1ed23075713264",
+        "category": "Header"
+      }
+    },
+    {
+      "content": "ZeRO 压测实验对应配置",
+      "metadata": {
+        "chunk_id": 71,
+        "page_number": 14,
+        "word_count": 2,
+        "page_range": "Page 14",
+        "coordinates": "CoordinatesMetadata(points=((36.73606, 20.317979235200028), (36.73606, 43.89398965280003), (281.3540870096, 43.89398965280003), (281.3540870096, 20.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e11eb10>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Header",
+        "id": "6a68ee69163af9922699c5b0476cb8fa",
+        "category": "Header"
+      }
+    },
+    {
+      "content": "Microsoft DeepSpeed 是什么呢？",
+      "metadata": {
+        "chunk_id": 72,
+        "page_number": 15,
+        "word_count": 3,
+        "page_range": "Page 15",
+        "coordinates": "CoordinatesMetadata(points=((229.625, 229.176), (229.625, 267.192), (766.3749, 267.192), (766.3749, 229.176)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e0f80d0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "cf7dd0c00398a2a592b72e8cb9268092",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "Microsoft DeepSpeed",
+      "metadata": {
+        "chunk_id": 73,
+        "page_number": 16,
+        "word_count": 2,
+        "page_range": "Page 16",
+        "coordinates": "CoordinatesMetadata(points=((324.4375, 229.176), (324.4375, 265.176), (671.5595000000001, 265.176), (671.5595000000001, 229.176)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e0f86d0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "3935674fcda411069b4d7c0ec1d1a7da",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "完整实现了 ZeRO 优化器",
+      "metadata": {
+        "chunk_id": 74,
+        "page_number": 16,
+        "word_count": 3,
+        "page_range": "Page 16",
+        "coordinates": "CoordinatesMetadata(points=((301.0625, 293.256), (301.0625, 331.27199999999993), (694.9375, 331.27199999999993), (694.9375, 293.256)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e0f86d0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "69c531e9b2a11fec761ffbcb65c71cbc",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "Microsoft DeepSpeed 框架简介",
+      "metadata": {
+        "chunk_id": 75,
+        "page_number": 17,
+        "word_count": 3,
+        "page_range": "Page 17",
+        "coordinates": "CoordinatesMetadata(points=((36.73606, 20.317979235200028), (36.73606, 43.89398965280003), (360.3580935184, 43.89398965280003), (360.3580935184, 20.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150f82090>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Header",
+        "id": "49072f3afe90f9a3262dd2c7885e9c12",
+        "category": "Header"
+      }
+    },
+    {
+      "content": "DeepSpeed 是一个开源深度学习优化库，旨在提高大模型训练和运行效率，以支持数千亿~万亿参数的超大语言模型。",
+      "metadata": {
+        "chunk_id": 76,
+        "page_number": 17,
+        "word_count": 2,
+        "page_range": "Page 17",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 74.65599127039997), (71.54952, 91.55198958079995), (913.5494984, 91.55198958079995), (913.5494984, 74.65599127039997)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150f82090>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "49072f3afe90f9a3262dd2c7885e9c12",
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "1d5e58687258277103cd38ff14447bfd",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "为了提高大模型训练的效率和扩展性， DeepSpeed 不仅实现了ZeRO 论文中的核心技术，还组合了以下多个模块：",
+      "metadata": {
+        "chunk_id": 77,
+        "page_number": 17,
+        "word_count": 4,
+        "page_range": "Page 17",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 102.73600127039998), (71.54952, 119.63199958079997), (877.0494984, 119.63199958079997), (877.0494984, 102.73600127039998)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150f82090>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "1d5e58687258277103cd38ff14447bfd",
+        "filetype": "application/pdf",
+        "element_type": "NarrativeText",
+        "id": "ed2d6e43d57bbd5737bc94faee947623",
+        "category": "NarrativeText"
+      }
+    },
+    {
+      "content": "1. ZeRO（Zero Redundancy Optimizer）: ZeRO 是 DeepSpeed 的一个关键组成部分，它通过优化数据并行训练中的 显存使用，显著减少了所需的GPU显存。ZeRO 分为几个不同的级别（ZeRO-DP, ZeRO-Offload, ZeRO-Infinity）， 每个级别都提供了不同程度的优化和显存节省，允许训练更大的模型或在有限的硬件资源上训练模型。",
+      "metadata": {
+        "chunk_id": 78,
+        "page_number": 17,
+        "word_count": 13,
+        "page_range": "Page 17",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 154.57600127039996), (71.54952, 209.63199958079997), (913.5494984, 209.63199958079997), (913.5494984, 154.57600127039996)), system=<unstructured.documents.coordinates.PixelSpace object at 0x15108aed0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "1d5e58687258277103cd38ff14447bfd",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "8526b0b926551918ae928b1e5b76b928",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "2. 模型并行（Model Parallelism）: DeepSpeed 实现了模型并行技术，如：Tensor切片，以支持大型模型的分布式 训练。这些技术允许模型的不同部分在不同的计算设备上并行运行，从而处理那些单个设备无法容纳的大型模型。",
+      "metadata": {
+        "chunk_id": 79,
+        "page_number": 17,
+        "word_count": 6,
+        "page_range": "Page 17",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 230.6560012704), (71.54952, 267.47199958079995), (913.5494984, 267.47199958079995), (913.5494984, 230.6560012704)), system=<unstructured.documents.coordinates.PixelSpace object at 0x15108b190>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "1d5e58687258277103cd38ff14447bfd",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "477488f0c1c227812b4d6740aa70d0d6",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "3. 流水线并行（Pipeline Parallelism）: 通过将模型训练分解为多个阶段，并在不同的设备上并行处理这些阶段，流 水线并行技术可以进一步提高训练效率。这种方法特别适合于顺序依赖较弱的训练任务，如某些类型的深度学习 模型。",
+      "metadata": {
+        "chunk_id": 80,
+        "page_number": 17,
+        "word_count": 6,
+        "page_range": "Page 17",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 288.73600127040004), (71.54952, 343.55199958080004), (897.5494984, 343.55199958080004), (897.5494984, 288.73600127040004)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150f82090>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "1d5e58687258277103cd38ff14447bfd",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "cea4c618dc92b5f0d444288105385285",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "4. 稀疏注意力（Sparse Attention）: DeepSpeed 支持稀疏注意力机制，这有助于降低训练大型模型（尤其是那些基 于Transformer的模型）时的计算和内存需求。稀疏性技术可以减少不必要的计算，使模型更加高效。",
+      "metadata": {
+        "chunk_id": 81,
+        "page_number": 17,
+        "word_count": 6,
+        "page_range": "Page 17",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 365.7760012704), (71.54952, 401.63199958079997), (897.5494904, 401.63199958079997), (897.5494904, 365.7760012704)), system=<unstructured.documents.coordinates.PixelSpace object at 0x15108b3d0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "1d5e58687258277103cd38ff14447bfd",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "70e303581f9aa4b6263869f7852e72aa",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "5. 显存和带宽优化: DeepSpeed 采用了多种技术来优化显存使用和增加带宽效率，如异步I/O、内存池化和压缩通信 等。这些优化有助于提高数据加载和模型训练过程中的效率。",
+      "metadata": {
+        "chunk_id": 82,
+        "page_number": 17,
+        "word_count": 5,
+        "page_range": "Page 17",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 422.6560012704), (71.54952, 459.4719995808), (897.36708554624, 459.4719995808), (897.36708554624, 422.6560012704)), system=<unstructured.documents.coordinates.PixelSpace object at 0x15108b650>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "1d5e58687258277103cd38ff14447bfd",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "55171d3ab538977416bd113f39d34472",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "https://www.deepspeed.ai/",
+      "metadata": {
+        "chunk_id": 83,
+        "page_number": 17,
+        "word_count": 1,
+        "page_range": "Page 17",
+        "coordinates": "CoordinatesMetadata(points=((15.14803, 516.9760012703999), (15.14803, 532.9759996703999), (207.6659993792, 532.9759996703999), (207.6659993792, 516.9760012703999)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150f82090>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Footer",
+        "id": "dacdf82853c19f6facb61e146c23173f",
+        "category": "Footer"
+      }
+    },
+    {
+      "content": "ZeRO-Offload 技术使能CPU参与大模型训练",
+      "metadata": {
+        "chunk_id": 84,
+        "page_number": 19,
+        "word_count": 2,
+        "page_range": "Page 19",
+        "coordinates": "CoordinatesMetadata(points=((36.73606, 20.317979235200028), (36.73606, 43.89398965280003), (481.7299886368, 43.89398965280003), (481.7299886368, 20.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e11db10>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Header",
+        "id": "df246cbc6da646319cd9c826bc31a9dd",
+        "category": "Header"
+      }
+    },
+    {
+      "content": "ZeRO-Offload是ZeRO技术的一个扩展，它将部分数据和计算从GPU（或其他主要训练设备）卸载到CPU，从而减轻了",
+      "metadata": {
+        "chunk_id": 85,
+        "page_number": 19,
+        "word_count": 1,
+        "page_range": "Page 19",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 94.3360012704), (71.54952, 111.2319995808), (895.424492, 111.2319995808), (895.424492, 94.3360012704)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e11db10>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "df246cbc6da646319cd9c826bc31a9dd",
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "dad3f6756605d2aba55a5da3ff9ae375",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "GPU的显存负担，并使得在有限GPU资源下训练更大的模型成为可能。核心策略如下：",
+      "metadata": {
+        "chunk_id": 86,
+        "page_number": 19,
+        "word_count": 1,
+        "page_range": "Page 19",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 122.17600127039998), (71.54952, 139.07199958079997), (678.0494984, 139.07199958079997), (678.0494984, 122.17600127039998)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e11db10>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "dad3f6756605d2aba55a5da3ff9ae375",
+        "filetype": "application/pdf",
+        "element_type": "Text",
+        "id": "4b452fc886b2260ee6ce6c0070a964c2",
+        "category": "UncategorizedText"
+      }
+    },
+    {
+      "content": "模型卸载：ZeRO-Offload可以将模型的一部分状态（如优化器状态、梯度或参数）从GPU卸载到CPU内存中，从而",
+      "metadata": {
+        "chunk_id": 87,
+        "page_number": 19,
+        "word_count": 1,
+        "page_range": "Page 19",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 180.25600127040002), (71.54952, 197.1519995808), (897.54909679504, 197.1519995808), (897.54909679504, 180.25600127040002)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e11db10>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "dad3f6756605d2aba55a5da3ff9ae375",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "95ab01c56a4408d3609c43e387b33309",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "减少GPU上的内存需求。。",
+      "metadata": {
+        "chunk_id": 88,
+        "page_number": 19,
+        "word_count": 1,
+        "page_range": "Page 19",
+        "coordinates": "CoordinatesMetadata(points=((94.04952, 209.29600127039998), (94.04952, 226.19199958079997), (285.2994984, 226.19199958079997), (285.2994984, 209.29600127039998)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e11db10>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "dad3f6756605d2aba55a5da3ff9ae375",
+        "filetype": "application/pdf",
+        "element_type": "Text",
+        "id": "c4e136ecd71fafea7062eb3b1eda51b4",
+        "category": "UncategorizedText"
+      }
+    },
+    {
+      "content": "计算卸载：除了模型卸载之外，ZeRO-Offload还可以将一部分计算任务（如参数更新）卸载到CPU，减轻GPU的计",
+      "metadata": {
+        "chunk_id": 89,
+        "page_number": 19,
+        "word_count": 1,
+        "page_range": "Page 19",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 238.33600127039995), (71.54952, 255.23199958079994), (897.54909679504, 255.23199958079994), (897.54909679504, 238.33600127039995)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e11db10>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "dad3f6756605d2aba55a5da3ff9ae375",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "5dcf5262d952127e2e417c76bf2c1739",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "算负担，使得GPU可以专注于更加密集的前向和反向传播计算。同时尽量减少数据在GPU和CPU之间的移动，以及",
+      "metadata": {
+        "chunk_id": 90,
+        "page_number": 19,
+        "word_count": 1,
+        "page_range": "Page 19",
+        "coordinates": "CoordinatesMetadata(points=((94.04952, 266.1760012704), (94.04952, 283.07199958079997), (897.4144967999999, 283.07199958079997), (897.4144967999999, 266.1760012704)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e11db10>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "df246cbc6da646319cd9c826bc31a9dd",
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "c0e02d4b21f18e1716239080e0fb3b00",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "减少CPU上的计算时间，从而在GPU上节省显存",
+      "metadata": {
+        "chunk_id": 91,
+        "page_number": 19,
+        "word_count": 1,
+        "page_range": "Page 19",
+        "coordinates": "CoordinatesMetadata(points=((94.04952, 295.21600127040006), (94.04952, 312.1119995808), (428.0494968, 312.1119995808), (428.0494968, 295.21600127040006)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e11db10>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "df246cbc6da646319cd9c826bc31a9dd",
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "cc13e04606fb2dcb22b2c8ab59c7976b",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "效率和规模：在单个NVIDIA V100 GPU上可以实现40 TFlops的性能，训练超过100亿参数的模型，相比于PyTorch",
+      "metadata": {
+        "chunk_id": 92,
+        "page_number": 19,
+        "word_count": 4,
+        "page_range": "Page 19",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 324.2560012704), (71.54952, 341.15199958079995), (897.49929420352, 341.15199958079995), (897.49929420352, 324.2560012704)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e11db10>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "cc13e04606fb2dcb22b2c8ab59c7976b",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "1afc972dfc82d145b314807201ddfae9",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "等流行框架在单GPU上能训练的最大模型规模提高了10倍。",
+      "metadata": {
+        "chunk_id": 93,
+        "page_number": 19,
+        "word_count": 1,
+        "page_range": "Page 19",
+        "coordinates": "CoordinatesMetadata(points=((94.04952, 353.2960012704), (94.04952, 370.19199958080003), (510.5494984, 370.19199958080003), (510.5494984, 353.2960012704)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e11db10>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "cc13e04606fb2dcb22b2c8ab59c7976b",
+        "filetype": "application/pdf",
+        "element_type": "Text",
+        "id": "d5e09708f722c1ca70a4fce506d002de",
+        "category": "UncategorizedText"
+      }
+    },
+    {
+      "content": "灵活性和可扩展性：设计用于在多GPU上扩展，提供接近线性的加速比，最多支持128个GPU。",
+      "metadata": {
+        "chunk_id": 94,
+        "page_number": 19,
+        "word_count": 1,
+        "page_range": "Page 19",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 382.33600127040006), (71.54952, 399.2319995808), (758.4244984, 399.2319995808), (758.4244984, 382.33600127040006)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e11db10>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "cc13e04606fb2dcb22b2c8ab59c7976b",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "a225457455173743de58e5e09aba3186",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "ZeRO-Offload 模型训练数据流图：降低 GPU 和 CPU 交互开销",
+      "metadata": {
+        "chunk_id": 95,
+        "page_number": 20,
+        "word_count": 6,
+        "page_range": "Page 20",
+        "coordinates": "CoordinatesMetadata(points=((36.73606, 20.317979235200028), (36.73606, 43.89398965280003), (665.7330935184, 43.89398965280003), (665.7330935184, 20.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150fb7bd0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Header",
+        "id": "e259f386367460893f068f978c98b863",
+        "category": "Header"
+      }
+    },
+    {
+      "content": "ZeRO-Offload 模型训练流程（单张GPU）",
+      "metadata": {
+        "chunk_id": 96,
+        "page_number": 21,
+        "word_count": 2,
+        "page_range": "Page 21",
+        "coordinates": "CoordinatesMetadata(points=((92.14897, 94.332), (92.14897, 138.68400000000003), (865.2739, 138.68400000000003), (865.2739, 94.332)), system=<unstructured.documents.coordinates.PixelSpace object at 0x15101f590>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "3918e142a6a6a28a3409481233c9c8e6",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "ZeRO-Offload 模型训练流程（多张GPUs）",
+      "metadata": {
+        "chunk_id": 97,
+        "page_number": 22,
+        "word_count": 2,
+        "page_range": "Page 22",
+        "coordinates": "CoordinatesMetadata(points=((82.08649, 94.332), (82.08649, 138.68400000000003), (875.3365, 138.68400000000003), (875.3365, 94.332)), system=<unstructured.documents.coordinates.PixelSpace object at 0x151000bd0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "e1a45319f368612a28233be34796e781",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "ZeRO-Offload 模型训练流程（延迟更新）",
+      "metadata": {
+        "chunk_id": 98,
+        "page_number": 23,
+        "word_count": 2,
+        "page_range": "Page 23",
+        "coordinates": "CoordinatesMetadata(points=((91.14898, 94.332), (91.14898, 138.68400000000003), (866.2739, 138.68400000000003), (866.2739, 94.332)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150f76b90>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "3ab2f25ead97737a326b6e2256d1d7d9",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "ZeRO-Infinity 异构创新支持百万亿模型训练",
+      "metadata": {
+        "chunk_id": 99,
+        "page_number": 24,
+        "word_count": 2,
+        "page_range": "Page 24",
+        "coordinates": "CoordinatesMetadata(points=((36.73606, 20.317979235200028), (36.73606, 43.89398965280003), (472.4740788736, 43.89398965280003), (472.4740788736, 20.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x151075550>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Header",
+        "id": "b1a72edd554df0231f372ba2470cff45",
+        "category": "Header"
+      }
+    },
+    {
+      "content": "ZeRO-Infinity也是ZeRO技术的扩展，旨在设计面向百万亿大模型的训练框架。它的主要创新如下：",
+      "metadata": {
+        "chunk_id": 100,
+        "page_number": 24,
+        "word_count": 1,
+        "page_range": "Page 24",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 94.3360012704), (71.54952, 111.2319995808), (766.0494984, 111.2319995808), (766.0494984, 94.3360012704)), system=<unstructured.documents.coordinates.PixelSpace object at 0x151075550>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "b1a72edd554df0231f372ba2470cff45",
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "c6de7a7936efa73d48e219e437f85466",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "全面优化： ZeRO-Infinity结合了数据并行、模型并行、流水线并行和ZeRO-Offload的优点，提供了一套全面的显",
+      "metadata": {
+        "chunk_id": 101,
+        "page_number": 24,
+        "word_count": 2,
+        "page_range": "Page 24",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 151.21600127039994), (71.54952, 168.11199958079993), (885.4244792, 168.11199958079993), (885.4244792, 151.21600127039994)), system=<unstructured.documents.coordinates.PixelSpace object at 0x151075550>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "c6de7a7936efa73d48e219e437f85466",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "212ba9a9d948f5188dc7996a025fc818",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "存和计算优化方案 。",
+      "metadata": {
+        "chunk_id": 102,
+        "page_number": 24,
+        "word_count": 2,
+        "page_range": "Page 24",
+        "coordinates": "CoordinatesMetadata(points=((94.04952, 181.15200118080003), (94.04952, 197.1519995808), (242.2994984, 197.1519995808), (242.2994984, 181.15200118080003)), system=<unstructured.documents.coordinates.PixelSpace object at 0x151075550>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "b1a72edd554df0231f372ba2470cff45",
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "94a20ea66f9bbb1ad547a7c10a3c8c48",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "高效利用各种存储层 ：通过智能地使用GPU显存、CPU内存和NVMe SSD存储， 最大化了训练设备的存储和计算能",
+      "metadata": {
+        "chunk_id": 103,
+        "page_number": 24,
+        "word_count": 4,
+        "page_range": "Page 24",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 209.29600127039998), (71.54952, 226.19199958079997), (896.9244759999999, 226.19199958079997), (896.9244759999999, 209.29600127039998)), system=<unstructured.documents.coordinates.PixelSpace object at 0x151075550>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "94a20ea66f9bbb1ad547a7c10a3c8c48",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "21e45823b34bf8148a18715447f85330",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "力。",
+      "metadata": {
+        "chunk_id": 104,
+        "page_number": 24,
+        "word_count": 1,
+        "page_range": "Page 24",
+        "coordinates": "CoordinatesMetadata(points=((94.04952, 239.23200118079995), (94.04952, 255.23199958079994), (126.04951679999999, 255.23199958079994), (126.04951679999999, 239.23200118079995)), system=<unstructured.documents.coordinates.PixelSpace object at 0x151075550>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "b1a72edd554df0231f372ba2470cff45",
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "9f3a247afbd035d4556451cde9661c2e",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "超大模型规模：可以在当前一代GPU集群上训练高达数十甚至数百万亿参数的模型。在单个NVIDIA DGX-2节点上",
+      "metadata": {
+        "chunk_id": 105,
+        "page_number": 24,
+        "word_count": 2,
+        "page_range": "Page 24",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 266.1760012704), (71.54952, 283.07199958079997), (883.4244951999999, 283.07199958079997), (883.4244951999999, 266.1760012704)), system=<unstructured.documents.coordinates.PixelSpace object at 0x151075550>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "9f3a247afbd035d4556451cde9661c2e",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "dcf0f5e792037cfb5e9b4e4bdd699857",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "微调万亿参数模型，降低了超大模型训练和微调的资源需求。",
+      "metadata": {
+        "chunk_id": 106,
+        "page_number": 24,
+        "word_count": 1,
+        "page_range": "Page 24",
+        "coordinates": "CoordinatesMetadata(points=((94.04952, 296.1120011808), (94.04952, 312.1119995808), (526.0494767999999, 312.1119995808), (526.0494767999999, 296.1120011808)), system=<unstructured.documents.coordinates.PixelSpace object at 0x151075550>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "b1a72edd554df0231f372ba2470cff45",
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "00b213061ed4332a1a1123b680ecdd71",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "优秀的吞吐量和可扩展性：在512个NVIDIA V100 GPU上保持超过25 petaflops的性能（达到峰值的40%），在不受",
+      "metadata": {
+        "chunk_id": 107,
+        "page_number": 24,
+        "word_count": 4,
+        "page_range": "Page 24",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 324.2560012704), (71.54952, 341.15199958079995), (891.549492, 341.15199958079995), (891.549492, 324.2560012704)), system=<unstructured.documents.coordinates.PixelSpace object at 0x151075550>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "00b213061ed4332a1a1123b680ecdd71",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "e64246b330e16c0e8a9433c01694b6d1",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "CPU或NVMe带宽限制的情况下，展示了超线性的可扩展性。",
+      "metadata": {
+        "chunk_id": 108,
+        "page_number": 24,
+        "word_count": 1,
+        "page_range": "Page 24",
+        "coordinates": "CoordinatesMetadata(points=((94.04952, 353.2960012704), (94.04952, 370.19199958080003), (518.9244663999999, 370.19199958080003), (518.9244663999999, 353.2960012704)), system=<unstructured.documents.coordinates.PixelSpace object at 0x151075550>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "b1a72edd554df0231f372ba2470cff45",
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "b18d09eeb03dfe21c3c9d06bff7ac448",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "开源友好： Microsoft 在 DeepSpeed 框架中开源实现了ZeRO-Infinity 技术。",
+      "metadata": {
+        "chunk_id": 109,
+        "page_number": 24,
+        "word_count": 6,
+        "page_range": "Page 24",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 382.33600127040006), (71.54952, 399.2319995808), (633.2994984, 399.2319995808), (633.2994984, 382.33600127040006)), system=<unstructured.documents.coordinates.PixelSpace object at 0x151075550>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "b18d09eeb03dfe21c3c9d06bff7ac448",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "d6f603317147ba8647816e0f6b761c0e",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "随着大型模型规模的快速增长和GPU内存增长的限制，传统的训练方法面临瓶颈。ZeRO-Infinity 面向未来提出了一套",
+      "metadata": {
+        "chunk_id": 110,
+        "page_number": 24,
+        "word_count": 2,
+        "page_range": "Page 24",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 439.2160012704), (71.54952, 456.1119995808), (890.9244855999999, 456.1119995808), (890.9244855999999, 439.2160012704)), system=<unstructured.documents.coordinates.PixelSpace object at 0x151075550>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "b1a72edd554df0231f372ba2470cff45",
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "1a4b59b4da7ac0f34b13f488c9da88be",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "创新的训练方法，推动了大模型和复杂任务的研究。",
+      "metadata": {
+        "chunk_id": 111,
+        "page_number": 24,
+        "word_count": 1,
+        "page_range": "Page 24",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 469.15200118079997), (71.54952, 485.15199958079995), (439.54948319999994, 485.15199958079995), (439.54948319999994, 469.15200118079997)), system=<unstructured.documents.coordinates.PixelSpace object at 0x151075550>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "b1a72edd554df0231f372ba2470cff45",
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "396f7a1db8ed23ef08017590d6a3eb81",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "ZeRO-Infinity 异构创新支持百 万亿模型训练",
+      "metadata": {
+        "chunk_id": 112,
+        "page_number": 25,
+        "word_count": 3,
+        "page_range": "Page 25",
+        "coordinates": "CoordinatesMetadata(points=((61.61559, 114.25200000000001), (61.61559, 249.56400000000002), (355.61559, 249.56400000000002), (355.61559, 114.25200000000001)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150fa58d0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "3ebeff0d5a5e1e5b5d95a656d9e5aff4",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "ZeRO-Infinity 异构训练框架",
+      "metadata": {
+        "chunk_id": 113,
+        "page_number": 26,
+        "word_count": 2,
+        "page_range": "Page 26",
+        "coordinates": "CoordinatesMetadata(points=((61.61559, 150.67599364799997), (61.61559, 249.17200209600003), (349.2362268688, 249.17200209600003), (349.2362268688, 150.67599364799997)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e11d9d0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "0a7867cfc75769e0199183bc37d491bd",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "Microsoft DeepSpeed 框架简介",
+      "metadata": {
+        "chunk_id": 114,
+        "page_number": 27,
+        "word_count": 3,
+        "page_range": "Page 27",
+        "coordinates": "CoordinatesMetadata(points=((36.73606, 20.317979235200028), (36.73606, 43.89398965280003), (360.3580935184, 43.89398965280003), (360.3580935184, 20.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x151000b90>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Header",
+        "id": "fbfb00472cd01db22ee23fae651cec5b",
+        "category": "Header"
+      }
+    },
+    {
+      "content": "DeepSpeed 是一个开源深度学习优化库，旨在提高大模型训练和运行效率，以支持数千亿~万亿参数的超大语言模型。",
+      "metadata": {
+        "chunk_id": 115,
+        "page_number": 27,
+        "word_count": 2,
+        "page_range": "Page 27",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 74.65599127039997), (71.54952, 91.55198958079995), (913.5494984, 91.55198958079995), (913.5494984, 74.65599127039997)), system=<unstructured.documents.coordinates.PixelSpace object at 0x151000b90>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "fbfb00472cd01db22ee23fae651cec5b",
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "22ff1e3c16a3cfe3d89c0d4b4a01237c",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "为了提高大模型训练的效率和扩展性， DeepSpeed 不仅实现了ZeRO 论文中的核心技术，还组合了以下多个模块：",
+      "metadata": {
+        "chunk_id": 116,
+        "page_number": 27,
+        "word_count": 4,
+        "page_range": "Page 27",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 102.73600127039998), (71.54952, 119.63199958079997), (877.0494984, 119.63199958079997), (877.0494984, 102.73600127039998)), system=<unstructured.documents.coordinates.PixelSpace object at 0x151000b90>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "22ff1e3c16a3cfe3d89c0d4b4a01237c",
+        "filetype": "application/pdf",
+        "element_type": "NarrativeText",
+        "id": "4d25322961b240bfd8be2ab62f492017",
+        "category": "NarrativeText"
+      }
+    },
+    {
+      "content": "1. ZeRO（Zero Redundancy Optimizer）: ZeRO 是 DeepSpeed 的一个关键组成部分，它通过优化数据并行训练中的 显存使用，显著减少了所需的GPU显存。ZeRO 分为几个不同的级别（ZeRO-DP, ZeRO-Offload, ZeRO-Infinity）， 每个级别都提供了不同程度的优化和显存节省，允许训练更大的模型或在有限的硬件资源上训练模型。",
+      "metadata": {
+        "chunk_id": 117,
+        "page_number": 27,
+        "word_count": 13,
+        "page_range": "Page 27",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 154.57600127039996), (71.54952, 209.63199958079997), (913.5494984, 209.63199958079997), (913.5494984, 154.57600127039996)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150fa4b50>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "22ff1e3c16a3cfe3d89c0d4b4a01237c",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "7e3b3bc80a7657decf3794fdb49eda1e",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "2. 模型并行（Model Parallelism）: DeepSpeed 实现了模型并行技术，如：Tensor切片，以支持大型模型的分布式 训练。这些技术允许模型的不同部分在不同的计算设备上并行运行，从而处理那些单个设备无法容纳的大型模型。",
+      "metadata": {
+        "chunk_id": 118,
+        "page_number": 27,
+        "word_count": 6,
+        "page_range": "Page 27",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 230.6560012704), (71.54952, 267.47199958079995), (913.5494984, 267.47199958079995), (913.5494984, 230.6560012704)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150feff10>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "22ff1e3c16a3cfe3d89c0d4b4a01237c",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "14da18b33e7993abe5f7e5db5c74bbff",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "3. 流水线并行（Pipeline Parallelism）: 通过将模型训练分解为多个阶段，并在不同的设备上并行处理这些阶段，流 水线并行技术可以进一步提高训练效率。这种方法特别适合于顺序依赖较弱的训练任务，如某些类型的深度学习 模型。",
+      "metadata": {
+        "chunk_id": 119,
+        "page_number": 27,
+        "word_count": 6,
+        "page_range": "Page 27",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 288.73600127040004), (71.54952, 343.55199958080004), (897.5494984, 343.55199958080004), (897.5494984, 288.73600127040004)), system=<unstructured.documents.coordinates.PixelSpace object at 0x151000b90>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "22ff1e3c16a3cfe3d89c0d4b4a01237c",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "ff533fc69d0b93efc5beab203d9baf20",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "4. 稀疏注意力（Sparse Attention）: DeepSpeed 支持稀疏注意力机制，这有助于降低训练大型模型（尤其是那些基 于Transformer的模型）时的计算和内存需求。稀疏性技术可以减少不必要的计算，使模型更加高效。",
+      "metadata": {
+        "chunk_id": 120,
+        "page_number": 27,
+        "word_count": 6,
+        "page_range": "Page 27",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 365.7760012704), (71.54952, 401.63199958079997), (897.5494904, 401.63199958079997), (897.5494904, 365.7760012704)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150feedd0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "22ff1e3c16a3cfe3d89c0d4b4a01237c",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "6d6152401ad327113c4a6ceedf296c24",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "5. 显存和带宽优化: DeepSpeed 采用了多种技术来优化显存使用和增加带宽效率，如异步I/O、内存池化和压缩通信 等。这些优化有助于提高数据加载和模型训练过程中的效率。",
+      "metadata": {
+        "chunk_id": 121,
+        "page_number": 27,
+        "word_count": 5,
+        "page_range": "Page 27",
+        "coordinates": "CoordinatesMetadata(points=((71.54952, 422.6560012704), (71.54952, 459.4719995808), (897.36708554624, 459.4719995808), (897.36708554624, 422.6560012704)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1510195d0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "22ff1e3c16a3cfe3d89c0d4b4a01237c",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "39d25627e36e1899ab9a4fe70a1bb653",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "https://www.deepspeed.ai/",
+      "metadata": {
+        "chunk_id": 122,
+        "page_number": 27,
+        "word_count": 1,
+        "page_range": "Page 27",
+        "coordinates": "CoordinatesMetadata(points=((15.14803, 516.9760012703999), (15.14803, 532.9759996703999), (207.6659993792, 532.9759996703999), (207.6659993792, 516.9760012703999)), system=<unstructured.documents.coordinates.PixelSpace object at 0x151000b90>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Footer",
+        "id": "b04e762d028ab73f894c53e4f52adae4",
+        "category": "Footer"
+      }
+    },
+    {
+      "content": "分布式模型训练并行化技术对比",
+      "metadata": {
+        "chunk_id": 123,
+        "page_number": 28,
+        "word_count": 1,
+        "page_range": "Page 28",
+        "coordinates": "CoordinatesMetadata(points=((246.0, 231.192), (246.0, 267.192), (750.0, 267.192), (750.0, 231.192)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150f91ad0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "c24922c2ec25c07219bdea79e1dd64a1",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "大模型分布式训练：数据并行 与 模型并行",
+      "metadata": {
+        "chunk_id": 124,
+        "page_number": 29,
+        "word_count": 3,
+        "page_range": "Page 29",
+        "coordinates": "CoordinatesMetadata(points=((16.51024, 26.317979235200028), (16.51024, 47.886606435200065), (431.13219351839996, 47.886606435200065), (431.13219351839996, 26.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150f91f50>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Header",
+        "id": "1c3b573611d3746f4b9061a0596f8ffa",
+        "category": "Header"
+      }
+    },
+    {
+      "content": "大模型分布式训练：模型并行 与 流水线并行",
+      "metadata": {
+        "chunk_id": 125,
+        "page_number": 30,
+        "word_count": 3,
+        "page_range": "Page 30",
+        "coordinates": "CoordinatesMetadata(points=((16.51024, 26.317979235200028), (16.51024, 47.886606435200065), (453.5061918912, 47.886606435200065), (453.5061918912, 26.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150fd2d90>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Header",
+        "id": "43b800af0e00c9f641b82e9cf968d9b4",
+        "category": "Header"
+      }
+    },
+    {
+      "content": "流水线并行则是将模型训练的过程（特别是前向和后向传播）分割成多个阶段，并在不同的设备上并行执行这些阶段。 流水线并行的关键优势在于它可以减少设备间的空闲时间，因为不同的设备可以同时处理模型的不同部分。",
+      "metadata": {
+        "chunk_id": 126,
+        "page_number": 30,
+        "word_count": 2,
+        "page_range": "Page 30",
+        "coordinates": "CoordinatesMetadata(points=((60.34197, 60.19199118080002), (60.34197, 95.15198958079998), (892.3418867999998, 95.15198958079998), (892.3418867999998, 60.19199118080002)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150fd2d90>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "43b800af0e00c9f641b82e9cf968d9b4",
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "fc969269025c9bd3d046f29840014fca",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "在实践中，这两种技术经常结合使用，以实现在有限硬件资源下训练大规模深度学习模型的目标。例如，一个大型模型 可以首先使用模型并行技术在多个设备上分割，然后在这些设备上进一步应用流水线并行技术来优化训练过程的效率。",
+      "metadata": {
+        "chunk_id": 127,
+        "page_number": 30,
+        "word_count": 2,
+        "page_range": "Page 30",
+        "coordinates": "CoordinatesMetadata(points=((60.34197, 118.27200118080003), (60.34197, 153.23199958079994), (892.3418867999998, 153.23199958079994), (892.3418867999998, 118.27200118080003)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150fd2d90>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "43b800af0e00c9f641b82e9cf968d9b4",
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "a734c7e860abfaf737d78d73fa97efd1",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "纯模型并行",
+      "metadata": {
+        "chunk_id": 128,
+        "page_number": 30,
+        "word_count": 1,
+        "page_range": "Page 30",
+        "coordinates": "CoordinatesMetadata(points=((850.2408, 241.8720011808), (850.2408, 257.8719995808), (930.240792, 257.8719995808), (930.240792, 241.8720011808)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150fd2d90>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "43b800af0e00c9f641b82e9cf968d9b4",
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "ee1ea5430144905b717d6063a24bde46",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "流水线+模型并行",
+      "metadata": {
+        "chunk_id": 129,
+        "page_number": 30,
+        "word_count": 1,
+        "page_range": "Page 30",
+        "coordinates": "CoordinatesMetadata(points=((836.034, 414.4320011808), (836.034, 430.54399956960003), (956.0339935999999, 430.54399956960003), (956.0339935999999, 414.4320011808)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150fd2d90>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "43b800af0e00c9f641b82e9cf968d9b4",
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "a9f97070630034d0330d3c615c41e933",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "DeepSpeed 与 Transformers 什么关系？",
+      "metadata": {
+        "chunk_id": 130,
+        "page_number": 31,
+        "word_count": 4,
+        "page_range": "Page 31",
+        "coordinates": "CoordinatesMetadata(points=((160.655, 229.71287030400003), (160.655, 267.192), (835.345, 267.192), (835.345, 229.71287030400003)), system=<unstructured.documents.coordinates.PixelSpace object at 0x151053410>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "NarrativeText",
+        "id": "1eee289ec1a51ed36a7c65e6c74a5dda",
+        "category": "NarrativeText"
+      }
+    },
+    {
+      "content": "DeepSpeed 与 Transformers 集成",
+      "metadata": {
+        "chunk_id": 131,
+        "page_number": 32,
+        "word_count": 4,
+        "page_range": "Page 32",
+        "coordinates": "CoordinatesMetadata(points=((16.51024, 26.317979235200028), (16.51024, 49.89398965280003), (364.88419677279995, 49.89398965280003), (364.88419677279995, 26.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x151031610>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "NarrativeText",
+        "id": "29bf88175d1319032300bb736bcc7d01",
+        "category": "NarrativeText"
+      }
+    },
+    {
+      "content": "Transformers 的 Trainer 支持直接使用参数 model_wrapped 和 place_model_on_device 来启动 DeepSpeed 加速训练",
+      "metadata": {
+        "chunk_id": 132,
+        "page_number": 32,
+        "word_count": 10,
+        "page_range": "Page 32",
+        "coordinates": "CoordinatesMetadata(points=((60.34197, 68.11199118079998), (60.34197, 84.22398956960001), (838.6568935999999, 84.22398956960001), (838.6568935999999, 68.11199118079998)), system=<unstructured.documents.coordinates.PixelSpace object at 0x151031610>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "NarrativeText",
+        "id": "5cb95fe7d2a36581d2027e6fa1046885",
+        "category": "NarrativeText"
+      }
+    },
+    {
+      "content": "DeepSpeed 与 Transformers 集成",
+      "metadata": {
+        "chunk_id": 133,
+        "page_number": 33,
+        "word_count": 4,
+        "page_range": "Page 33",
+        "coordinates": "CoordinatesMetadata(points=((16.51024, 26.317979235200028), (16.51024, 49.89398965280003), (364.88419677279995, 49.89398965280003), (364.88419677279995, 26.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1510a8c50>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "NarrativeText",
+        "id": "cc208012e1e87dedba15db3acffa023b",
+        "category": "NarrativeText"
+      }
+    },
+    {
+      "content": "Transformers 也支持通过 HfDeepSpeedConfig 方式，以独立配置文件注入训练配置参数。",
+      "metadata": {
+        "chunk_id": 134,
+        "page_number": 33,
+        "word_count": 4,
+        "page_range": "Page 33",
+        "coordinates": "CoordinatesMetadata(points=((60.34197, 68.11199118079998), (60.34197, 84.22398956960001), (670.9169695999999, 84.22398956960001), (670.9169695999999, 68.11199118079998)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1510a8c50>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "NarrativeText",
+        "id": "57fd112b93f788f0d7b296150ecb5258",
+        "category": "NarrativeText"
+      }
+    },
+    {
+      "content": "DeepSpeed 框架编译与安装",
+      "metadata": {
+        "chunk_id": 135,
+        "page_number": 34,
+        "word_count": 2,
+        "page_range": "Page 34",
+        "coordinates": "CoordinatesMetadata(points=((266.0, 229.71287030400003), (266.0, 267.192), (730.0, 267.192), (730.0, 229.71287030400003)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150fd1650>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "a950c1b5a246f92133932e33cac27620",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "查看 GPU 架构和兼容性（NVIDIA T4 Major 7 Minor 5) – 需源代码安装 DeepSpeed",
+      "metadata": {
+        "chunk_id": 136,
+        "page_number": 35,
+        "word_count": 11,
+        "page_range": "Page 35",
+        "coordinates": "CoordinatesMetadata(points=((16.51024, 26.317979235200028), (16.51024, 49.89398965280003), (846.04879116992, 49.89398965280003), (846.04879116992, 26.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150f91b10>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "c36dd943051e31a3f87ef093ebdc86a7",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "源代码安装 DeepSpeed",
+      "metadata": {
+        "chunk_id": 137,
+        "page_number": 36,
+        "word_count": 2,
+        "page_range": "Page 36",
+        "coordinates": "CoordinatesMetadata(points=((16.51024, 26.317979235200028), (16.51024, 49.89398965280003), (255.92379116992, 49.89398965280003), (255.92379116992, 26.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x151003bd0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "NarrativeText",
+        "id": "3d8efcd9763991e02bea31fa8fd8c289",
+        "category": "NarrativeText"
+      }
+    },
+    {
+      "content": "主要参数设置 • 根据你的 GPU 实际情况（查看方法见前一页），设置参数 TORCH_CUDA_ARCH_LIST； • 如果你需要使用 NVMe Offload，设置参数 DS_BUILD_UTILS=1； • 如果你需要使用 CPU Offload 优化器参数，设置参数 DS_BUILD_CPU_ADAM=1；",
+      "metadata": {
+        "chunk_id": 138,
+        "page_number": 36,
+        "word_count": 17,
+        "page_range": "Page 36",
+        "coordinates": "CoordinatesMetadata(points=((47.10063, 85.63199118079996), (47.10063, 159.8239995696), (661.8955983999999, 159.8239995696), (661.8955983999999, 85.63199118079996)), system=<unstructured.documents.coordinates.PixelSpace object at 0x151003bd0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Text",
+        "id": "548f163f259cc07944f72a12f04d89e9",
+        "category": "UncategorizedText"
+      }
+    },
+    {
+      "content": "源代码安装 DeepSpeed – 安装完成",
+      "metadata": {
+        "chunk_id": 139,
+        "page_number": 37,
+        "word_count": 4,
+        "page_range": "Page 37",
+        "coordinates": "CoordinatesMetadata(points=((16.51024, 26.317979235200028), (16.51024, 49.89398965280003), (368.38219351839996, 49.89398965280003), (368.38219351839996, 26.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e0e2f90>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "NarrativeText",
+        "id": "e5fc8edb6fb3749da74057f13a23112e",
+        "category": "NarrativeText"
+      }
+    },
+    {
+      "content": "编译 DeepSpeed 源代码",
+      "metadata": {
+        "chunk_id": 140,
+        "page_number": 38,
+        "word_count": 3,
+        "page_range": "Page 38",
+        "coordinates": "CoordinatesMetadata(points=((16.51024, 26.317979235200028), (16.51024, 49.89398965280003), (267.8831951456, 49.89398965280003), (267.8831951456, 26.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x151003950>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "83b05ebb2a408e5947806a899c9a9278",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "编译 DeepSpeed 源代码 – 编译失败报错",
+      "metadata": {
+        "chunk_id": 141,
+        "page_number": 39,
+        "word_count": 5,
+        "page_range": "Page 39",
+        "coordinates": "CoordinatesMetadata(points=((16.51024, 26.317979235200028), (16.51024, 49.89398965280003), (425.380190264, 49.89398965280003), (425.380190264, 26.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150fa4110>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "96214dbf4a5d2e56075630aa6a101b50",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "解决方案：升级 GCC 和 G++ 版本，支持 C++17 以上编译器",
+      "metadata": {
+        "chunk_id": 142,
+        "page_number": 39,
+        "word_count": 7,
+        "page_range": "Page 39",
+        "coordinates": "CoordinatesMetadata(points=((440.7029, 412.386), (440.7029, 431.196), (923.9528, 431.196), (923.9528, 412.386)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150fa4110>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "eacee933f10f3cca48dcb0b4e1707e0b",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "检查 GCC/G++ 版本是否满足最低要求",
+      "metadata": {
+        "chunk_id": 143,
+        "page_number": 40,
+        "word_count": 3,
+        "page_range": "Page 40",
+        "coordinates": "CoordinatesMetadata(points=((16.51024, 26.317979235200028), (16.51024, 49.89398965280003), (397.5011837552, 49.89398965280003), (397.5011837552, 26.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x151050a10>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "de2b08074ee459fdaa191c362a4abad8",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "PyTorch 要求 C++ 17 以及上版本的编译器（对应 GCC/G++ 最低版本为7）",
+      "metadata": {
+        "chunk_id": 144,
+        "page_number": 40,
+        "word_count": 7,
+        "page_range": "Page 40",
+        "coordinates": "CoordinatesMetadata(points=((47.10063, 85.63199118079996), (47.10063, 101.74398956959999), (548.2705983999999, 101.74398956959999), (548.2705983999999, 85.63199118079996)), system=<unstructured.documents.coordinates.PixelSpace object at 0x151050a10>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "4189bc290ef8aa57d1cc7b6168a0e417",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "如果需要，更新 GCC/G++ 版本（>=7）",
+      "metadata": {
+        "chunk_id": 145,
+        "page_number": 40,
+        "word_count": 3,
+        "page_range": "Page 40",
+        "coordinates": "CoordinatesMetadata(points=((47.10055, 312.9120011808), (47.10055, 329.02399956960005), (313.9654984, 329.02399956960005), (313.9654984, 312.9120011808)), system=<unstructured.documents.coordinates.PixelSpace object at 0x151050a10>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "4189bc290ef8aa57d1cc7b6168a0e417",
+        "filetype": "application/pdf",
+        "element_type": "Text",
+        "id": "e21215f6c6219fd8236db29da4d46854",
+        "category": "UncategorizedText"
+      }
+    },
+    {
+      "content": "DeepSpeed ZeRO-Offload 模式单 GPU 训练翻译模型（T5） - DeepSpeed启动报错",
+      "metadata": {
+        "chunk_id": 146,
+        "page_number": 41,
+        "word_count": 7,
+        "page_range": "Page 41",
+        "coordinates": "CoordinatesMetadata(points=((16.51024, 26.317979235200028), (16.51024, 49.89398965280003), (859.8841967728, 49.89398965280003), (859.8841967728, 26.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e2bce10>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "7eeb6cbd69588b381c29dc8c347fc8fd",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "DeepSpeed ZeRO-Offload 模式单 GPU 训练翻译模型（T5）- Python脚本启动报错",
+      "metadata": {
+        "chunk_id": 147,
+        "page_number": 42,
+        "word_count": 6,
+        "page_range": "Page 42",
+        "coordinates": "CoordinatesMetadata(points=((16.51024, 26.317979235200028), (16.51024, 49.89398965280003), (850.2591967728, 49.89398965280003), (850.2591967728, 26.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150f77cd0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "35fa8112b341e8f13359b287d3ac5bd0",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "解决方案：需要重新使用源代码安装 Transformers",
+      "metadata": {
+        "chunk_id": 148,
+        "page_number": 42,
+        "word_count": 2,
+        "page_range": "Page 42",
+        "coordinates": "CoordinatesMetadata(points=((60.24441, 490.146), (60.24441, 508.956), (462.31179999999995, 508.956), (462.31179999999995, 490.146)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150f77cd0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "5f6f3d1a7fbb81e900b525ec7531df0a",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "源代码安装 Transformers – 安装完成",
+      "metadata": {
+        "chunk_id": 149,
+        "page_number": 43,
+        "word_count": 4,
+        "page_range": "Page 43",
+        "coordinates": "CoordinatesMetadata(points=((16.51024, 26.317979235200028), (16.51024, 49.89398965280003), (388.63219351839996, 49.89398965280003), (388.63219351839996, 26.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x15101f1d0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "ba960d49cfdc7e9de1fea6ae97f38201",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "DeepSpeed ZeRO-Offload 模式单 GPU 训练翻译模型（T5） - 训练开始(Zero-2)",
+      "metadata": {
+        "chunk_id": 150,
+        "page_number": 44,
+        "word_count": 7,
+        "page_range": "Page 44",
+        "coordinates": "CoordinatesMetadata(points=((16.51024, 26.317979235200028), (16.51024, 49.89398965280003), (821.8967986355201, 49.89398965280003), (821.8967986355201, 26.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1510a9c10>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "dd78c00133d6f594d2db7630991b4401",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "DeepSpeed ZeRO-Offload 模式单 GPU 训练翻译模型（T5）- 训练完成(Zero-2)",
+      "metadata": {
+        "chunk_id": 151,
+        "page_number": 45,
+        "word_count": 6,
+        "page_range": "Page 45",
+        "coordinates": "CoordinatesMetadata(points=((16.51024, 26.317979235200028), (16.51024, 49.89398965280003), (815.7717986355201, 49.89398965280003), (815.7717986355201, 26.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150fec8d0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "64ae719129e5678f0b68f49a4f8af39f",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "DeepSpeed ZeRO 配置详解",
+      "metadata": {
+        "chunk_id": 152,
+        "page_number": 46,
+        "word_count": 3,
+        "page_range": "Page 46",
+        "coordinates": "CoordinatesMetadata(points=((265.8125, 229.71287030400003), (265.8125, 267.192), (730.1875, 267.192), (730.1875, 229.71287030400003)), system=<unstructured.documents.coordinates.PixelSpace object at 0x15101d650>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "52e17d9fa2cfcdf34aa097dc6efd6c3e",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "T5 （Text-to-Text Transfer Transformer）模型架构 (2019)",
+      "metadata": {
+        "chunk_id": 153,
+        "page_number": 47,
+        "word_count": 5,
+        "page_range": "Page 47",
+        "coordinates": "CoordinatesMetadata(points=((16.51024, 25.35797923519999), (16.51024, 49.92398958079997), (610.1201954920001, 49.92398958079997), (610.1201954920001, 25.35797923519999)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150fb6cd0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Header",
+        "id": "ab8932e9a705c477e3157bd6b7e34aa1",
+        "category": "Header"
+      }
+    },
+    {
+      "content": "Google Research 团队提出的T5采用了一种创新的文本到文本的框架，将所有的 NLP 任务（传统的翻译、 摘要、分类、问答和文本补全等）视为文本生成问题。 T5 通过预训练和微调的方式来适应特定的任务，其中预训练阶段包括了大量的无监督学习，使用了一个称 为“掩码语言模型”的任务来预测文本中被随机遮盖的部分。",
+      "metadata": {
+        "chunk_id": 154,
+        "page_number": 47,
+        "word_count": 9,
+        "page_range": "Page 47",
+        "coordinates": "CoordinatesMetadata(points=((60.84441, 78.78599000000003), (60.84441, 162.63599999999997), (905.1444, 162.63599999999997), (905.1444, 78.78599000000003)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150fb6cd0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "ab8932e9a705c477e3157bd6b7e34aa1",
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "029714bb936a69c0536d711e44ce40a0",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "T5 模型家族在翻译任务上的对比",
+      "metadata": {
+        "chunk_id": 155,
+        "page_number": 48,
+        "word_count": 2,
+        "page_range": "Page 48",
+        "coordinates": "CoordinatesMetadata(points=((16.51024, 26.317979235200028), (16.51024, 49.89398965280003), (338.87320887359994, 49.89398965280003), (338.87320887359994, 26.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150f930d0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "91191e861df02e3d132d26ce886e5c5e",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "T5 模型众多变体在各个任务上的性能。Small、Base、Large、3B 和 11B 表示模型参数量分别为 6000 万、2.2 亿、7.7 亿、30 亿和 110 亿。每个表的第一行列出了该任务之前的 SOTA 得分。",
+      "metadata": {
+        "chunk_id": 156,
+        "page_number": 48,
+        "word_count": 14,
+        "page_range": "Page 48",
+        "coordinates": "CoordinatesMetadata(points=((60.84441, 78.78599000000003), (60.84441, 119.67599999999999), (882.1016, 119.67599999999999), (882.1016, 78.78599000000003)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150f930d0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "91191e861df02e3d132d26ce886e5c5e",
+        "filetype": "application/pdf",
+        "element_type": "NarrativeText",
+        "id": "2c4b42a87f0ef4b51be8ec644a4c7251",
+        "category": "NarrativeText"
+      }
+    },
+    {
+      "content": "使用 DeepSpeed 以 ZeRO-2 配置训练 T5-Large(7.7亿参数)",
+      "metadata": {
+        "chunk_id": 157,
+        "page_number": 49,
+        "word_count": 6,
+        "page_range": "Page 49",
+        "coordinates": "CoordinatesMetadata(points=((16.51024, 26.317979235200028), (16.51024, 49.89398965280003), (612.1471995264001, 49.89398965280003), (612.1471995264001, 26.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1510adc10>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "NarrativeText",
+        "id": "8a8dafb8fc1fb43faa28fda3e92a9ec1",
+        "category": "NarrativeText"
+      }
+    },
+    {
+      "content": "deepspeed --num_gpus=1 translation/run_translation.py \\ --deepspeed config/ds_config_zero2.json --model_name_or_path t5-large --do_train --do_eval \\ --per_device_train_batch_size 4 --per_device_eval_batch_size 4 \\ --output_dir output_dir --overwrite_output_dir --max_train_samples 500 --num_train_epochs 1 \\ --dataset_name wmt16 --dataset_config \"ro-en\" --source_lang en --target_lang ro",
+      "metadata": {
+        "chunk_id": 158,
+        "page_number": 49,
+        "word_count": 32,
+        "page_range": "Page 49",
+        "coordinates": "CoordinatesMetadata(points=((101.7845, 69.55199125280001), (101.7845, 162.59199965279998), (807.7514994368, 162.59199965279998), (807.7514994368, 69.55199125280001)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1510adc10>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "NarrativeText",
+        "id": "1c7cdddf2d377e21b20c7449b93ca365",
+        "category": "NarrativeText"
+      }
+    },
+    {
+      "content": "使用 DeepSpeed 以 ZeRO-2 配置训练 T5-Large(7.7亿参数)",
+      "metadata": {
+        "chunk_id": 159,
+        "page_number": 50,
+        "word_count": 6,
+        "page_range": "Page 50",
+        "coordinates": "CoordinatesMetadata(points=((16.51024, 26.317979235200028), (16.51024, 49.89398965280003), (612.1471995264001, 49.89398965280003), (612.1471995264001, 26.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1510aab90>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "NarrativeText",
+        "id": "d149bca506a95391d9e8d5480d993a10",
+        "category": "NarrativeText"
+      }
+    },
+    {
+      "content": "LLM-quickstart/deepspeed/config/ds_config_zero2.json",
+      "metadata": {
+        "chunk_id": 160,
+        "page_number": 50,
+        "word_count": 1,
+        "page_range": "Page 50",
+        "coordinates": "CoordinatesMetadata(points=((24.32197, 69.79199125280002), (24.32197, 85.7919896528), (438.0899844232, 85.7919896528), (438.0899844232, 69.79199125280002)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1510aab90>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "e37e8a5a15b62c69ada5c337dd7971dc",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "ZeRO-2 vs ZeRO-3 配置",
+      "metadata": {
+        "chunk_id": 161,
+        "page_number": 51,
+        "word_count": 4,
+        "page_range": "Page 51",
+        "coordinates": "CoordinatesMetadata(points=((16.51024, 26.317979235200028), (16.51024, 49.89398965280003), (264.8841967728, 49.89398965280003), (264.8841967728, 26.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e2bd950>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "ca65be676ae5d0275643f4e60eeb025a",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "LLM-quickstart/deepspeed/config/ds_config_zero2.json",
+      "metadata": {
+        "chunk_id": 162,
+        "page_number": 51,
+        "word_count": 1,
+        "page_range": "Page 51",
+        "coordinates": "CoordinatesMetadata(points=((24.32197, 69.79199125280002), (24.32197, 85.7919896528), (438.0899844232, 85.7919896528), (438.0899844232, 69.79199125280002)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e2bd950>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "3d85a46b561b973148f6ae65df47cda7",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "LLM-quickstart/deepspeed/config/ds_config_zero3.json",
+      "metadata": {
+        "chunk_id": 163,
+        "page_number": 51,
+        "word_count": 1,
+        "page_range": "Page 51",
+        "coordinates": "CoordinatesMetadata(points=((508.3742, 69.55199125280001), (508.3742, 85.55198965279999), (922.13329647008, 85.55198965279999), (922.13329647008, 69.55199125280001)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e2bd950>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "2454186ae0e43319c349b4dedd2225d9",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "使用 DeepSpeed 以 ZeRO-3 配置训练 T5-Large(7.7亿参数)",
+      "metadata": {
+        "chunk_id": 164,
+        "page_number": 52,
+        "word_count": 6,
+        "page_range": "Page 52",
+        "coordinates": "CoordinatesMetadata(points=((16.51024, 26.317979235200028), (16.51024, 49.89398965280003), (612.1471995264001, 49.89398965280003), (612.1471995264001, 26.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150fb4490>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "NarrativeText",
+        "id": "37caa5fed0fc00d619325681862f64db",
+        "category": "NarrativeText"
+      }
+    },
+    {
+      "content": "计算任务总量不变，显存需求降低，训练速度变慢",
+      "metadata": {
+        "chunk_id": 165,
+        "page_number": 52,
+        "word_count": 1,
+        "page_range": "Page 52",
+        "coordinates": "CoordinatesMetadata(points=((39.18543, 82.75199118079996), (39.18543, 98.75198958079994), (391.1853824, 98.75198958079994), (391.1853824, 82.75199118079996)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150fb4490>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "9e04f24d653c148ef6617c65321a4aae",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "使用 DeepSpeed 以 ZeRO-3 配置训练 T5-Large(7.7亿参数)",
+      "metadata": {
+        "chunk_id": 166,
+        "page_number": 53,
+        "word_count": 6,
+        "page_range": "Page 53",
+        "coordinates": "CoordinatesMetadata(points=((16.51024, 26.317979235200028), (16.51024, 49.89398965280003), (612.1471995264001, 49.89398965280003), (612.1471995264001, 26.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150fa6290>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "NarrativeText",
+        "id": "fe1089010cc7e85f93985c96917def46",
+        "category": "NarrativeText"
+      }
+    },
+    {
+      "content": "CPU Offload 多核并行训练，占用了26GB左右内存：",
+      "metadata": {
+        "chunk_id": 167,
+        "page_number": 53,
+        "word_count": 3,
+        "page_range": "Page 53",
+        "coordinates": "CoordinatesMetadata(points=((32.07433, 79.63199125279999), (32.07433, 96.35198958079997), (409.65929839999995, 96.35198958079997), (409.65929839999995, 79.63199125279999)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150fa6290>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "7383294dba44004f6d70501d53612ddf",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "使用 DeepSpeed 以 ZeRO-3 配置训练 T5-Large(7.7亿参数) – 训练完成",
+      "metadata": {
+        "chunk_id": 168,
+        "page_number": 54,
+        "word_count": 8,
+        "page_range": "Page 54",
+        "coordinates": "CoordinatesMetadata(points=((16.51024, 26.317979235200028), (16.51024, 49.89398965280003), (724.5071935184001, 49.89398965280003), (724.5071935184001, 26.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x151019ad0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "NarrativeText",
+        "id": "774d89816cee846c26afb8f9c8961ec0",
+        "category": "NarrativeText"
+      }
+    },
+    {
+      "content": "训练结束后，主进程（GPU）正常退出，子进程（CPU）手动终止（`kill -9`）",
+      "metadata": {
+        "chunk_id": 169,
+        "page_number": 54,
+        "word_count": 2,
+        "page_range": "Page 54",
+        "coordinates": "CoordinatesMetadata(points=((39.18543, 80.59199125280003), (39.18543, 97.3119895808), (586.6853983999999, 97.3119895808), (586.6853983999999, 80.59199125280003)), system=<unstructured.documents.coordinates.PixelSpace object at 0x151019ad0>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "NarrativeText",
+        "id": "542af7f7fffd21723f99efaeb44c4b37",
+        "category": "NarrativeText"
+      }
+    },
+    {
+      "content": "使用 DeepSpeed 以 ZeRO-3 配置训练 T5-3B",
+      "metadata": {
+        "chunk_id": 170,
+        "page_number": 55,
+        "word_count": 6,
+        "page_range": "Page 55",
+        "coordinates": "CoordinatesMetadata(points=((16.51024, 26.317979235200028), (16.51024, 49.89398965280003), (468.87279798272004, 49.89398965280003), (468.87279798272004, 26.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x151003650>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "NarrativeText",
+        "id": "6a9d4c87eed850462bbe1217aeae180b",
+        "category": "NarrativeText"
+      }
+    },
+    {
+      "content": "deepspeed --num_gpus=1 translation/run_translation.py \\ --deepspeed config/ds_config_zero3.json --model_name_or_path t5-3b \\ --do_train --do_eval --per_device_train_batch_size 1 --per_device_eval_batch_size 4 \\ --output_dir output_dir --overwrite_output_dir --max_train_samples 500 --num_train_epochs 1 \\ --dataset_name wmt16 --dataset_config \"ro-en\" --source_lang en --target_lang ro --fp16",
+      "metadata": {
+        "chunk_id": 171,
+        "page_number": 55,
+        "word_count": 33,
+        "page_range": "Page 55",
+        "coordinates": "CoordinatesMetadata(points=((58.2289, 64.9919912528), (58.2289, 158.03199965279998), (761.2358994368, 158.03199965279998), (761.2358994368, 64.9919912528)), system=<unstructured.documents.coordinates.PixelSpace object at 0x151003650>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "NarrativeText",
+        "id": "55055715f949a67154473ec3c639d2d2",
+        "category": "NarrativeText"
+      }
+    },
+    {
+      "content": "使用 DeepSpeed 以 ZeRO-3 配置训练 T5-3B（内存溢出，异常退出 Exit code 12）",
+      "metadata": {
+        "chunk_id": 172,
+        "page_number": 56,
+        "word_count": 9,
+        "page_range": "Page 56",
+        "coordinates": "CoordinatesMetadata(points=((16.51024, 26.317979235200028), (16.51024, 49.89398965280003), (849.2601984, 49.89398965280003), (849.2601984, 26.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x151000350>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "NarrativeText",
+        "id": "8809b522652a72f99049596db4d5b585",
+        "category": "NarrativeText"
+      }
+    },
+    {
+      "content": "deepspeed --num_gpus=1 translation/run_translation.py \\ --deepspeed config/ds_config_zero3.json --model_name_or_path t5-3b \\ --do_train --do_eval --per_device_train_batch_size 1 --per_device_eval_batch_size 4 \\ --output_dir output_dir --overwrite_output_dir --max_train_samples 500 --num_train_epochs 1 \\ --dataset_name wmt16 --dataset_config \"ro-en\" --source_lang en --target_lang ro --fp16",
+      "metadata": {
+        "chunk_id": 173,
+        "page_number": 56,
+        "word_count": 33,
+        "page_range": "Page 56",
+        "coordinates": "CoordinatesMetadata(points=((58.2289, 77.71199125280003), (58.2289, 170.75199965279995), (761.2358994368, 170.75199965279995), (761.2358994368, 77.71199125280003)), system=<unstructured.documents.coordinates.PixelSpace object at 0x151000350>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "NarrativeText",
+        "id": "d7b0197fb47891c092cecb7175915077",
+        "category": "NarrativeText"
+      }
+    },
+    {
+      "content": "Homework：调整 ZeRO-3 配置文件，支持 T5-3B 甚至 T5-11B 模型训练",
+      "metadata": {
+        "chunk_id": 174,
+        "page_number": 56,
+        "word_count": 7,
+        "page_range": "Page 56",
+        "coordinates": "CoordinatesMetadata(points=((46.29654, 510.3979892352001), (46.29654, 533.9739996528), (773.7934935184, 533.9739996528), (773.7934935184, 510.3979892352001)), system=<unstructured.documents.coordinates.PixelSpace object at 0x151000350>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Footer",
+        "id": "4c33756976479d28aa2df5ec9c88a8a8",
+        "category": "Footer"
+      }
+    },
+    {
+      "content": "使用 DeepSpeed 单机多卡、分布式训",
+      "metadata": {
+        "chunk_id": 175,
+        "page_number": 57,
+        "word_count": 3,
+        "page_range": "Page 57",
+        "coordinates": "CoordinatesMetadata(points=((189.0, 229.71287030400003), (189.0, 267.192), (807.0, 267.192), (807.0, 229.71287030400003)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150feea50>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "19190c22a5ac03920423cd4e681eb093",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "练",
+      "metadata": {
+        "chunk_id": 176,
+        "page_number": 57,
+        "word_count": 1,
+        "page_range": "Page 57",
+        "coordinates": "CoordinatesMetadata(points=((480.0, 295.272), (480.0, 331.27199999999993), (516.0, 331.27199999999993), (516.0, 295.272)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150feea50>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "e383af9d5bde57ba0f17c6884892475f",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "DeepSpeed 启动命令：单机多卡",
+      "metadata": {
+        "chunk_id": 177,
+        "page_number": 58,
+        "word_count": 2,
+        "page_range": "Page 58",
+        "coordinates": "CoordinatesMetadata(points=((16.51024, 26.317979235200028), (16.51024, 49.89398965280003), (345.1271853824, 49.89398965280003), (345.1271853824, 26.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x15108a050>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "1c6d1cbe84947dddded0cde234b25afd",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "多卡启动无需额外安装 DeepSpeed，在启动命令中将 num_gpus 参数设置为显卡数量：",
+      "metadata": {
+        "chunk_id": 178,
+        "page_number": 58,
+        "word_count": 4,
+        "page_range": "Page 58",
+        "coordinates": "CoordinatesMetadata(points=((60.84441, 78.78599000000003), (60.84441, 97.59599000000003), (764.2194, 97.59599000000003), (764.2194, 78.78599000000003)), system=<unstructured.documents.coordinates.PixelSpace object at 0x15108a050>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "14bf8f94d379b1c0ab799057f2a64933",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "deepspeed --num_gpus=2 your_program.py <normal cl args> --deepspeed ds_config.json",
+      "metadata": {
+        "chunk_id": 179,
+        "page_number": 58,
+        "word_count": 8,
+        "page_range": "Page 58",
+        "coordinates": "CoordinatesMetadata(points=((69.78441, 127.74600000000004), (69.78441, 145.74600000000004), (818.7963999999998, 145.74600000000004), (818.7963999999998, 127.74600000000004)), system=<unstructured.documents.coordinates.PixelSpace object at 0x15108a050>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "14bf8f94d379b1c0ab799057f2a64933",
+        "filetype": "application/pdf",
+        "element_type": "NarrativeText",
+        "id": "61f28d1e78a7e0bb8b1106f2aa5c1b88",
+        "category": "NarrativeText"
+      }
+    },
+    {
+      "content": "以在单机4卡训练 T5-3B 模型为例，DeepSpeed 启动命令（参考）如下：",
+      "metadata": {
+        "chunk_id": 180,
+        "page_number": 58,
+        "word_count": 4,
+        "page_range": "Page 58",
+        "coordinates": "CoordinatesMetadata(points=((60.69953, 187.50600000000003), (60.69953, 206.31600000000003), (647.5745, 206.31600000000003), (647.5745, 187.50600000000003)), system=<unstructured.documents.coordinates.PixelSpace object at 0x15108a050>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "2faf62ec7c7e5431811fbc9ae37af2a1",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "deepspeed --num_gpus=4 translation/run_translation.py \\",
+      "metadata": {
+        "chunk_id": 181,
+        "page_number": 58,
+        "word_count": 4,
+        "page_range": "Page 58",
+        "coordinates": "CoordinatesMetadata(points=((69.78441, 236.8320012528), (69.78441, 252.8319996528), (495.1663994368, 252.8319996528), (495.1663994368, 236.8320012528)), system=<unstructured.documents.coordinates.PixelSpace object at 0x15108a050>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "deffff630e07fcf4bed4f0b6155c72cd",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "--deepspeed config/ds_config_zero2.json --model_name_or_path t5-3b \\",
+      "metadata": {
+        "chunk_id": 182,
+        "page_number": 58,
+        "word_count": 5,
+        "page_range": "Page 58",
+        "coordinates": "CoordinatesMetadata(points=((69.78441, 264.6720012528), (69.78441, 280.67199965279997), (606.3763994368, 280.67199965279997), (606.3763994368, 264.6720012528)), system=<unstructured.documents.coordinates.PixelSpace object at 0x15108a050>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "e2238e56010180ce0616ffa49f8cea2b",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "--do_train --per_device_train_batch_size 4 \\",
+      "metadata": {
+        "chunk_id": 183,
+        "page_number": 58,
+        "word_count": 4,
+        "page_range": "Page 58",
+        "coordinates": "CoordinatesMetadata(points=((69.78441, 293.7120012528), (69.78441, 309.71199965280005), (391.5413994368, 309.71199965280005), (391.5413994368, 293.7120012528)), system=<unstructured.documents.coordinates.PixelSpace object at 0x15108a050>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "7a0fbbbf0aa0c8d3d0e4405a882b251a",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "--do_eval --per_device_eval_batch_size 4 \\",
+      "metadata": {
+        "chunk_id": 184,
+        "page_number": 58,
+        "word_count": 4,
+        "page_range": "Page 58",
+        "coordinates": "CoordinatesMetadata(points=((69.78441, 322.75200125279997), (69.78441, 338.7519996528), (390.0413994368, 338.7519996528), (390.0413994368, 322.75200125279997)), system=<unstructured.documents.coordinates.PixelSpace object at 0x15108a050>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "31c9595505e7714042c326ceb46c3912",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "--output_dir output_dir --overwrite_output_dir \\",
+      "metadata": {
+        "chunk_id": 185,
+        "page_number": 58,
+        "word_count": 4,
+        "page_range": "Page 58",
+        "coordinates": "CoordinatesMetadata(points=((69.78441, 351.7920012528), (69.78441, 367.7919996528), (416.9163994368, 367.7919996528), (416.9163994368, 351.7920012528)), system=<unstructured.documents.coordinates.PixelSpace object at 0x15108a050>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "0867a6454d7c78d0e2da5b12ae9d7c5c",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "--max_train_samples 500 --num_train_epochs 1 \\",
+      "metadata": {
+        "chunk_id": 186,
+        "page_number": 58,
+        "word_count": 5,
+        "page_range": "Page 58",
+        "coordinates": "CoordinatesMetadata(points=((69.78441, 380.8320012528), (69.78441, 396.83199965280005), (431.2913994368, 396.83199965280005), (431.2913994368, 380.8320012528)), system=<unstructured.documents.coordinates.PixelSpace object at 0x15108a050>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "ed952c22df0a64642b8e05bc52bffe33",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "--dataset_name wmt16 --dataset_config “ro-en” \\",
+      "metadata": {
+        "chunk_id": 187,
+        "page_number": 58,
+        "word_count": 5,
+        "page_range": "Page 58",
+        "coordinates": "CoordinatesMetadata(points=((69.78441, 408.6720012528), (69.78441, 424.67199965279997), (434.6263994368, 424.67199965279997), (434.6263994368, 408.6720012528)), system=<unstructured.documents.coordinates.PixelSpace object at 0x15108a050>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "473148fab3d62e9e868e2dc5af2993dc",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "--source_lang en --target_lang ro \\",
+      "metadata": {
+        "chunk_id": 188,
+        "page_number": 58,
+        "word_count": 5,
+        "page_range": "Page 58",
+        "coordinates": "CoordinatesMetadata(points=((69.78441, 437.7120012528), (69.78441, 453.7119996528), (323.58639943680004, 453.7119996528), (323.58639943680004, 437.7120012528)), system=<unstructured.documents.coordinates.PixelSpace object at 0x15108a050>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "c8e10c3d3127ff0831836a1ec2303886",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "--fp16",
+      "metadata": {
+        "chunk_id": 189,
+        "page_number": 58,
+        "word_count": 1,
+        "page_range": "Page 58",
+        "coordinates": "CoordinatesMetadata(points=((69.78441, 466.75200125279997), (69.78441, 482.75199965279995), (114.80440674799999, 482.75199965279995), (114.80440674799999, 466.75200125279997)), system=<unstructured.documents.coordinates.PixelSpace object at 0x15108a050>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "c8e10c3d3127ff0831836a1ec2303886",
+        "filetype": "application/pdf",
+        "element_type": "Text",
+        "id": "7dd5321c3de8b36f98d9466b886781db",
+        "category": "UncategorizedText"
+      }
+    },
+    {
+      "content": "DeepSpeed 启动命令：分布式训练",
+      "metadata": {
+        "chunk_id": 190,
+        "page_number": 59,
+        "word_count": 2,
+        "page_range": "Page 59",
+        "coordinates": "CoordinatesMetadata(points=((16.51024, 26.317979235200028), (16.51024, 49.89398965280003), (367.5011837552, 49.89398965280003), (367.5011837552, 26.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1510bde50>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "79708e70fa7aeb1c7bc7bd7eec1e87f3",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "分布式训练需要在所有节点都源代码安装 DeepSpeed，通过编译出来的 whl 包安装：",
+      "metadata": {
+        "chunk_id": 191,
+        "page_number": 59,
+        "word_count": 4,
+        "page_range": "Page 59",
+        "coordinates": "CoordinatesMetadata(points=((60.84441, 67.26598999999999), (60.84441, 86.07598999999999), (742.2194, 86.07598999999999), (742.2194, 67.26598999999999)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1510bde50>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "d15367d14934794aafe864269ee60a4d",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "新建 `hostfile` 文件，将所有节点的 SSH 别名（类似 VSCode 访问远程服务器）和GPU数量配置如下：",
+      "metadata": {
+        "chunk_id": 192,
+        "page_number": 59,
+        "word_count": 7,
+        "page_range": "Page 59",
+        "coordinates": "CoordinatesMetadata(points=((61.48291, 362.226), (61.48291, 381.036), (879.1079, 381.036), (879.1079, 362.226)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1510bde50>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "37f7d4ea477795450a4fa98d3a2e5cb8",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "使用 DeepSpeed 启动分布式训练： deepspeed --num_gpus 8 --num_nodes 2 --hostfile hostfile --master_addr hostname1 --master_port=9901 \\ your_program.py <normal cl args> --deepspeed ds_config.json",
+      "metadata": {
+        "chunk_id": 193,
+        "page_number": 59,
+        "word_count": 20,
+        "page_range": "Page 59",
+        "coordinates": "CoordinatesMetadata(points=((60.69953, 459.906), (60.69953, 521.3919996528), (854.0457994368, 521.3919996528), (854.0457994368, 459.906)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1510bde50>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "37f7d4ea477795450a4fa98d3a2e5cb8",
+        "filetype": "application/pdf",
+        "element_type": "NarrativeText",
+        "id": "eaa7c1520b46b37b13822ee59b92274d",
+        "category": "NarrativeText"
+      }
+    },
+    {
+      "content": "DeepSpeed 启动命令：分布式训练（基于 SLURM）",
+      "metadata": {
+        "chunk_id": 194,
+        "page_number": 60,
+        "word_count": 3,
+        "page_range": "Page 60",
+        "coordinates": "CoordinatesMetadata(points=((16.51024, 26.317979235200028), (16.51024, 49.89398965280003), (542.5101984, 49.89398965280003), (542.5101984, 26.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150f81790>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "a980c6c37b532c7541190743d646cc09",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "SLURM（Simple Linux Utility for Resource Management）是一个开源、高度可配置的集群管理和作业 调度系统，广泛应用于高性能计算（HPC）环境中进行资源分配、作业调度和监控。",
+      "metadata": {
+        "chunk_id": 195,
+        "page_number": 60,
+        "word_count": 7,
+        "page_range": "Page 60",
+        "coordinates": "CoordinatesMetadata(points=((60.84441, 67.26598999999999), (60.84441, 108.156), (887.7694, 108.156), (887.7694, 67.26598999999999)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150f81790>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "c872de1aa8fb3553d848ab92009053e2",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "使用 SLURM 启动分布式训练：sbatch launch.slurm",
+      "metadata": {
+        "chunk_id": 196,
+        "page_number": 60,
+        "word_count": 4,
+        "page_range": "Page 60",
+        "coordinates": "CoordinatesMetadata(points=((60.84441, 496.62600000000003), (60.84441, 515.436), (482.8532000000001, 515.436), (482.8532000000001, 496.62600000000003)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150f81790>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Footer",
+        "id": "ca8cef67359544cea13cca187202afa1",
+        "category": "Footer"
+      }
+    },
+    {
+      "content": "实战 DeepSpeed",
+      "metadata": {
+        "chunk_id": 197,
+        "page_number": 61,
+        "word_count": 2,
+        "page_range": "Page 61",
+        "coordinates": "CoordinatesMetadata(points=((356.0, 229.71287030400003), (356.0, 267.192), (650.0079000000001, 267.192), (650.0079000000001, 229.71287030400003)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1510be390>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "NarrativeText",
+        "id": "e310a7160b9b7a4f61ab04352ef7e852",
+        "category": "NarrativeText"
+      }
+    },
+    {
+      "content": "ZeRO-2 和 ZeRO-3 单机单卡训练",
+      "metadata": {
+        "chunk_id": 198,
+        "page_number": 61,
+        "word_count": 4,
+        "page_range": "Page 61",
+        "coordinates": "CoordinatesMetadata(points=((223.125, 293.79287030399996), (223.125, 331.27199999999993), (772.875, 331.27199999999993), (772.875, 293.79287030399996)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1510be390>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "406769d93639be4ec6810726e83b1fcd",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "DeepSpeed 创新模块",
+      "metadata": {
+        "chunk_id": 199,
+        "page_number": 62,
+        "word_count": 2,
+        "page_range": "Page 62",
+        "coordinates": "CoordinatesMetadata(points=((320.0, 229.71287030400003), (320.0, 267.192), (676.0, 267.192), (676.0, 229.71287030400003)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150feef10>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "73dfd557ae8e0d690067d9f30ed7d0ae",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "Inference、Compression & Science",
+      "metadata": {
+        "chunk_id": 200,
+        "page_number": 62,
+        "word_count": 3,
+        "page_range": "Page 62",
+        "coordinates": "CoordinatesMetadata(points=((194.15, 293.79287030399996), (194.15, 331.27199999999993), (801.1630000000001, 331.27199999999993), (801.1630000000001, 293.79287030399996)), system=<unstructured.documents.coordinates.PixelSpace object at 0x150feef10>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "75e17da4bd31e7ca3fa5a4d70cb72904",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "DeepSpeed 四大核心模块",
+      "metadata": {
+        "chunk_id": 201,
+        "page_number": 63,
+        "word_count": 2,
+        "page_range": "Page 63",
+        "coordinates": "CoordinatesMetadata(points=((16.51024, 26.317979235200028), (16.51024, 49.89398965280003), (278.005190264, 49.89398965280003), (278.005190264, 26.317979235200028)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1510ab390>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "75c96a78087fb06aa3a31de78be31a7c",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "Training 模块不仅实现了 ZeRO 系列优化技术，还支持了 MoE 模型和RLHF等前沿训练方法。",
+      "metadata": {
+        "chunk_id": 202,
+        "page_number": 63,
+        "word_count": 6,
+        "page_range": "Page 63",
+        "coordinates": "CoordinatesMetadata(points=((60.84441, 79.89598999999998), (60.84441, 98.79599000000002), (828.0644, 98.79599000000002), (828.0644, 79.89598999999998)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1510ab390>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "75c96a78087fb06aa3a31de78be31a7c",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "f26ae01b8157e8cff895f9920f88697a",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "",
+      "metadata": {
+        "chunk_id": 203,
+        "page_number": 63,
+        "word_count": 0,
+        "page_range": "Page 63",
+        "coordinates": "CoordinatesMetadata(points=((60.84441, 112.77599999999995), (60.84441, 130.77599999999995), (67.14441000000001, 130.77599999999995), (67.14441000000001, 112.77599999999995)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1510ab390>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "75c96a78087fb06aa3a31de78be31a7c",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "c12e05f15b1018e6bf6c63c424699f6c",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "Inference 模块提供了整套高效运行超大模型的解决方案：",
+      "metadata": {
+        "chunk_id": 204,
+        "page_number": 63,
+        "word_count": 2,
+        "page_range": "Page 63",
+        "coordinates": "CoordinatesMetadata(points=((83.34441, 112.86599999999999), (83.34441, 131.676), (543.7694, 131.676), (543.7694, 112.86599999999999)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1510ab390>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "6a9345b285e0a31e8782dec64391b4b5",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "并行技术：Tensor、Pipeline、Expert、ZeRO-Parallelism。",
+      "metadata": {
+        "chunk_id": 205,
+        "page_number": 63,
+        "word_count": 1,
+        "page_range": "Page 63",
+        "coordinates": "CoordinatesMetadata(points=((96.84441, 144.93599999999998), (96.84441, 163.836), (603.0944, 163.836), (603.0944, 144.93599999999998)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1510ab390>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "6a9345b285e0a31e8782dec64391b4b5",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "f25deef679b915fa6ed66e8030d5de70",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "低时延高吞吐技术：通信优化、自定义推理内核、异构存储优化。",
+      "metadata": {
+        "chunk_id": 206,
+        "page_number": 63,
+        "word_count": 1,
+        "page_range": "Page 63",
+        "coordinates": "CoordinatesMetadata(points=((96.84441, 177.81599999999997), (96.84441, 196.716), (641.3444, 196.716), (641.3444, 177.81599999999997)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1510ab390>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "6a9345b285e0a31e8782dec64391b4b5",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "ec03f4d75dfcc0d59e5911b1e4a47681",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "Compression 模块进一步提升了模型推理效率，降低了部署成本。社区紧跟最新的模型压缩技术并开",
+      "metadata": {
+        "chunk_id": 207,
+        "page_number": 63,
+        "word_count": 2,
+        "page_range": "Page 63",
+        "coordinates": "CoordinatesMetadata(points=((60.84441, 209.73599999999993), (60.84441, 228.63599999999997), (882.7694, 228.63599999999997), (882.7694, 209.73599999999993)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1510ab390>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "6a9345b285e0a31e8782dec64391b4b5",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "2167036663f491285563a53efb887581",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "源实现了 ZeroQuant and XTC 等算法。",
+      "metadata": {
+        "chunk_id": 208,
+        "page_number": 63,
+        "word_count": 5,
+        "page_range": "Page 63",
+        "coordinates": "CoordinatesMetadata(points=((83.34441, 241.986), (83.34441, 260.796), (402.3944, 260.796), (402.3944, 241.986)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1510ab390>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "562ea66a5cd1e3357cb4da9ea8cd0bfb",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "DeepSpeed4Science 模块是响应微软人类科学挑战使命的新模块，旨在通过AI系统技术创新构建独特",
+      "metadata": {
+        "chunk_id": 209,
+        "page_number": 63,
+        "word_count": 2,
+        "page_range": "Page 63",
+        "coordinates": "CoordinatesMetadata(points=((60.84441, 274.77599999999995), (60.84441, 293.676), (891.3444, 293.676), (891.3444, 274.77599999999995)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1510ab390>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "parent_id": "562ea66a5cd1e3357cb4da9ea8cd0bfb",
+        "filetype": "application/pdf",
+        "element_type": "ListItem",
+        "id": "cd5bba9469717db7782143dd29e4d45d",
+        "category": "ListItem"
+      }
+    },
+    {
+      "content": "能力，帮助领域专家揭开当今最大的科学之谜。（类似 DeepMind 之于 Google 的愿景任务）",
+      "metadata": {
+        "chunk_id": 210,
+        "page_number": 63,
+        "word_count": 5,
+        "page_range": "Page 63",
+        "coordinates": "CoordinatesMetadata(points=((83.34441, 307.026), (83.34441, 325.836), (824.9694, 325.836), (824.9694, 307.026)), system=<unstructured.documents.coordinates.PixelSpace object at 0x1510ab390>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "94f9804172e3907e1da0ad2fa57133bc",
+        "category": "Title"
+      }
+    },
+    {
+      "content": "THANKS",
+      "metadata": {
+        "chunk_id": 211,
+        "page_number": 64,
+        "word_count": 1,
+        "page_range": "Page 64",
+        "coordinates": "CoordinatesMetadata(points=((233.75, 225.33000542399998), (233.75, 350.329997424), (726.2499684799999, 350.329997424), (726.2499684799999, 225.33000542399998)), system=<unstructured.documents.coordinates.PixelSpace object at 0x14e1ec190>)",
+        "file_directory": "temp",
+        "filename": "15-大模型分布式训练框架Microsoft DeepSpeed.pdf",
+        "languages": [
+          "eng"
+        ],
+        "last_modified": "2025-06-12T21:16:23",
+        "links": [],
+        "filetype": "application/pdf",
+        "element_type": "Title",
+        "id": "f97cbbaf781b71469880da322929e7d8",
+        "category": "Title"
+      }
+    }
+  ]
+}

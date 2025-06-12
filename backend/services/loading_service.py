@@ -190,7 +190,7 @@ class LoadingService:
             logger.error(f"PyPDF error: {str(e)}")
             raise
     
-    def _load_with_unstructured(self, file_path: str, strategy: str = "fast", chunking_strategy: str = "basic", chunking_options: dict = None) -> str:
+    def _load_with_unstructured(self, file_path: str, strategy: str = "fast", chunking_strategy: str = "basic", chunking_options: dict = None, include_page_breaks: bool = True, include_metadata: bool = True, languages: list = None, encoding: str = "utf-8", pdf_image_processor: str = "auto") -> str:
         """
         使用unstructured库加载PDF文档。
         适合需要更好的文档结构识别和灵活分块策略的场景。
@@ -200,6 +200,11 @@ class LoadingService:
             strategy (str): 加载策略，默认'fast'
             chunking_strategy (str): 分块策略，默认'basic'
             chunking_options (dict): 分块选项配置
+            include_page_breaks (bool): 是否在文本中包含分页符
+            include_metadata (bool): 是否包含元数据
+            languages (list): 文档语言列表
+            encoding (str): 文本编码
+            pdf_image_processor (str): PDF图像处理器选项
 
         返回:
             str: 提取的文本内容
@@ -228,8 +233,17 @@ class LoadingService:
                     "multipage_sections": chunking_options.get("multiPageSections", False)
                 }
             
-            # Combine strategy parameters with chunking parameters
-            params = {**strategy_params.get(strategy, {"strategy": "fast"}), **chunking_params}
+            # 添加新的参数
+            additional_params = {
+                "include_page_breaks": include_page_breaks,
+                "include_metadata": include_metadata,
+                "languages": languages or ["eng"],
+                "encoding": encoding,
+                "pdf_image_processor": pdf_image_processor
+            }
+            
+            # Combine strategy parameters with chunking parameters and additional parameters
+            params = {**strategy_params.get(strategy, {"strategy": "fast"}), **chunking_params, **additional_params}
             
             elements = partition_pdf(file_path, **params)
             

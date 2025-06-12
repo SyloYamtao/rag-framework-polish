@@ -16,6 +16,11 @@ const LoadFile = () => {
     overlapAll: false,
     multiPageSections: false
   });
+  const [includePageBreaks, setIncludePageBreaks] = useState(true);
+  const [includeMetadata, setIncludeMetadata] = useState(true);
+  const [languages, setLanguages] = useState(['eng']);
+  const [encoding, setEncoding] = useState('utf-8');
+  const [pdfImageProcessor, setPdfImageProcessor] = useState('auto');
   const [loadedContent, setLoadedContent] = useState(null);
   const [status, setStatus] = useState('');
   const [documents, setDocuments] = useState([]);
@@ -100,6 +105,11 @@ const LoadFile = () => {
         formData.append('strategy', unstructuredStrategy);
         formData.append('chunking_strategy', chunkingStrategy);
         formData.append('chunking_options', JSON.stringify(chunkingOptions));
+        formData.append('include_page_breaks', includePageBreaks);
+        formData.append('include_metadata', includeMetadata);
+        formData.append('languages', JSON.stringify(languages));
+        formData.append('encoding', encoding);
+        formData.append('pdf_image_processor', pdfImageProcessor);
       }
 
       const response = await fetch(`${apiBaseUrl}/load`, {
@@ -346,6 +356,67 @@ const LoadFile = () => {
                     <option value="basic">Basic</option>
                     <option value="by_title">By Title</option>
                   </select>
+                </div>
+
+                <div className="mt-4 space-y-3">
+                  <div className="flex items-center">
+                    <input
+                      type="checkbox"
+                      checked={includePageBreaks}
+                      onChange={(e) => setIncludePageBreaks(e.target.checked)}
+                      className="mr-2"
+                    />
+                    <label className="text-sm font-medium">Include Page Breaks</label>
+                  </div>
+
+                  <div className="flex items-center">
+                    <input
+                      type="checkbox"
+                      checked={includeMetadata}
+                      onChange={(e) => setIncludeMetadata(e.target.checked)}
+                      className="mr-2"
+                    />
+                    <label className="text-sm font-medium">Include Metadata</label>
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium mb-1">Languages</label>
+                    <input
+                      type="text"
+                      value={languages.join(',')}
+                      onChange={(e) => setLanguages(e.target.value.split(',').map(lang => lang.trim()))}
+                      placeholder="eng,chi_sim,etc"
+                      className="block w-full p-2 border rounded"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium mb-1">Encoding</label>
+                    <select
+                      value={encoding}
+                      onChange={(e) => setEncoding(e.target.value)}
+                      className="block w-full p-2 border rounded"
+                    >
+                      <option value="utf-8">UTF-8</option>
+                      <option value="utf-16">UTF-16</option>
+                      <option value="ascii">ASCII</option>
+                      <option value="latin1">Latin-1</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium mb-1">PDF Image Processor</label>
+                    <select
+                      value={pdfImageProcessor}
+                      onChange={(e) => setPdfImageProcessor(e.target.value)}
+                      className="block w-full p-2 border rounded"
+                    >
+                      <option value="auto">Auto</option>
+                      <option value="pytesseract">PyTesseract</option>
+                      <option value="easyocr">EasyOCR</option>
+                      <option value="none">None</option>
+                    </select>
+                  </div>
                 </div>
 
                 {chunkingStrategy === 'basic' && (
